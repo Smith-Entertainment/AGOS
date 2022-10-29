@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+</head>
+<body>
+    <header>
+        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
+        <h4>Usuario</h4>
+        <a href="login.html">Sair</a>
+       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
+        <nav>
+            <a href="index.html">Obras</a>
+            <a href="listausuarios.html">Usuarios</a>
+            <a href="relatorios.html">Relatorios</a>
+        </nav>
+
+    </header>
+
+    <article>
+
+        <h2> Geração de relatorios</h2>
+        <form>
+           <label>Inicio <input type="date"/></label>
+           <label>Até <input type="date"/></label>
+           <label>Termino <input type="date"/></label>
+           <label>Até <input type="date"/></label>
+           <label>Valor Minimo <input type="number"/></label>
+           <label>Valor Máximo <input type="number"/></label>
+            <select name="tipo Obra">
+                <option>Tipo de obra</option>
+                <option>Tipo 1</option>
+                <option>Tipo 2</option>
+                <option>Tipo 3</option>
+                <option>Tipo 4</option>
+            </select>
+            <select name="Bairro">
+                <option>Bairro</option>
+                <option>Bairro 1</option>
+                <option>bairro 2</option>
+                <option>Bairro 3</option>
+                <option>Bairro 4</option>
+            </select>
+            <label> Apenas obras com acompanhamento <input type="checkbox"> </label>
+            <input type="submit" value="Gerar">
+            <input type="submit" value="Limpar">
+        </form>
+
+    </article>
+
+</body>
+</html>
