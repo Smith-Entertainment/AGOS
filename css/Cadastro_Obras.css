@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: lightblue;
+    display: flex;
+    height: 10%;
+    width: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    background-color: bisque;
+    width: auto;
+    height: auto;
+}
+
+nav{
+    background-color: aquamarine;
+    align-self: flex-end;
+}
+
+li{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.opc_user{
+    background-color: lightcoral;
+}
+
+.icone_header{
+    background-color: lightgreen;
+    width: auto;
+    height: 100px;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    display: grid;
+    grid-column: 1 2;
+}
