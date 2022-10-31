@@ -23,44 +23,44 @@
             <a href="perfilusuario.html"><img src="../img/loginico.png" alt="foto usuario"></a>
 
     </header>
-
     <article>
 
-        <h2 id="h2relatorio"> Geração de relatórios</h2>
-        <form class="gerar-relatorio">
-            <section class="coluna-esquerda">
-                <label>Ínicio <input type="date" /></label>
-                <label>Término <input type="date" /></label>
-                <label>Valor Mínimo <input type="number" /></label>
-                <select name="tipo Obra">
-                    <option>Tipo de obra</option>
-                    <option>Tipo 1</option>
-                    <option>Tipo 2</option>
-                    <option>Tipo 3</option>
-                    <option>Tipo 4</option>
-                </select>
+        <h2 id="h2relatorio"> Gerar relatório</h2>
+        <div id="container-form">
+            <form class="gerar-relatorio">
+                <section class="coluna-esquerda">
+                    <label>Ínicio <input type="date" /></label>
+                    <label>Término <input type="date" /></label>
+                    <input type="number" />
+                    <select name="tipo Obra">
+                        <option>Tipo de obra</option>
+                        <option>Tipo 1</option>
+                        <option>Tipo 2</option>
+                        <option>Tipo 3</option>
+                        <option>Tipo 4</option>
+                    </select>
 
-                <!--CONFERIR!-->
-                <label id="checkbox"> Apenas obras acompanhadas <input type="checkbox"> </label>
-                <!--CONFERIR!-->
+                    <!--CONFERIR!-->
+                    <label id="checkbox"> Apenas obras acompanhadas <input type="checkbox"> </label>
+                    <!--CONFERIR!-->
 
-                <input id="botao-gerar" type="submit" value="Gerar">
-            </section>
-            <section class="coluna-direita">
-                <label>Até <input type="date" /></label>
-                <label>Até <input type="date" /></label>
-                <label>Valor Máximo <input type="number" /></label>
-                <select name="Bairro">
-                    <option>Bairro</option>
-                    <option>Bairro 1</option>
-                    <option>bairro 2</option>
-                    <option>Bairro 3</option>
-                    <option>Bairro 4</option>
-                </select>
-                <input id="botao-submit" type="submit" value="Limpar">
-            </section>
-        </form>
-
+                    <input id="botao-gerar" type="submit" value="Gerar">
+                </section>
+                <section class="coluna-direita">
+                    <label>Até <input type="date" /></label>
+                    <label>Até <input type="date" /></label>
+                    <label>Valor Máximo <input type="number" /></label>
+                    <select name="Bairro">
+                        <option>Bairro</option>
+                        <option>Bairro 1</option>
+                        <option>bairro 2</option>
+                        <option>Bairro 3</option>
+                        <option>Bairro 4</option>
+                    </select>
+                    <input id="botao-submit" type="submit" value="Limpar">
+                </section>
+            </form>
+        </div>
     </article>
 
 </body>

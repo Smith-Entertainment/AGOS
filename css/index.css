@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: 'Caladea', serif;
+    font-family: 'Caladea', sans-serif;
     font-weight: 400;
 }
 
@@ -28,8 +28,17 @@ body {
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
-    gap: 200px;
-    font-size: 40px;
+    gap: 180px;
+    font-size: 25px;
+    color: black;
+}
+
+nav a {
+    color: black;
+}
+
+#header-relatorio-nav a:hover {
+    color: #A5CF3A;
 }
 
 #usuario {
@@ -49,18 +58,24 @@ body {
     display: flex;
     justify-content: center;
     font-size: 48px;
+    font-weight: 400;
+
 }
 
 .gerar-relatorio {
 
     padding: 25px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-evenly;
-    justify-items: flex-end;
-    font-size: 30px;
+    justify-content: space-around;
 
+
+
+}
+
+#container-form {
+    align-items: baseline;
 }
 
 .coluna-esquerda {
