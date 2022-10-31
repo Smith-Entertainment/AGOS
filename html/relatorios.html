@@ -14,43 +14,51 @@
         <a href="index.html"><img src="../img/Logo.png" alt="Logo Observatorio"></a>
         <nav id="header-relatorio-nav">
             <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
+            <a href="listausuarios.html">Usuários</a>
+            <a href="relatorios.html">Relatórios</a>
         </nav>
         <div<h4 id="usuario">Usuario</h4>
             <a href="login.html">Sair</a>
-        </div>
-        <a href="perfilusuario.html"><img src="../img/loginico.png" alt="foto usuario"></a>
+            </div>
+            <a href="perfilusuario.html"><img src="../img/loginico.png" alt="foto usuario"></a>
 
     </header>
 
     <article>
 
-        <h2> Geração de relatorios</h2>
-        <form>
-            <label>Inicio <input type="date" /></label>
-            <label>Até <input type="date" /></label>
-            <label>Termino <input type="date" /></label>
-            <label>Até <input type="date" /></label>
-            <label>Valor Minimo <input type="number" /></label>
-            <label>Valor Máximo <input type="number" /></label>
-            <select name="tipo Obra">
-                <option>Tipo de obra</option>
-                <option>Tipo 1</option>
-                <option>Tipo 2</option>
-                <option>Tipo 3</option>
-                <option>Tipo 4</option>
-            </select>
-            <select name="Bairro">
-                <option>Bairro</option>
-                <option>Bairro 1</option>
-                <option>bairro 2</option>
-                <option>Bairro 3</option>
-                <option>Bairro 4</option>
-            </select>
-            <label> Apenas obras com acompanhamento <input type="checkbox"> </label>
-            <input type="submit" value="Gerar">
-            <input type="submit" value="Limpar">
+        <h2 id="h2relatorio"> Geração de relatórios</h2>
+        <form class="gerar-relatorio">
+            <section class="coluna-esquerda">
+                <label>Ínicio <input type="date" /></label>
+                <label>Término <input type="date" /></label>
+                <label>Valor Mínimo <input type="number" /></label>
+                <select name="tipo Obra">
+                    <option>Tipo de obra</option>
+                    <option>Tipo 1</option>
+                    <option>Tipo 2</option>
+                    <option>Tipo 3</option>
+                    <option>Tipo 4</option>
+                </select>
+
+                <!--CONFERIR!-->
+                <label id="checkbox"> Apenas obras acompanhadas <input type="checkbox"> </label>
+                <!--CONFERIR!-->
+
+                <input id="botao-gerar" type="submit" value="Gerar">
+            </section>
+            <section class="coluna-direita">
+                <label>Até <input type="date" /></label>
+                <label>Até <input type="date" /></label>
+                <label>Valor Máximo <input type="number" /></label>
+                <select name="Bairro">
+                    <option>Bairro</option>
+                    <option>Bairro 1</option>
+                    <option>bairro 2</option>
+                    <option>Bairro 3</option>
+                    <option>Bairro 4</option>
+                </select>
+                <input id="botao-submit" type="submit" value="Limpar">
+            </section>
         </form>
 
     </article>
