@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet" href="../css/Cadastro_Obras.css" >
 </head>
 <body>
     <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
+        <img src="../img/logoobs.png" alt="Logo Observatorio" class="logo">
         <nav>
-            <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
-        </nav>
+            <ul>
+                <li><a href="index.html">Obras</a></li>
+                <li><a href="listausuarios.html">Usuarios</a></li>
+                <li><a href="relatorios.html">Relatorios</a></li>
+            </ul>
+            </nav>
+        <div class="opc_user">
+            <a href="perfilusuario.html"><p>Usuario</p></a>
+            <a href="login.html"><p>Sair</p></a>
+        </div>
+        <a href="login.html"><img src="../img/loginico.png" alt="foto usuario" class="icone_header"></a>
 
     </header>
 
@@ -42,7 +47,6 @@
             <input type="submit" value="Cadastrar">
             <input type="submit" value="Limpar">
         </form>
-
     </article>
 
 </body>
