@@ -1,3 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
+*{
+    font-family: 'Caladea', serif;
+}
 body{
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #000000;
+}
+
+header img{
+ 
+    width: 300px;
+    height: 100px;
+    top: 2%;
+   
+}
+
+header h4{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    right: 10%;
+    top: 3%;
+    font-size: 25px;
+
+}
+
+.sair{
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    font-size: 20;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.user{
+    position: absolute;
+    right: 1%;
+    width: 90px;
+    height: 90px;
+}
+
+header nav {
+    position: absolute;
+    display: inline-block;
+    margin-left: 120px;
+    width: 40%;
+    top: 12%;
+}
+
+nav a{
+    margin: 25px;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: #A5CF3A;
+}
+.busca{
+    position: absolute;
+    width: 100%;
+    top: 125px;;
+}
+
+.busca input{
+    width: 20%;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.busca img{
+    position: absolute;
+    top:17px;
+    width: 25px;
+    height: 25px;
+}
+
+.btnfiltro{
+    position: absolute;
+    margin-left: 65%;
+    border: 15px solid #A5CF3A;
+    border-radius: 30px;
+    background-color: #A5CF3A;
+    font-size: 20px;
+}
+
+.btnaddfun{
+    position: absolute;
+    margin-left: 45%;
+    border: 15px solid #A5CF3A;
+    border-radius: 30px;
+    background-color: #A5CF3A;
+    font-size: 20px;
+}
+
+
+.container-obra{
+    margin-top: 75px;
+    border: 1px solid grey;
+    border-radius: 40px;
+    width: 96%;
+    height: 180px;
+    margin: 65px auto;
+}
+
+.container-obra:hover{
+    border: 3px solid #A5CF3A;
+    border-radius: 40px;
+}
+
+.img-obra{
+    display: inline-block;
+    width: 143px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.container-obra h3{
+    display: block;
+}
+
+.objizq{
+    display: inline-block;
+    position: absolute;
+    width: 143px;
+    height: 165px;
+    left: 20%;
+
+}
+
+.objdir{
+    display: inline-block;
+    position: absolute;
+    width: 143px;
+    height: 165px;
+    right: 25%; 
+    padding-top: 0;
 }

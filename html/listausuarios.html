@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles..css">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
 </head>
 <body>
     <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
+        <img src="../img/logo.png" alt="Logo Observatorio">
+        <h4>Usuário</h4>
+        <a href="login.html" class="sair">Sair</a>
+        <a href="login.html"><img src="../img/loginico.png" alt="foto usuario" class="user"></a>
+        
+       
         <nav>
             <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
+            <a href="listausuarios.html">Usuários</a>
             <a href="relatorios.html">Relatorios</a>
         </nav>
 
     </header>
 
     <article>
-       <section>
+       <section class="busca">
             <input type="text">
             <img src="../img/procurar.jpg">
-            <button> Adicionar Funcionario</button>
-            <button> Filtros</button>
+            <button class="btnaddfun"> Adicionar Funcionario</button>
+            <button class="btnfiltro">Filtros</button>
        </section>
 
-       <section>
-            <div>
-                <img src="######" alt="Foto Usuario">
+       <section class="container-user">
+            <div class="perfiluser">
+                <img src="../img/loginico.png" alt="Foto Usuario">
                 <h3>Usuario</h3>
-                <h4>Nome</h4>
-                <h4>CPF</h4>
-                <h4>E-mail</h4>
-                <h4>Celular</h4>
-                <h4>Número de obras acompanhando</h4>
-                <h4>Nivel de acesso</h4>
+                <div class="container-nce">
+                    <h4 class="hnome">Nome</h4>
+                    <h4 class="hcpf">CPF</h4>
+                    <h4 class="hemail">E-mail</h4>
+                </div>
+
+                <div class="container-tnn">
+                    <h4 class="htelefone">Celular</h4>
+                    <h4 class="hnobras">Número de obras acompanhando</h4>
+                    <h4 class="hnivel">Nivel de acesso</h4>
+                </div>
             </div>
        </section>
 
