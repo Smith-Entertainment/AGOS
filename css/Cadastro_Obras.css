@@ -50,6 +50,17 @@ h2{
 }
 
 form{
-    display: grid;
-    grid-column: 1 2;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25%;
+}
+
+input{
+    width: 104px;
+    height: auto;
+}
+
+select{
+    width: 104px;
+    height: auto;
 }
