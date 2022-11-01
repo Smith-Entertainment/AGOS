@@ -9,7 +9,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-family: 'Caladea', sans-serif;
+    font-family: 'Caladea';
     font-weight: 400;
 }
 
@@ -67,14 +67,13 @@ nav a {
     padding: 25px;
     font-size: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
 
 }
 
-#container-form {
-    justify-content: space-around;
-}
+#container-form {}
 
 .coluna-esquerda {
     display: flex;
@@ -86,7 +85,6 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 35px;
-
 }
 
 #checkbox {
@@ -99,17 +97,22 @@ nav a {
 
 #botao-gerar {
     background-color: #A5CF3A;
+    border-color: #A5CF3A;
     width: 250px;
     height: 100px;
-    border-radius: 25px;
-    font-size: 48px;
+    font-size: 30px;
 }
-
+#botao-gerar:hover{
+    box-shadow: 5px 5px 5px grey;
+}
 #botao-submit {
     border-color: #A5CF3A;
     background-color: #FFFFFF;
     width: 250px;
     height: 100px;
-    border-radius: 25px;
-    font-size: 48px;
+    font-size: 30px;
+}
+#botao-submit:hover{
+    
+    box-shadow: 5px 5px 5px #A5CF3A;
 }
