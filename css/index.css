@@ -16,15 +16,18 @@ body {
 .header-relatorios {
     padding: 5px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    flex-direction: row;
     border-bottom: 1px solid black;
+}
+
+.canto-direito {
+    display: flex;
 }
 
 #header-relatorio-nav {
 
     display: flex;
-    pad: 15px;
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
@@ -41,12 +44,9 @@ nav a {
     color: #A5CF3A;
 }
 
-#usuario {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2px 10px;
-    font-size: 25px;
+#divusuario {
+    font-size: 18px;
+
 }
 
 .header-relatorios img {
@@ -72,8 +72,6 @@ nav a {
 
 
 }
-
-#container-form {}
 
 .coluna-esquerda {
     display: flex;
@@ -102,9 +100,11 @@ nav a {
     height: 100px;
     font-size: 30px;
 }
-#botao-gerar:hover{
+
+#botao-gerar:hover {
     box-shadow: 5px 5px 5px grey;
 }
+
 #botao-submit {
     border-color: #A5CF3A;
     background-color: #FFFFFF;
@@ -112,7 +112,8 @@ nav a {
     height: 100px;
     font-size: 30px;
 }
-#botao-submit:hover{
-    
+
+#botao-submit:hover {
+
     box-shadow: 5px 5px 5px #A5CF3A;
 }
