@@ -109,8 +109,7 @@ a:hover{
     font-size: 20px;
 }
 
-
-.container-obra{
+.container-user{
     margin-top: 75px;
     border: 1px solid grey;
     border-radius: 40px;
@@ -119,12 +118,12 @@ a:hover{
     margin: 65px auto;
 }
 
-.container-obra:hover{
+.container-user:hover{
     border: 3px solid #A5CF3A;
     border-radius: 40px;
 }
 
-.img-obra{
+.img-user{
     display: inline-block;
     width: 143px;
     height: 150px;
@@ -132,6 +131,10 @@ a:hover{
     margin-top: 12px;
 }
 
+.img-user img{
+    width: 143px;
+    height: 150px;
+}
 
 .container-obra h3{
     display: block;
