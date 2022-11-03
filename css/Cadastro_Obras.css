@@ -8,10 +8,9 @@ header{
     display: flex;
     height: 10%;
     width: auto;
-    flex-direction: row;
-    align-items: center;
+    flex-flow: row nowrap;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    align-items: center;
 }
 
 ul{
@@ -47,20 +46,50 @@ li{
 
 h2{
     text-align: center;
+    font-size: 36px;
 }
 
 form{
     display: flex;
     flex-flow: row wrap;
-    gap: 25%;
+    justify-content: center;
+    gap: 10%;
 }
 
 input{
-    width: 104px;
-    height: auto;
+    width: 256px;
+    height: 52px;
+    background-color: #F1F1F1;
+    border-style: none;
+    padding-left: 5%;
 }
 
 select{
-    width: 104px;
-    height: auto;
+    width: 256px;
+    height: 52px;
+    background-color: #F1F1F1;
+    border-style: none;
+    padding-left: 5%;
+}
+
+.coluna{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#botao_cadastrar{
+    width: 149px;
+    height: 56px;
+    background-color: #A5CF3A;
+    border-style: none;
+    align-self: center;
+}
+
+#botao_limpar{
+    width: 149px;
+    height: 56px;
+    align-self: center;
+    background-color: white;
+    border: 3px solid #A5CF3A;
 }
