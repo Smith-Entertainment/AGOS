@@ -9,19 +9,24 @@
     </head>
     <body>
         <header>
-            <img src="../img/logoobs.png" alt="Logo Observatorio" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Obras</a></li>
-                    <li><a href="listausuarios.html">Usuarios</a></li>
-                    <li><a href="relatorios.html">Relatorios</a></li>
-                </ul>
+            <div id="header_esq">
+                <img src="../img/logoobs.png" alt="Logo Observatorio" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Obras</a></li>
+                        <li><a href="listausuarios.html">Usuarios</a></li>
+                        <li><a href="relatorios.html">Relatorios</a></li>
+                    </ul>
                 </nav>
-            <div class="opc_user">
-                <a href="perfilusuario.html"><p>Usuario</p></a>
-                <a href="login.html"><p>Sair</p></a>
             </div>
-            <a href="login.html"><img src="../img/loginico.png" alt="foto usuario" class="icone_header"></a>
+
+            <div id="header_dir">
+                <div class="opc_user">
+                    <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
+                    <a href="login.html"><p><i>Sair</i></p></a>
+                </div>
+                <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
+            </div>
         </header>
 
         <article>
@@ -50,6 +55,5 @@
                 </div>
             </form>
         </article>
-
     </body>
 </html>
