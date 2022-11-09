@@ -5,54 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
-    teste
+    <link rel="stylesheet" href="../css/perfilobra.css">
+    
 </head>
 <body>
-    <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
+    
+    <header class="header">
+        
+        <img src="../img/Logo.png" height="110" alt="Logo Observatorio">
+        <nav class="links">
             <a href="index.html">Obras</a>
             <a href="listausuarios.html">Usuarios</a>
             <a href="relatorios.html">Relatorios</a>
         </nav>
-
+        <section class="usuario">
+            <div class="us">
+        <h4>Usuario</h4>
+        <a class="sair" href="login.html">Sair</a>
+        <a href="login.html">
+        </div>
+        <img  src="../img/loginico.png" height="110px" alt="foto usuario"></a>
+        </section>
+       
+        <nav>
+            
+        
+        </nav>
+        
+ 
     </header>
-
+    
     <article>
 
        <section>
-            <div>
-                <img src="######" alt="Foto Obra">
-                <h3>Nome</h3>
-                <h4>Objeto</h4>
-                <h4>Endereço</h4>
-                <h4>Data do certame</h4>
-                <h4>Licitação</h4>
-                <h4>Empresa contratada</h4>
-                <h4>Dtata de Inicio</h4>
-                <h4>Dta de termino previsto</h4>
-                <h4>Valor do edital</h4>
-                <h4>Valor contratado</h4>
-                <h4>Numero de voluntarios</h4>
+            <div class="conteudo">
+                <div class="img">
+                <img class="obra" src="../img/obra.png"  alt="Foto Obra">
             </div>
-       </section>
+                <section class="desc">
+                    <section class="desc1">
+                <h3>Museu histórico de foz do iguaçu</h3>
+                <h4>Endereço:</h4>
+                <h4>Data do certame:</h4>
+                <h4>Empresa contratada:</h4>
+                <h4>Data de Inicio:</h4>
+            </section>
+       
+                <section class="desc2">
+                    
+                    <h4>Empresa contratada:</h4>
+                    <h4>Data de Inicio:</h4>
+                <h4>Valor do edital:</h4>
+                <h4>Valor contratado:</h4>
 
+              
+            </section>
+            <div class="part">
+                <img class="config" src="../img/eng.png"  alt="configurações"> 
+            <button id="btp">PARTICIPAR</button>
+        </div>
+       
+            </section>
+           
+        </div>
+        
+       </section>
+       
        <section>
             <nav>
-                <ul>
-                    <li>Cronograma</li>
-                    <li>Graficos</li>
-                    <li>Fotos</li>
-                    <li>Projetos</li>
-                    <li>Relatorios</li>
-                    <li>Documentos</li>
-                </ul>
+                <div class="lista">
+                    <p>Cronograma</p>
+                    <p>Graficos</p>
+                    <p>Fotos</p>
+                    <p>Projetos</p>
+                    <p>Relatorios</p>
+                    <p>Documentos</p>
+                </div>
             </nav>
        </section>
-
+       
     </article>
 
 </body>
