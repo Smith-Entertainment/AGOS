@@ -1,75 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-*{
+* {
     font-family: 'Caladea', serif;
-}
-body{
-    background-color: #ffffff;
-    margin: 0;
     padding: 0;
-}
-
-header{
-    display: inline-block;
-    width: 100%;
-    height: 120px;
-    border-bottom: 1px solid #000000;
-}
-
-header img{
- 
-    width: 300px;
-    height: 100px;
-    top: 2%;
-   
-}
-
-header h4{
-    position: absolute;
-    display: inline-block;
     margin: 0;
-    right: 10%;
-    top: 3%;
-    font-size: 25px;
+    box-sizing: border-box;
+}
+
+/*--------------------------- Inicio header -----------------------------*/
+.container-header {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #000000;
 
 }
 
-.sair{
-    position: absolute;
-    top: 12%;
-    right: 10%;
-    font-size: 20;
-    color: #000000;
+.container-header_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 15vh;
+    width: 25%;
+
+}
+
+.container-header_logo img {
+    height: 15vh;
+    width: 20vw;
+
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 15vh;
+    width: 50%;
+
+}
+
+nav a {
     text-decoration: none;
-
+    color: #000;
 }
 
-.user{
-    position: absolute;
-    right: 1%;
-    width: 90px;
-    height: 90px;
-}
-
-header nav {
-    position: absolute;
-    display: inline-block;
-    margin-left: 120px;
-    width: 40%;
-    top: 12%;
-}
-
-nav a{
-    margin: 25px;
-    font-size: 30px;
-    color: #000000;
-    text-decoration: none;
-
-}
-
-a:hover{
+a:hover {
     color: #A5CF3A;
+
 }
+
+
+.container-header_user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 15vh;
+    width: 25%;
+}
+
+.container-header_user a {
+    text-decoration: none;
+    color: #000;
+    margin: 1%;
+
+}
+
+
+.imguser {
+    height: 13vh;
+    width: 10vw;
+
+
+}
+
+/*--------------------------- End header -----------------------------*/
 .busca{
     position: absolute;
     width: 100%;
