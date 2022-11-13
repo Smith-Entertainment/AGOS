@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Caladea';
+    font-weight: 400;
+}
+
+.header-relatorios {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.canto-direito {
+    display: flex;
+}
+
+#header-relatorio-nav {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 180px;
+    font-size: 25px;
+    color: black;
+}
+
+nav a {
+    color: black;
+}
+
+#header-relatorio-nav a:hover {
+    color: #A5CF3A;
+}
+
+#divusuario {
+    font-size: 18px;
+
+}
+
+.header-relatorios img {
+    height: 90px;
+}
+
+#h2relatorio {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 400;
+
+}
+
+.gerar-relatorio {
+
+    padding: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
+
+}
+
+.coluna-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+#checkbox {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+
+#botao-gerar {
+    background-color: #A5CF3A;
+    border-color: #A5CF3A;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+#botao-gerar:hover {
+    box-shadow: 5px 5px 5px grey;
+}
+
+#botao-submit {
+    border-color: #A5CF3A;
+    background-color: #FFFFFF;
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+}
+
+#botao-submit:hover {
+
+    box-shadow: 5px 5px 5px #A5CF3A;
+}
