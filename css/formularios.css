@@ -45,7 +45,7 @@ nav a {
 }
 
 #divusuario {
-    font-size: 18px;
+    font-size: 1.5em;
 
 }
 
@@ -76,6 +76,7 @@ nav a {
 .coluna-esquerda {
     display: flex;
     flex-direction: column;
+    
     gap: 35px;
 }
 
@@ -84,22 +85,161 @@ nav a {
     flex-direction: column;
     gap: 35px;
 }
+/*------------------*/
+input[type="date"]{
+    background-color: #F1F1F1;
+    border: none;
+    border-radius: 6px;
+    width: 16rem;
+    height: 3rem;
 
+    font-family: 'Caladea';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgba(32, 32, 32, 0.5);
+}
+input[type="number"]{
+    background-color: #F1F1F1;
+    border: none;
+    border-radius: 6px;
+    width: 24rem;
+    height: 3rem;
+}
+select{
+    border-radius: 6px;
+    width: 24rem;
+    height: 3rem;
+}
+::-webkit-calendar-picker-indicator{
+    border-radius: 6px;
+    background-color: #F1F1F1;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.05rem;
+    cursor: pointer;
 
+}
+#label_inicio {
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#label_inicio input::before {
+  
+    display: flex;
+    align-items: flex-end;
+    content: "Data:  ";
+   
+}
+
+#label_termino {
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+#label_termino input::before {
+   
+    display: flex;
+    align-items: flex-end;
+    content: "Data:  ";
+   
+}
+
+#label_ate1 {
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#label_ate1 input::before {
+    
+    display: flex;
+    align-items: flex-end;
+    content: "Data:  ";
+    
+}
+
+#label_ate2 {
+    font-family: 'Caladea';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+#label_ate2 input::before {
+    
+    display: flex;
+    align-items: flex-end;
+    content: "Data:  ";
+
+}
+
+#valorminimo {
+    font-family: 'Caladea';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+#valormaximo {
+    font-family: 'Caladea';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+
+}
+#select_obra{
+    font-family: 'Caladea';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+}
+#select_bairro{
+    font-family: 'Caladea';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: flex-end;
+}
 #checkbox {
     display: flex;
     align-content: flex-start;
     justify-content: space-evenly;
     flex-direction: row-reverse;
     gap: 15px;
+    font-size: 1.5rem;
 }
 
 #botao-gerar {
     background-color: #A5CF3A;
     border-color: #A5CF3A;
-    width: 250px;
-    height: 100px;
-    font-size: 30px;
+    width: 17rem;
+    height: 7rem;
+    font-size: 2rem;
 }
 
 #botao-gerar:hover {
@@ -107,11 +247,11 @@ nav a {
 }
 
 #botao-submit {
-    border-color: #A5CF3A;
+    border: 0.2rem solid #A5CF3A;
     background-color: #FFFFFF;
-    width: 250px;
-    height: 100px;
-    font-size: 30px;
+    width: 17rem;
+    height: 7rem;
+    font-size: 2rem;
 }
 
 #botao-submit:hover {
