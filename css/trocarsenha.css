@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
+*{
+    font-family: 'Caladea', serif;
+}
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #000000;
+}
+
+header img{
+ 
+    width: 300px;
+    height: 100px;
+    top: 2%;
+   
+}
+
+header h4{
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    right: 10%;
+    top: 3%;
+    font-size: 25px;
+
+}
+
+.sair{
+    position: absolute;
+    top: 12%;
+    right: 10%;
+    font-size: 20;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.user{
+    position: absolute;
+    right: 1%;
+    width: 90px;
+    height: 90px;
+}
+
+header nav {
+    position: absolute;
+    display: inline-block;
+    margin-left: 120px;
+    width: 40%;
+    top: 12%;
+}
+
+nav a{
+    margin: 25px;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+
+}
+
+a:hover{
+    color: #A5CF3A;
+}
+
+
+.container-trocasenha{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 50px;order: 1px solid #000000;
+}
+
+.container-trocasenha h3{
+    text-align: center;
+}
+
+.container-trocasenha p{
+    color: #000;
+}
+
+.container-trocasenha_input{
+    width: 200px;
+    height: 200px;
+    background: #F1F1F1;
+    mix-blend-mode: normal;
+    border-radius: 10px;
+    margin:5px auto 5px auto;
+}
