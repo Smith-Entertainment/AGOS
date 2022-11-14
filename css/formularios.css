@@ -67,30 +67,30 @@ nav a {
     padding: 25px;
     font-size: 20px;
     display: flex;
-    align-items: flex-end;
     justify-content: space-evenly;
-
 
 }
 
 .coluna-esquerda {
     display: flex;
     flex-direction: column;
-    
-    gap: 35px;
+    align-items: flex-end;
+    gap: 1rem;
 }
 
 .coluna-direita {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    align-items: flex-end;
+    gap: 1rem;
 }
+
 /*------------------*/
-input[type="date"]{
+input[type="date"] {
     background-color: #F1F1F1;
     border: none;
     border-radius: 6px;
-    width: 16rem;
+    width: 24rem;
     height: 3rem;
 
     font-family: 'Caladea';
@@ -99,19 +99,23 @@ input[type="date"]{
     font-size: 1.5rem;
     color: rgba(32, 32, 32, 0.5);
 }
-input[type="number"]{
+
+input[type="number"] {
     background-color: #F1F1F1;
     border: none;
     border-radius: 6px;
     width: 24rem;
     height: 3rem;
 }
-select{
+
+select {
     border-radius: 6px;
     width: 24rem;
     height: 3rem;
+    padding: 0.5rem;
 }
-::-webkit-calendar-picker-indicator{
+
+::-webkit-calendar-picker-indicator {
     border-radius: 6px;
     background-color: #F1F1F1;
     width: 3rem;
@@ -120,22 +124,44 @@ select{
     cursor: pointer;
 
 }
+
+#alinhar_botao_gerar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    left: -4.5rem;
+    gap: 35px;
+}
+
+#alinhar_botao_submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    gap: 28px;
+}
+
 #label_inicio {
     font-family: 'Caladea';
     font-style: normal;
     font-weight: 400;
     font-size: 2rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    gap: 1rem;
+
 
 }
 
 #label_inicio input::before {
-  
+
     display: flex;
     align-items: flex-end;
-    content: "Data:  ";
-   
+    content: "Data:";
+    padding: 1.5rem;
+
+
 }
 
 #label_termino {
@@ -144,16 +170,18 @@ select{
     font-weight: 400;
     font-size: 2rem;
     display: flex;
-    align-items: flex-end;
-    
+    align-items: center;
+    gap: 1rem;
+
 }
 
 #label_termino input::before {
-   
+
     display: flex;
     align-items: flex-end;
-    content: "Data:  ";
-   
+    content: "Data:";
+    padding: 1.5rem;
+
 }
 
 #label_ate1 {
@@ -162,15 +190,17 @@ select{
     font-weight: 400;
     font-size: 2rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    gap: 1rem;
 }
 
 #label_ate1 input::before {
-    
+
     display: flex;
     align-items: flex-end;
-    content: "Data:  ";
-    
+    content: "Data:";
+    padding: 1.5rem;
+
 }
 
 #label_ate2 {
@@ -179,14 +209,17 @@ select{
     font-weight: 400;
     font-size: 2rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    gap: 1rem;
 }
 
 #label_ate2 input::before {
-    
+
     display: flex;
     align-items: flex-end;
-    content: "Data:  ";
+    content: "Data:";
+    padding: 1.5rem;
+
 
 }
 
@@ -197,6 +230,7 @@ select{
     font-size: 1.5rem;
     display: flex;
     align-items: flex-end;
+    padding: 1.5rem;
 
 }
 
@@ -207,9 +241,11 @@ select{
     font-size: 1.5rem;
     display: flex;
     align-items: flex-end;
+    padding: 1.5rem;
 
 }
-#select_obra{
+
+#select_obra {
     font-family: 'Caladea';
     font-style: italic;
     font-weight: 400;
@@ -217,7 +253,8 @@ select{
     display: flex;
     align-items: flex-end;
 }
-#select_bairro{
+
+#select_bairro {
     font-family: 'Caladea';
     font-style: italic;
     font-weight: 400;
@@ -225,6 +262,7 @@ select{
     display: flex;
     align-items: flex-end;
 }
+
 #checkbox {
     display: flex;
     align-content: flex-start;
@@ -232,13 +270,15 @@ select{
     flex-direction: row-reverse;
     gap: 15px;
     font-size: 1.5rem;
+    cursor: pointer;
+
 }
 
 #botao-gerar {
     background-color: #A5CF3A;
     border-color: #A5CF3A;
-    width: 17rem;
-    height: 7rem;
+    width: 16rem;
+    height: 5rem;
     font-size: 2rem;
 }
 
@@ -249,8 +289,8 @@ select{
 #botao-submit {
     border: 0.2rem solid #A5CF3A;
     background-color: #FFFFFF;
-    width: 17rem;
-    height: 7rem;
+    width: 16rem;
+    height: 5rem;
     font-size: 2rem;
 }
 

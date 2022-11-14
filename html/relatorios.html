@@ -35,7 +35,7 @@
         <div id="container-form">
             <form class="gerar-relatorio">
                 <section class="coluna-esquerda">
-                    <label id="label_inicio">Ínicio:<input type="date" min="1901-01-01" max="2099-12-31" ></label>
+                    <label id="label_inicio">Ínicio:<input type="date" min="1901-01-01" max="2099-12-31"></label>
                     <label id="label_termino">Término:<input type="date" /></label>
                     <input id="valorminimo" placeholder="Valor mínimo" type="number" />
                     <select id="select_obra" name="tipo Obra">
@@ -45,28 +45,28 @@
                         <option>Tipo 3</option>
                         <option>Tipo 4</option>
                     </select>
-
-                    <!--CONFERIR!-->
-                    <label id="checkbox"> Apenas obras acompanhadas <input type="checkbox"> </label>
-                    <!--CONFERIR!-->
-
-                    <input id="botao-gerar" type="submit" value="Gerar">
+                    <div id="alinhar_botao_gerar">
+                        <label id="checkbox"> Apenas obras acompanhadas <input type="checkbox"></label>
+                        <input id="botao-gerar" type="submit" value="Gerar">
+                    </div>
                 </section>
                 <section class="coluna-direita">
                     <label id="label_ate1">Até:<input type="date" /></label>
                     <label id="label_ate2">Até:<input type="date" /></label>
                     <input id="valormaximo" placeholder="Valor máximo" type="number">
-                    <select id="select_bairro" name="Bairro">
-                        <option>Bairro</option>
-                        <option>Bairro 1</option>
-                        <option>bairro 2</option>
-                        <option>Bairro 3</option>
-                        <option>Bairro 4</option>
-                    </select>
-                    <!--CONFERIR!-->
-                    <br>
-                    <!--CONFERIR!-->
-                    <input id="botao-submit" type="submit" value="Limpar">
+                    <div id="alinhar_botao_submit">
+                        <select id="select_bairro" name="Bairro">
+                            <option>Bairro</option>
+                            <option>Bairro 1</option>
+                            <option>bairro 2</option>
+                            <option>Bairro 3</option>
+                            <option>Bairro 4</option>
+                        </select>
+                        <!--CONFERIR!-->
+                        <br>
+                        <!--CONFERIR!-->
+                        <input id="botao-submit" type="submit" value="Limpar">
+                    </div>
                 </section>
             </form>
         </div>
