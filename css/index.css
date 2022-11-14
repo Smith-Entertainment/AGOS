@@ -85,47 +85,69 @@ a:hover {
 }
 
 /*--------------------------- End header -----------------------------*/
-.busca{
-    position: absolute;
+
+/*-------------------------- Inicio Busca ----------------------------*/
+.container-busca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    top: 125px;;
+    height: 10vh;
+    padding: 2vh 2vw;
+    border-bottom: 1px solid #000000;
 }
 
-.busca input{
-    width: 20%;
-    height: 30px;
-    border-radius: 15px;
-    margin-left: 4%;
-    margin-top: 1%;
+.container-busca_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 25vw;
+    height: 7vh;
 }
 
-.busca img{
-    position: absolute;
-    top:17px;
+.container-busca_input input {
+    width: 25vw;
+    height: 5vh;
+    border-radius: 14px;
+}
+
+.lupa {
     width: 25px;
     height: 25px;
+    margin-left: 1vw;
+}
+.container-busca_btn{
+    display: flex;
+    flex-direction: row;
+    width: 45vw;
+    height: 7vh;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
 }
 
-.btnfiltro{
-    position: absolute;
-    margin-left: 65%;
-    border: 15px solid #A5CF3A;
+.btnaddobra {
+    width: 17vw;
+    height: 6vh;
+    border: 5px solid #A5CF3A;
     border-radius: 30px;
     background-color: #A5CF3A;
     font-size: 20px;
 }
 
-.btnaddfun{
-    position: absolute;
-    margin-left: 45%;
-    border: 15px solid #A5CF3A;
+.btnfiltro {
+    width: 15vw;
+    height: 6vh;
+    border: 5px solid #A5CF3A;
     border-radius: 30px;
     background-color: #A5CF3A;
     font-size: 20px;
 }
 
 
-.container-obra{
+/*-------------------------- End Busca ----------------------------*/
+
+.container-obra {
     margin-top: 75px;
     border: 1px solid grey;
     border-radius: 40px;
@@ -134,12 +156,12 @@ a:hover {
     margin: 65px auto;
 }
 
-.container-obra:hover{
+.container-obra:hover {
     border: 3px solid #A5CF3A;
     border-radius: 40px;
 }
 
-.img-obra{
+.img-obra {
     display: inline-block;
     width: 143px;
     height: 150px;
@@ -148,11 +170,11 @@ a:hover {
 }
 
 
-.container-obra h3{
+.container-obra h3 {
     display: block;
 }
 
-.objizq{
+.objizq {
     display: inline-block;
     position: absolute;
     width: 143px;
@@ -161,11 +183,11 @@ a:hover {
 
 }
 
-.objdir{
+.objdir {
     display: inline-block;
     position: absolute;
     width: 143px;
     height: 165px;
-    right: 25%; 
+    right: 25%;
     padding-top: 0;
 }
