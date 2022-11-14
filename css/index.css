@@ -147,13 +147,19 @@ a:hover {
 
 /*-------------------------- End Busca ----------------------------*/
 
+/*-------------------------- Inicio Obra ----------------------------*/
+
 .container-obra {
-    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 30vh;
     border: 1px solid grey;
     border-radius: 40px;
-    width: 96%;
-    height: 180px;
-    margin: 65px auto;
+    margin: 3vh auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 .container-obra:hover {
@@ -161,33 +167,50 @@ a:hover {
     border-radius: 40px;
 }
 
-.img-obra {
-    display: inline-block;
-    width: 143px;
-    height: 150px;
-    margin-left: 10px;
-    margin-top: 12px;
-}
-
-
-.container-obra h3 {
-    display: block;
+.container-obra_img{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 13vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
 }
 
 .objizq {
-    display: inline-block;
-    position: absolute;
-    width: 143px;
-    height: 165px;
-    left: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+    
+}
+
+.objdir {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+}
+
+/*
+.objizq {
+    display: flex;
+    flex-direction: row;
+    width: 6vw;
+    height: 25vh;
+    flex-wrap: wrap;
+    align-items: flex-end;
 
 }
 
 .objdir {
-    display: inline-block;
-    position: absolute;
-    width: 143px;
-    height: 165px;
-    right: 25%;
-    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 6vw;
+    height: 25vh;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
+*/
+/*-------------------------- End Obra ----------------------------*/

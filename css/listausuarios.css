@@ -147,25 +147,52 @@ a:hover {
 
 /*-------------------------- End Busca ----------------------------*/
 
+/*-------------------------- Inicio User ----------------------------*/
 
-.container-obra h3{
-    display: block;
+
+.container-user {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 30vh;
+    border: 1px solid grey;
+    border-radius: 40px;
+    margin: 3vh auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
-.objizq{
-    display: inline-block;
-    position: absolute;
-    width: 143px;
-    height: 165px;
-    left: 20%;
-
+.container-user:hover {
+    border: 3px solid #A5CF3A;
+    border-radius: 40px;
 }
 
-.objdir{
-    display: inline-block;
-    position: absolute;
-    width: 143px;
-    height: 165px;
-    right: 25%; 
-    padding-top: 0;
+.container-user_img{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 13vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
 }
+
+.objizq {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+    
+}
+
+.objdir {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+}
+
+
+/*-------------------------- End User ----------------------------*/
