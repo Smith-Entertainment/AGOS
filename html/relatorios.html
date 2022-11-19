@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    <title>AGOS - Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
-    <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
+    <header class="header-relatorios">
+        <a href="index.html"><img src="../img/Logo.png" alt="Logo Observatorio"></a>
+        <nav id="header-relatorio-nav">
             <a href="index.html">Obras</a>
             <a href="listausuarios.html">Usuarios</a>
             <a href="relatorios.html">Relatorios</a>
         </nav>
+        <div<h4 id="usuario">Usuario</h4>
+            <a href="login.html">Sair</a>
+        </div>
+        <a href="perfilusuario.html"><img src="../img/loginico.png" alt="foto usuario"></a>
 
     </header>
 
@@ -24,12 +28,12 @@
 
         <h2> Geração de relatorios</h2>
         <form>
-           <label>Inicio <input type="date"/></label>
-           <label>Até <input type="date"/></label>
-           <label>Termino <input type="date"/></label>
-           <label>Até <input type="date"/></label>
-           <label>Valor Minimo <input type="number"/></label>
-           <label>Valor Máximo <input type="number"/></label>
+            <label>Inicio <input type="date" /></label>
+            <label>Até <input type="date" /></label>
+            <label>Termino <input type="date" /></label>
+            <label>Até <input type="date" /></label>
+            <label>Valor Minimo <input type="number" /></label>
+            <label>Valor Máximo <input type="number" /></label>
             <select name="tipo Obra">
                 <option>Tipo de obra</option>
                 <option>Tipo 1</option>
@@ -52,4 +56,5 @@
     </article>
 
 </body>
+
 </html>
