@@ -4,44 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/padrao.css">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
 </head>
 <body>
     <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
-            <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
-        </nav>
+        <div id="header_esq">
+            <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Obras</a></li>
+                    <li><a href="listausuarios.html">Usuarios</a></li>
+                    <li><a href="relatorios.html">Relatorios</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <div id="header_dir">
+            <div class="opc_user">
+                <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
+                <a href="login.html"><p><i>Sair</i></p></a>
+            </div>
+            <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
+        </div>
     </header>
 
-    <article>
-       <section>
-            <input type="text">
-            <img src="../img/procurar.jpg">
-            <button> Adicionar Funcionario</button>
-            <button> Filtros</button>
-       </section>
-
-       <section>
-            <div>
-                <img src="######" alt="Foto Usuario">
-                <h3>Usuario</h3>
-                <h4>Nome</h4>
-                <h4>CPF</h4>
-                <h4>E-mail</h4>
-                <h4>Celular</h4>
-                <h4>Número de obras acompanhando</h4>
-                <h4>Nivel de acesso</h4>
+        <section class="container-busca">
+            <div class="container-busca_input">
+                <input type="text" placeholder="Buscar...">
             </div>
-       </section>
+            <div class="container-busca_btn">
+                <button class="btnfiltro">Filtros</button>
+            </div>
+        </section>
 
-    </article>
+        <section>
+            <div class="container-obra">
+                <div class="container-obra_img">
+                    <img src="../img/loginico.png" alt="Foto Obra">
+                </div>
+    
+                <div class="objizq">
+                    <h3>Usuario:</h3>
+                    <h3>Nome:</h3>
+                    <h3>CPF:</h3>
+                    <h3>E-mail:</h3>
+                </div>
+    
+                <div class="objdir">
+                    <br>
+                    <h3>Celular:</h3>
+                    <h3>N de obras acompanhando:</h3>
+                    <h3>Nivel de acesso:</h3>
+                </div>
+            </div>
 
+            <div class="container-obra">
+                <div class="container-obra_img">
+                    <img src="../img/loginico.png" alt="Foto Obra">
+                </div>
+    
+                <div class="objizq">
+                    <h3>Usuario:</h3>
+                    <h3>Nome:</h3>
+                    <h3>CPF:</h3>
+                    <h3>E-mail:</h3>
+                </div>
+    
+                <div class="objdir">
+                    <br>
+                    <h3>Celular:</h3>
+                    <h3>N de obras acompanhando:</h3>
+                    <h3>Nivel de acesso:</h3>
+                </div>
+            </div>
+
+            <div class="container-obra">
+                <div class="container-obra_img">
+                    <img src="../img/loginico.png" alt="Foto Obra">
+                </div>
+    
+                <div class="objizq">
+                    <h3>Usuario:</h3>
+                    <h3>Nome:</h3>
+                    <h3>CPF:</h3>
+                    <h3>E-mail:</h3>
+                </div>
+    
+                <div class="objdir">
+                    <br>
+                    <h3>Celular:</h3>
+                    <h3>N de obras acompanhando:</h3>
+                    <h3>Nivel de acesso:</h3>
+                </div>
+            </div>
+    
+        </section>
 </body>
 </html>
