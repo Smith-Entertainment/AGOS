@@ -265,3 +265,8 @@ padding: 12px;/* local da palavra no botao*/
    flex-direction: row;
    gap: 140px;
 }
+
+input[type="checkbox"] {
+    width: 40px;
+    height: auto;
+}
