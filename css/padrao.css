@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     color: #202020;
+    font-family: 'Caladea';
 }
 
 /*HEADER*/
@@ -26,7 +29,7 @@ nav a:hover {
 
 .logo{
     width: auto;
-    height: auto;
+    height: 10vh;
 }
 
 nav{
@@ -76,7 +79,7 @@ li{
 /*FIM HEADER*/
 
 input{
-    width: 256px;
+    width: 24rem;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
