@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+.logo{
+    height: 7vw;
+}
+.img{
+    display: flex;
+    align-items: center;
+}
+.obra{
+    height: 300px;
+
+}
+body{
+    font-family: 'Caladea';
+    font-weight: 400;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15vw;
+    
+}
+.usuario{
+display: flex;
+flex-direction: row ;
+align-items: center;
+gap: 5%;
+
+}
+.us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.config{
+    height:30px;
+     width:30px;
+ 
+}
+
+
+.desc2 img{
+padding-left: 170px;
+}
+.links{
+    
+    font-size: 25px;
+    display: flex;
+    flex-direction:row;
+    align-items:flex-end ;
+    justify-content:center;
+    gap: 150px;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo{
+    font-size: 18px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid black;
+    
+    
+}
+.desc{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+}
+.desc1{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.desc2{
+    padding-top: 7.5%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.lista{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+#btp{
+    background-color: #A5CF3A;
+    border-style: none;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 2vw;
+}
+    
