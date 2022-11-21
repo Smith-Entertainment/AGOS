@@ -175,26 +175,5 @@ body {
     height: 25vh;
     justify-content: space-around;
 }
-
-/*
-.objizq {
-    display: flex;
-    flex-direction: row;
-    width: 6vw;
-    height: 25vh;
-    flex-wrap: wrap;
-    align-items: flex-end;
-
-}
-
-.objdir {
-    display: flex;
-    flex-direction: row;
-    width: 6vw;
-    height: 25vh;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-*/
 /*-------------------------- End Obra ----------------------------*/
 
