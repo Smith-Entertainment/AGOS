@@ -3,34 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
 </head>
 <body>
     <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
+        <img src="../img/Logo.png" height="100" alt="Logo Observatorio">
+        <hr>
+    
     </header>
 
-    <article>
-        <h2> Cadastro Usuario</h2>
-        <form>
-            <input type="text" value="Nome">
-            <input type="text" value="Sobrenome">
-            <input type="text" value="Usuario">
-            <input type="number" value="CPF">
-            <input type="email" value="Email">
-            <input type="number" value="Telefone">
-            <input type="password" value="Senha">
-            <input type="password" value="Confirmar senha">
-            <p> Tem algumafiliação politica?</p>
+ <article class="tudo">
+        <br>
+        <h2 class="textcad"> Cadastro</h2>
+
+          <form>
+
+            <div class="esp">
+
+            <div class="colunas">
+
+   <div class="coluna1">
+            <input class="nome" type="text" placeholder="Nome">
+            <input class="usu" type="text" placeholder="Usuario">
+            <input class="email" type="email" placeholder="Email">
+            <input class="sen" type="password" placeholder="Senha">
+   </div> 
+
+
+        
+   <div class="coluna2">
+            <input class="sobrenome" type="text" placeholder="Sobrenome">
+            <input class="cpf" type="number" placeholder="CPF">
+            <input class="tel" type="number" placeholder="Telefone">
+            <input class="conf" type="password" placeholder="Confirmar senha">
+
+  </div>
+
+
+ </div>
+            <div class="polit">
+            <p> Tem alguma filiação politica?</p>
+     </div>   
+
+<div>
+
+         <div class="SN">
             <label><input type="checkbox"> Sim</label>
             <label><input type="checkbox"> Não</label>
-        </form>
+     </div>
+     </div>
+    <div class="botao">
+    <input class="logar" type="submit" value="cadastrar">
+   <input class="voltar" type="submit" value="voltar">
+  </div>
 
-    </article>
+</div>
+
+</form>
+
+ </article>
 
 </body>
 </html>

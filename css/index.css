@@ -8,10 +8,12 @@
 }
 
 body {
+
     background-color: #FFFFFF;
     font-family: 'Caladea', serif;
     font-weight: 400;
 }
+
 
 .header-relatorios {
     padding: 5px;
@@ -36,9 +38,230 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
 }
 
 .header-relatorios img {
     height: 100px;
+}
+
+.text {
+    display: flex;
+    justify-content : center;
+    font-size: 30px;
+    
+}
+
+.usuario1{
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+}
+
+.senha{
+height: 40px;
+width: 180px;
+background-color: #F1F1F1;
+font-family: 'Caladea', serif;
+font-style: italic;
+border-style: none;/*tirar a borda preta do botao*/
+border-radius: 5px;/* deixar o formato do botao como redondo*/
+padding: 12px;/* local da palavra no botao*/
+}
+
+.usuario{
+height: 40px;
+width: 180px;
+background-color: #F1F1F1;
+font-family: 'Caladea', serif;
+font-style: italic;
+border-style: none;/*tirar a borda preta do botao*/
+border-radius: 5px;/* deixar o formato do botao como redondo*/
+padding: 12px;/* local da palavra no botao*/
+}
+
+.bot{
+
+display: flex;
+flex-direction: row;
+gap: 10px;
+
+}
+.esq{
+
+font-size: 12px;
+
+}
+.esqs{
+
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+
+}
+.login{
+    height: 40px;/* altura do botao*/
+    width: 90px;
+    background-color: #A5CF3A;
+    border-style: none;
+    font-family: 'Caladea', serif;
+}
+.cad{
+    height: 40px;/* altura do botao*/
+    width: 90px;
+    border-color:#A5CF3A;
+    border: 2.2px solid #A5CF3A;
+    font-family: 'Caladea', serif;
+    
+}/* tela de cadastro*/
+
+.tudo{
+    
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+
+}
+
+.colunas{
+display: flex;
+flex-direction: row;
+ gap: 10px;
+}
+
+.coluna1{
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+
+}
+.coluna2{
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+}
+.esp{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+}
+.SN{
+display: flex;
+justify-content: center;
+gap: 100px;
+}
+.nome{
+    height: 40px;
+width: 180px;
+background-color: #F1F1F1;
+font-family: 'Caladea', serif;
+font-style: italic;
+border-style: none;/*tirar a borda preta do botao*/
+border-radius: 5px;/* deixar o formato do botao como redondo*/
+padding: 12px;/* local da palavra no botao*/
+}
+.usu{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.email{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.sen{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.sobrenome{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.cpf{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.tel{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.conf{
+    height: 40px;
+    width: 180px;
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;/*tirar a borda preta do botao*/
+    border-radius: 5px;/* deixar o formato do botao como redondo*/
+    padding: 12px;/* local da palavra no botao*/
+}
+.logar{
+    
+
+    height: 40px;/* altura do botao*/
+    width: 100px;
+    background-color: #A5CF3A;
+    border-style: none;
+    font-family: 'Caladea', serif;
+
+}
+
+.voltar{
+
+    height: 40px;/* altura do botao*/
+    width: 100px;
+    border-color:#A5CF3A;
+    border: 2.2px solid #A5CF3A;
+    font-family: 'Caladea', serif;
+
+}
+.botao{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   gap: 140px;
 }
