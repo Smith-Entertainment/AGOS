@@ -212,11 +212,11 @@ nav a {
 
     box-shadow: 5px 5px 5px #A5CF3A;
 }
-=======
+======={
     width: 100%;
     height: 10vh;
     padding: 2vh 2vw;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #00000;
 }
 
 .container-busca_input {
