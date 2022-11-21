@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+.logo{
+    height: 7vw;
+}
 .img{
     display: flex;
     align-items: center;
@@ -15,7 +18,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 10%;
+    align-items: flex-end;
+    gap: 15vw;
     
 }
 .usuario{
