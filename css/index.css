@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
 * {
@@ -12,16 +11,6 @@ body {
     background-color: #FFFFFF;
     font-family: 'Caladea';
     font-weight: 400;
-=======
-
-@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
-
-* {
-    font-family: 'Caladea', serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
->>>>>>> 95b3550f97b753eb8ee1dcee1c1f374b9fbb59ce
 }
 
 /*--------------------------- Inicio header -----------------------------*/
@@ -54,27 +43,6 @@ body {
 }
 
 
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 15vh;
-    width: 50%;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: #000;
-}
-
-a:hover {
-    color: #A5CF3A;
-
-}
-
 
 .container-header_user {
     display: flex;
@@ -97,8 +65,6 @@ a:hover {
 .imguser {
     height: 13vh;
     width: 10vw;
-
-
 }
 
 /*--------------------------- End header -----------------------------*/
@@ -107,116 +73,10 @@ a:hover {
 .container-busca {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    flex-direction: row;
-    border-bottom: 1px solid black;
-}
-
-.canto-direito {
-    display: flex;
-}
-
-#header-relatorio-nav {
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 180px;
-    font-size: 25px;
-    color: black;
-}
-
-nav a {
-    color: black;
-}
-
-#header-relatorio-nav a:hover {
-    color: #A5CF3A;
-}
-
-#divusuario {
-    font-size: 18px;
-
-}
-
-.header-relatorios img {
-    height: 90px;
-}
-
-#h2relatorio {
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    font-size: 48px;
-    font-weight: 400;
-
-}
-
-.gerar-relatorio {
-
-    padding: 25px;
-    font-size: 20px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-
-
-}
-
-.coluna-esquerda {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-
-.coluna-direita {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-}
-
-#checkbox {
-    display: flex;
-    align-content: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row-reverse;
-    gap: 15px;
-}
-
-#botao-gerar {
-    background-color: #A5CF3A;
-    border-color: #A5CF3A;
-    width: 250px;
-    height: 100px;
-<<<<<<< HEAD
-    
-}
-=======
-    font-size: 30px;
-}
-
-#botao-gerar:hover {
-    box-shadow: 5px 5px 5px grey;
-}
-
-#botao-submit {
-    border-color: #A5CF3A;
-    background-color: #FFFFFF;
-    width: 250px;
-    height: 100px;
-    font-size: 30px;
-}
-
-#botao-submit:hover {
-
-    box-shadow: 5px 5px 5px #A5CF3A;
-}
-======={
     width: 100%;
     height: 10vh;
     padding: 2vh 2vw;
-    border-bottom: 1px solid #00000;
+    border-bottom: 1px solid #000000;
 }
 
 .container-busca_input {
@@ -243,7 +103,8 @@ nav a {
     flex-direction: row;
     width: 45vw;
     height: 7vh;
-    justify-content: space-around;
+    gap: 5%;
+    justify-content: flex-end;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
@@ -314,28 +175,5 @@ nav a {
     height: 25vh;
     justify-content: space-around;
 }
-
-/*
-.objizq {
-    display: flex;
-    flex-direction: row;
-    width: 6vw;
-    height: 25vh;
-    flex-wrap: wrap;
-    align-items: flex-end;
-
-}
-
-.objdir {
-    display: flex;
-    flex-direction: row;
-    width: 6vw;
-    height: 25vh;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-*/
 /*-------------------------- End Obra ----------------------------*/
 
->>>>>>> 95b3550f97b753eb8ee1dcee1c1f374b9fbb59ce
->>>>>>> f3ae2d4fe82fe34bbf42419b9af9d97148568b64

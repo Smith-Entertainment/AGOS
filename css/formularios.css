@@ -108,6 +108,11 @@ input[type="number"] {
     height: 3rem;
 }
 
+input[type="checkbox"] {
+    width: 40px;
+    height: auto;
+}
+
 select {
     border-radius: 6px;
     width: 24rem;

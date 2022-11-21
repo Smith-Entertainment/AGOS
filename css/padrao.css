@@ -7,7 +7,7 @@ body{
 /*HEADER*/
 header{
     display: flex;
-    height: 10%;
+    height: 10vh;
     width: auto;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -20,7 +20,7 @@ a{
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     color: #A5CF3A;
 }
 
@@ -75,19 +75,6 @@ li{
 }
 /*FIM HEADER*/
 
-/*CONTEUDO*/
-h2{
-    text-align: center;
-    font-size: 36px;
-}
-
-form{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 10%;
-}
-
 input{
     width: 256px;
     height: 52px;
@@ -98,40 +85,10 @@ input{
 }
 
 select{
-    width: 256px;
+    width: 24rem;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
     padding-left: 5%;
     border-radius: 5px;
-}
-
-.coluna{
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10px;
-}
-
-#botao_cadastrar{
-    width: 149px;
-    height: 56px;
-    background-color: #A5CF3A;
-    border-style: none;
-    align-self: center;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 0;
-    margin: 10% 0;
-}
-
-#botao_limpar{
-    width: 149px;
-    height: 56px;
-    align-self: center;
-    background-color: white;
-    border: 3px solid #A5CF3A;
-    font-size: 24px;
-    text-align: center;
-    border-radius: 0;
-    margin: 10% 0;
 }
