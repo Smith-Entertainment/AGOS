@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/listausuarios.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/padrao.css">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <picture class="container-header_logo">
-                <img src="../img/logo.png" alt="Logo Observatorio">
-            </picture>
-
+        <div id="header_esq">
+            <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
             <nav>
-                <a href="index.html">Obras</a>
-                <a href="listausuarios.html">Usuários</a>
-                <a href="relatorios.html">Relatorios</a>
+                <ul>
+                    <li><a href="index.html">Obras</a></li>
+                    <li><a href="listausuarios.html">Usuarios</a></li>
+                    <li><a href="relatorios.html">Relatorios</a></li>
+                </ul>
             </nav>
-            <div class="container-header_user">
-                <h4>Usuário</h4>
-                <a href="login.html" class="sair">Sair</a>
-                <a href="login.html"><img class="imguser" src="../img/loginico.png" alt="foto usuario" class="user"></a>
+        </div>
+
+        <div id="header_dir">
+            <div class="opc_user">
+                <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
+                <a href="login.html"><p><i>Sair</i></p></a>
             </div>
+            <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
         </div>
     </header>
 
         <section class="container-busca">
             <div class="container-busca_input">
                 <input type="text" placeholder="Buscar...">
-                <img src="../img/procurar.jpg" class="lupa">
             </div>
             <div class="container-busca_btn">
-                <button class="btnaddfun"> Adicionar Funcionario</button>
                 <button class="btnfiltro">Filtros</button>
             </div>
         </section>
 
         <section>
-            <div class="container-user">
-                <div class="container-user_img">
+            <div class="container-obra">
+                <div class="container-obra_img">
                     <img src="../img/loginico.png" alt="Foto Obra">
                 </div>
     
@@ -52,14 +53,15 @@
                 </div>
     
                 <div class="objdir">
+                    <br>
                     <h3>Celular:</h3>
                     <h3>N de obras acompanhando:</h3>
                     <h3>Nivel de acesso:</h3>
                 </div>
             </div>
 
-            <div class="container-user">
-                <div class="container-user_img">
+            <div class="container-obra">
+                <div class="container-obra_img">
                     <img src="../img/loginico.png" alt="Foto Obra">
                 </div>
     
@@ -71,14 +73,15 @@
                 </div>
     
                 <div class="objdir">
+                    <br>
                     <h3>Celular:</h3>
                     <h3>N de obras acompanhando:</h3>
                     <h3>Nivel de acesso:</h3>
                 </div>
             </div>
 
-            <div class="container-user">
-                <div class="container-user_img">
+            <div class="container-obra">
+                <div class="container-obra_img">
                     <img src="../img/loginico.png" alt="Foto Obra">
                 </div>
     
@@ -90,6 +93,7 @@
                 </div>
     
                 <div class="objdir">
+                    <br>
                     <h3>Celular:</h3>
                     <h3>N de obras acompanhando:</h3>
                     <h3>Nivel de acesso:</h3>
