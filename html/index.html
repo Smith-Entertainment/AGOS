@@ -1,48 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caladea&display=swap" rel="stylesheet">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
     
 </head>
+
 <body>
+    <!– --------------------------- Inicio header ---------------------------- ->
     <header>
-        <img src="../img/logoobs.jpg" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-       <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
-            <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
-        </nav>
+        <div class="container-header">
+            <picture class="container-header_logo">
+                <img src="../img/logo.png" alt="Logo Observatorio">
+            </picture>
 
-    </header>
-
-    <article>
-       <section>
-            <input type="text">
-            <img src="../img/procurar.jpg">
-            <button> Adicionar Obras</button>
-            <button> Filtros</button>
-       </section>
-
-       <section>
-            <div>
-                <img src="######" alt="Foto Obra">
-                <h3>Nome</h3>
-                <h4>Objeto</h4>
-                <h4>Endereço</h4>
-                <h4>Data do certame</h4>
-                <h4>Dta de Inicio</h4>
-                <h4>Data de Termino Previsto</h4>
-                <h4>Numero de voluntarios</h4>
+            <nav>
+                <a href="index.html">Obras</a>
+                <a href="listausuarios.html">Usuários</a>
+                <a href="relatorios.html">Relatorios</a>
+            </nav>
+            <div class="container-header_user">
+                <h4>Usuário</h4>
+                <a href="login.html" class="sair">Sair</a>
+                <a href="login.html"><img class="imguser" src="../img/loginico.png" alt="foto usuario" class="user"></a>
             </div>
-       </section>
+        </div>
+    </header>
+    <!– --------------------------- End header ---------------------------- ->
 
-    </article>
+    <!– --------------------------- Inicio Busca ---------------------------- ->
+
+    <section class="container-busca">
+        <div class="container-busca_input">
+            <input type="text" placeholder="Buscar...">
+            <img src="../img/procurar.jpg" class="lupa">
+        </div>
+        <div class="container-busca_btn">
+            <button class="btnaddobra"> Adicionar Obra</button>
+            <button class="btnfiltro">Filtros</button>
+        </div>
+    </section>
+    <!– --------------------------- End Busca ---------------------------- ->
+
+
+    <!– --------------------------- Inicio Obra ---------------------------- ->
+    <section>
+        <div class="container-obra">
+            <div class="container-obra_img">
+                <img src="../img/imgobra.jfif" alt="Foto Obra">
+            </div>
+
+            <div class="objizq">
+                <h3>Nome:</h3>
+                <h3>Objeto:</h3>
+                <h3>Endereço:</h3>
+                <h3>Data do certame:</h3>
+            </div>
+
+            <div class="objdir">
+                <h3>Data de Inicio:</h3>
+                <h3>Data de Termino Previsto:</h3>
+                <h3>Numero de voluntarios:</h3>
+            </div>
+        </div>
+
+        <div class="container-obra">
+            <div class="container-obra_img">
+                <img src="../img/imgobra.jfif" alt="Foto Obra">
+            </div>
+
+            <div class="objizq">
+                <h3>Nome:</h3>
+                <h3>Objeto:</h3>
+                <h3>Endereço:</h3>
+                <h3>Data do certame:</h3>
+            </div>
+
+            <div class="objdir">
+                <h3>Data de Inicio:</h3>
+                <h3>Data de Termino Previsto:</h3>
+                <h3>Numero de voluntarios:</h3>
+            </div>
+        </div>
+
+        <div class="container-obra">
+            <div class="container-obra_img">
+                <img src="../img/imgobra.jfif" alt="Foto Obra">
+            </div>
+
+            <div class="objizq">
+                <h3>Nome:</h3>
+                <h3>Objeto:</h3>
+                <h3>Endereço:</h3>
+                <h3>Data do certame:</h3>
+            </div>
+
+            <div class="objdir">
+                <h3>Data de Inicio:</h3>
+                <h3>Data de Termino Previsto:</h3>
+                <h3>Numero de voluntarios:</h3>
+            </div>
+        </div>
+    </section>
+
+    <!– --------------------------- End Obra ---------------------------- ->
 
 </body>
+
 </html>
