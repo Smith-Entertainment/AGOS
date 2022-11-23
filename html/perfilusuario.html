@@ -6,19 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS - Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet" href="../css/perfilusuario.css">
+    <link rel="stylesheet" href="../css/padrao.css">
 </head>
 
 <body>
     <header>
-        <img src="../img/logo.png" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-        <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
-            <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
-        </nav>
+        <div id="header_esq">
+            <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Obras</a></li>
+                    <li><a href="listausuarios.html">Usuarios</a></li>
+                    <li><a href="relatorios.html">Relatorios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header_dir">
+            <div class="opc_user">
+                <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
+                <a href="login.html"><p><i>Sair</i></p></a>
+            </div>
+           <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
+        </div>
 
     </header>
 
