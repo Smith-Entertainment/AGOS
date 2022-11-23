@@ -228,7 +228,7 @@ select {
     align-items: flex-end;
 }
 
-#checkbox{
+#checkbox {
     display: flex;
     align-content: flex-start;
     justify-content: space-evenly;
