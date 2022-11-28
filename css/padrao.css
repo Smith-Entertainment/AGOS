@@ -5,6 +5,7 @@ body{
     padding: 0;
     color: #202020;
     font-family: 'Caladea';
+    box-sizing: border-box;
 }
 
 /*HEADER*/
