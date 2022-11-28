@@ -111,16 +111,30 @@ a{
 /*Janela filtros*/
 #janela_filtros{
     display: none;
+    position: fixed;
+    z-index: 1;
     width: 40vw;
-    background-color: lightcoral;
     padding: 1vw;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+    margin: 0 3vw 0 57vw;
+    
+}
+
+#header_janela{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 }
 
 span{
-    font-size: 32px;
-    vertical-align: middle;
-    background-color: #A5CF3A;
+    font-size: 48px;
+    float: right;
     cursor: pointer;
+}
+
+#fechar{
+    justify-self: flex-end;
 }
 
 .display_filtros{
