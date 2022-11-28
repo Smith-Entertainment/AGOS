@@ -16,6 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #202020;
+    padding: 0 3vw;
 }
 
 a{
@@ -98,9 +99,9 @@ select{
 }
 
 .input_busca{
-    width: 25vw;
+    width: 20vw;
     height: 5vh;
     border: 1px solid #202020;
     background-color: #FFFFFF;
-    border-radius: 14px;
+    border-radius: 25px;
 }
