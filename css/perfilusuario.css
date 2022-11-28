@@ -77,23 +77,6 @@
 
 /*FIM BOTAO OBRA*/
 
-/*BOTAO BUSCAR*/
-#container-busca_input {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 25vw;
-    height: 7vh;
-}
-
-#container-busca_input input {
-    width: 25vw;
-    height: 6vh;
-    border-radius: 14px;
-}
-
-/* FIM BOTAO BUSCAR*/
-
 /*ASIDE*/
 aside {
     padding: 1rem;
