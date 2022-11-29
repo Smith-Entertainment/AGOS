@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/padrao.css">
-
         <link
             href="https://fonts.googleapis.com/css2?family=Caladea&display=swap"
             rel="stylesheet">
@@ -15,158 +14,163 @@
     </head>
 
     <body>
-        <header>
-            <div class="container-header">
-                <picture class="container-header_logo">
-                    <img src="../img/logo.png" alt="Logo Observatorio"
-                        class="logo">
-                </picture>
+        <!– --------------------------- Inicio Header---------------------------- ->
+            <header>
+                <div class="container-header">
+                    <picture class="container-header_logo">
+                        <img src="../img/logo.png" alt="Logo Observatorio"
+                            class="logo">
+                    </picture>
 
-                <nav>
-                    <a href="index.html">Obras</a>
-                    <a href="listausuarios.html">Usuários</a>
-                    <a href="relatorios.html">Relatorios</a>
-                </nav>
-                <div class="container-header_user">
-                    <h4>Usuário</h4>
-                    <a href="login.html" class="sair">Sair</a>
-                    <a href="login.html"><img class="imguser"
-                            src="../img/loginico.png" alt="foto usuario"
-                            class="user"></a>
+                    <nav>
+                        <a href="index.html">Obras</a>
+                        <a href="listausuarios.html">Usuários</a>
+                        <a href="relatorios.html">Relatorios</a>
+                    </nav>
+                    <div class="container-header_user">
+                        <h4>Usuário</h4>
+                        <a href="login.html" class="sair">Sair</a>
+                        <a href="login.html"><img class="imguser"
+                                src="../img/loginico.png" alt="foto usuario"
+                                class="user"></a>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!– --------------------------- Inicio Busca
-            ---------------------------- ->
+            </header>
+            <!– --------------------------- End Header---------------------------- ->
+                <!– --------------------------- Inicio Busca---------------------------- ->
 
-            <!-- BUSCA -->
-            <section class="container-busca">
-                <div class="container-busca_input">
-                    <input type="text" placeholder="Buscar..."
-                        class="input_busca">
-                </div>
-                <div class="container-busca_btn">
-                    <a href="../html/cadastro_obras.html"><button
-                            class="btnaddobra">Adicionar Obra</button></a>
-                    <button id="btnfiltro">Filtros</button>
-                </div>
-            </section>
-
-            <!-- JANELA DE FILTROS -->
-            <div id="janela_filtros">
-                <section id="header_janela">
-                    <input type="text" placeholder="Buscar..."
-                        class="input_busca">
-                    <span>&plus;</span>
-                    <span id="fechar">&times;</span>
-                </section>
-                <br>
-
-                <section class="display_filtros">
-                    <h3>Titulo</h3>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                </section>
-                <br>
-
-                <section class="display_filtros">
-                    <h3>Titulo</h3>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                </section>
-
-            </div>
-            <!– --------------------------- End Busca
-                ---------------------------- ->
-                <!– --------------------------- Inicio Obra
-                    ----------------------------->
-                    <section>
-                        <a href="perfilobra.html">
-                            <div class="container-obra">
-
-                                <div class="container-img-obra">
-                                    <img src="../img/projeto1.jfif"
-                                        class="obra_img" alt="Foto Obra">
-                                </div>
-
-                                <div class="objizq">
-
-                                    <h3>Nome: Nome obra 1</h3>
-                                    <h3>Objeto: Objeto obra 2</h3>
-                                    <h3>Endereço: Av Panará 1641</h3>
-                                    <h3>Nº do Contrato: 253125</h3>
-                                </div>
-
-                                <div class="objdir">
-                                    <br>
-                                    <h3>Data de Inicio: 06/02/2022</h3>
-                                    <h3>Data de Termino Previsto:01/08/2023</h3>
-                                    <h3>Valor do Contrato: 150.000R$</h3>
-                                </div>
-                                
-                            </div>
-                        </a>
-
-                        <a href="perfilobra.html">
-                            <div class="container-obra">
-                                <div class="container-obra_img">
-                                    <img src="../img/projeto 2.jfif" alt="Foto
-                                        Obra">
-                                </div>
-
-                                <div class="objizq">
-                                    <h3>Nome: Nome obra 2</h3>
-                                    <h3>Objeto: Objeto obra 2</h3>
-                                    <h3>Endereço: Rua Santos Dumont 1021</h3>
-                                    <h3>Nº do Contrato: 843714</h3>
-                                </div>
-
-                                <div class="objdir">
-                                    <br>
-                                    <<h3>Data de Inicio: 12/08/2022</h3>
-                                    <h3>Data de Termino Previsto: 07/12/2023</h3>
-                                    <h3>Valor do Contrato: 100.000R$</h3>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="perfilobra.html">
-                            <div class="container-obra">
-                                <div class="container-obra_img">
-                                    <img src="../img/projeto 3.jfif" alt="Foto
-                                        Obra">
-                                </div>
-
-                                <div class="objizq">
-                                    <h3>Nome: Nome obra 3</h3>
-                                    <h3>Objeto: Objeto obra 3</h3>
-                                    <h3>Endereço: Av das cataras 1118</h3>
-                                    <h3>Nº do Contrato: 324234</h3>
-                                </div>
-
-                                <div class="objdir">
-                                    <br>
-                                    <h3>Data de Inicio: 21/10/2022</h3>
-                                    <h3>Data de Termino Previsto:05/11/2023</h3>
-                                    <h3>Valor do Contrato: 50.000R$</h3>
-                                </div>
-                            </div>
-                        </a>
+                    <!-- BUSCA -->
+                    <section class="container-busca">
+                        <div class="container-busca_input">
+                            <input type="text" placeholder="Buscar..."
+                                class="input_busca">
+                        </div>
+                        <div class="container-busca_btn">
+                            <a href="../html/cadastro_obras.html"><button
+                                    class="btnaddobra">Adicionar Obra</button></a>
+                            <button id="btnfiltro">Filtros</button>
+                        </div>
                     </section>
 
-                    <!– --------------------------- End Obra
-                        ---------------------------- ->
-                        <script src="../script/index.js"></script>
-                    </body>
+                    <!-- JANELA DE FILTROS -->
+                    <div id="janela_filtros">
+                        <section id="header_janela">
+                            <input type="text" placeholder="Buscar..."
+                                class="input_busca">
+                            <span>&plus;</span>
+                            <span id="fechar">&times;</span>
+                        </section>
+                        <br>
 
-                </html>
+                        <section class="display_filtros">
+                            <h3>Titulo</h3>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                        </section>
+                        <br>
+
+                        <section class="display_filtros">
+                            <h3>Titulo</h3>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                            <button>Filtro</button>
+                        </section>
+
+                    </div>
+                    <!– --------------------------- End Busca---------------------------- ->
+                        <!– --------------------------- Inicio Obra----------------------------->
+                            <section>
+                                <a href="perfilobra.html">
+                                    <div class="container-obra">
+
+                                        <div class="container-img-obra">
+                                            <img src="../img/projeto1.jfif"
+                                                class="obra_img" alt="Foto
+                                                Obra">
+                                        </div>
+
+                                        <div class="objizq">
+
+                                            <h3>Nome: Nome obra 1</h3>
+                                            <h3>Objeto: Objeto obra 2</h3>
+                                            <h3>Endereço: Av Panará 1641</h3>
+                                            <h3>Nº do Contrato: 253125</h3>
+                                        </div>
+
+                                        <div class="objdir">
+                                            <br>
+                                            <h3>Data de Inicio: 06/02/2022</h3>
+                                            <h3>Data de Termino Previsto:01/08/2023</h3>
+                                            <h3>Valor do Contrato: 150.000R$</h3>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                                <a href="perfilobra.html">
+
+                                    <div class="container-obra">
+
+                                        <div class="container-img-obra">
+                                            <img src="../img/projeto 2.jfif"
+                                                class="obra_img" alt="Foto
+                                                Obra">
+                                        </div>
+                                        <div class="objizq">
+                                            <h3>Nome: Nome obra 2</h3>
+                                            <h3>Objeto: Objeto obra 2</h3>
+                                            <h3>Endereço: Rua Santos Dumont 1021</h3>
+                                            <h3>Nº do Contrato: 843714</h3>
+                                        </div>
+
+                                        <div class="objdir">
+                                            <br>
+                                            <h3>Data de Inicio: 12/08/2022</h3>
+                                            <h3>Data de Termino Previsto:
+                                                07/12/2023</h3>
+                                            <h3>Valor do Contrato: 100.000R$</h3>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="perfilobra.html">
+                                    <div class="container-obra">
+
+                                        <div class="container-img-obra">
+                                            <img src="../img/projeto 3.jfif"
+                                                class="obra_img" alt="Foto
+                                                Obra">
+                                        </div>
+
+                                        <div class="objizq">
+                                            <h3>Nome: Nome obra 3</h3>
+                                            <h3>Objeto: Objeto obra 3</h3>
+                                            <h3>Endereço: Av das cataras 1118</h3>
+                                            <h3>Nº do Contrato: 324234</h3>
+                                        </div>
+
+                                        <div class="objdir">
+                                            <br>
+                                            <h3>Data de Inicio: 21/10/2022</h3>
+                                            <h3>Data de Termino
+                                                Previsto:05/11/2023</h3>
+                                            <h3>Valor do Contrato: 50.000R$</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </section>
+
+                            <!– --------------------------- End Obra---------------------------- ->
+                                <script src="../script/index.js"></script>
+                            </body>
+
+                        </html>

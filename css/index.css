@@ -155,7 +155,7 @@ a:hover {
     height: auto;
     border: 1px solid grey;
     border-radius: 40px;
-    margin: 3vh auto;
+    margin: 5vh auto;
     flex-wrap: wrap;
     justify-content: space-around;
     
@@ -184,20 +184,18 @@ a:hover {
     border-radius: 15px;
 }
 
-.objizq {
+.objizq, .objdir {
     width: auto;
     height: 25vh;
     flex-grow: 2;
-    margin: 2vh 2vw
+    margin: 2vh 5vw
     
 }
 
-.objdir {
-    width: auto;
-    height: 25vh;
-    flex-grow: 2;
-    margin: 2vh 2vw
+.objizq h3, .objdir h3{
+    padding-bottom: 2vh;
 }
+
 /*-------------------------- End Obra ----------------------------*/
 
 /*Janela filtros*/
