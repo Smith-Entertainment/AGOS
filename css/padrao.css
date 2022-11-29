@@ -81,7 +81,7 @@ li{
 /*FIM HEADER*/
 
 input{
-    width: 24rem;
+    width: 20vw;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
@@ -90,7 +90,7 @@ input{
 }
 
 select{
-    width: 24rem;
+    width: 20vw;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
