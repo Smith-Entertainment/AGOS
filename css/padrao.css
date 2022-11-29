@@ -11,17 +11,17 @@ body{
 /*HEADER*/
 header{
     display: flex;
-    height: 10vh;
     width: auto;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #202020;
+    
 }
 
 a{
     color: #202020;
     text-decoration: none;
+    margin-left: 2vw;
 }
 
 nav a:hover {
@@ -55,6 +55,11 @@ li{
     text-align: end;
 }
 
+.imguser {
+    height: 10vh;
+    width: auto;
+    margin-right: 1vw;
+}
 .icone_header{
     width: auto;
     height: 8vh;
@@ -98,9 +103,10 @@ select{
 }
 
 .input_busca{
-    width: 25vw;
-    height: 5vh;
+    width:300px;
+    height: 30px;
     border: 1px solid #202020;
     background-color: #FFFFFF;
     border-radius: 14px;
+    margin: 2vw 1vw;
 }

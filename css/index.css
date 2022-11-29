@@ -36,11 +36,13 @@ body {
 
 }
 
-.container-header_logo img {
-    height: 15vh;
+.logo{
     width: 20vw;
-
+    height: 12vh;
+    margin-top: 1vh;
+    margin-left: 1vw;
 }
+
 
 
 nav {
@@ -68,7 +70,8 @@ a:hover {
 .container-header_user {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items:center;
+    align-content: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
     height: 15vh;
@@ -95,43 +98,49 @@ a:hover {
 /*-------------------------- Inicio Busca ----------------------------*/
 .container-busca {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
     height: 10vh;
     align-items: center;
     padding: 0 3vw;
 }
 
-.lupa {
-    width: 25px;
-    height: 25px;
-    margin-left: 1vw;
+.container-busca_input{
+    gap: 5%;
+    align-items: center;
+    flex-grow: 2;
 }
 
 .container-busca_btn{
     display: flex;
     flex-direction: row;
-    gap: 5%;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
+    gap: 5%; 
     align-items: center;
+    text-align: end;
+    flex-grow: 1;
+    
 }
 
+
 .btnaddobra {
-    height: 6vh;
+    height: auto;
     border: 5px solid #A5CF3A;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: #A5CF3A;
-    font-size: 20px;
-    min-width: max-content;
+    font-size: 15px;
+    width: auto;
+    text-align: center;
 }
 
 #btnfiltro {
-    height: 6vh;
+    height: auto;
     border: 5px solid #A5CF3A;
-    border-radius: 30px;
+    border-radius: 15px;
     background-color: #A5CF3A;
-    font-size: 20px;
-    min-width: max-content;
+    font-size: 15px;
+    width: auto;
+    text-align: center;
 }
 
 
@@ -142,8 +151,8 @@ a:hover {
 .container-obra {
     display: flex;
     flex-direction: row;
-    width: 90vw;
-    height: 30vh;
+    width: 95vw;
+    height: auto;
     border: 1px solid grey;
     border-radius: 40px;
     margin: 3vh auto;
@@ -157,41 +166,37 @@ a:hover {
     border-radius: 40px;
 }
 
-.container-obra_img{
-    display: flex;
-    flex-direction: row;
+.container-img-obra{
+    width: auto;
     height: 25vh;
-    width: 13vw;
-    margin-top: 1vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    flex-grow: 1;
+    margin: 2vh 2vw;
+    flex-grow: 1;
+    
 }
 
-.container-obra_img img{
-    display: flex;
-    flex-direction: row;
-    height: 25vh;
-    width: 13vw;
-    margin-top: 1vh;
-    margin-left: 1vw;
+.obra_img{
+    height: 20vh;
+    width: 220px;
+    margin-top: 2vh;
+    margin-left: 2vw;
     margin-right: 1vw;
+    border-radius: 15px;
 }
 
 .objizq {
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
+    width: auto;
     height: 25vh;
-    justify-content: space-around;
+    flex-grow: 2;
+    margin: 2vh 2vw
     
 }
 
 .objdir {
-    display: flex;
-    flex-direction: column;
-    width: 35vw;
+    width: auto;
     height: 25vh;
-    justify-content: space-around;
+    flex-grow: 2;
+    margin: 2vh 2vw
 }
 /*-------------------------- End Obra ----------------------------*/
 
