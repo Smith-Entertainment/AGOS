@@ -1,111 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
-.logo{
+
+.logo {
     height: 7vw;
 }
-.img{
+
+.img {
     display: flex;
     align-items: center;
 }
-.obra{
+
+.obra {
     height: 300px;
 
 }
-body{
+
+body {
     font-family: 'Caladea';
     font-weight: 400;
 }
-.header{
+
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     gap: 15vw;
-    
-}
-.usuario{
-display: flex;
-flex-direction: row ;
-align-items: center;
-gap: 5%;
 
 }
-.us{
+
+.usuario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+
+}
+
+.us {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-.config{
-    height:30px;
-     width:30px;
- 
+
+.config {
+    height: 30px;
+    width: 30px;
+
 }
 
 
-.desc2 img{
-padding-left: 170px;
+.desc2 img {
+    padding-left: 170px;
 }
-.links{
-    
+
+.links {
+
     font-size: 25px;
     display: flex;
-    flex-direction:row;
-    align-items:flex-end ;
-    justify-content:center;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
     gap: 150px;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
 
-.conteudo{
+.conteudo {
     font-size: 18px;
     padding: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
+
+
 }
-.desc{
+
+.desc {
     display: flex;
     flex-direction: row;
     gap: 10vw;
 }
-.desc1{
+
+.desc1 {
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
-.desc2{
+.desc2 {
     padding-top: 7.5%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-.lista{
+.lista {
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
 }
-.part{
+
+.part {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    
+
 }
-#btp{
+
+#btp {
     background-color: #A5CF3A;
     border-style: none;
     width: 200px;
     height: 80px;
     margin-bottom: 2vw;
 }
-    
+
+
+#graficos {
+    display: block;
+    z-index: -1;
+    width: 90vw;
+    margin-left: 1vw;
+   
+    /* Hidden by default */
+}
+
+#contaienr-form_ajusteObra {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+    top: 100px;
+    right:200vw;
+
+}
+
+
+#btn-grafico{
+
+    color: #A5CF3A;
+    text-decoration: underline;
+}

@@ -43,6 +43,27 @@ body {
 }
 
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 15vh;
+    width: 50%;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #A5CF3A;
+
+}
+
 
 .container-header_user {
     display: flex;
@@ -65,6 +86,8 @@ body {
 .imguser {
     height: 13vh;
     width: 10vw;
+
+
 }
 
 /*--------------------------- End header -----------------------------*/
@@ -73,17 +96,9 @@ body {
 .container-busca {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     height: 10vh;
-    padding: 2vh 2vw;
-}
-
-.container-busca_input {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 25vw;
-    height: 7vh;
+    align-items: center;
+    padding: 0 3vw;
 }
 
 .lupa {
@@ -91,33 +106,32 @@ body {
     height: 25px;
     margin-left: 1vw;
 }
+
 .container-busca_btn{
     display: flex;
     flex-direction: row;
-    width: 45vw;
-    height: 7vh;
     gap: 5%;
     justify-content: flex-end;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .btnaddobra {
-    width: 17vw;
     height: 6vh;
     border: 5px solid #A5CF3A;
     border-radius: 30px;
     background-color: #A5CF3A;
     font-size: 20px;
+    min-width: max-content;
 }
 
-.btnfiltro {
-    width: 15vw;
+#btnfiltro {
     height: 6vh;
     border: 5px solid #A5CF3A;
     border-radius: 30px;
     background-color: #A5CF3A;
     font-size: 20px;
+    min-width: max-content;
 }
 
 
@@ -148,8 +162,19 @@ body {
     flex-direction: row;
     height: 25vh;
     width: 13vw;
-    margin-top: 2vh;
+    margin-top: 1vh;
     margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.container-obra_img img{
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 13vw;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .objizq {
@@ -172,6 +197,4 @@ body {
 
 /*Janela filtros*/
 /*.janela_filtros{
-    display: block;
-    background-color: lightcoral;
-}*/
+   

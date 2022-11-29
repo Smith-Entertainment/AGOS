@@ -1,86 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
-    <link rel="stylesheet" href="../css/perfilobra.css">
-    <link rel="stylesheet" href="../css/padrao.css">
-    
-</head>
-<body>
-    <header>
-        <div id="header_esq">
-            <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Obras</a></li>
-                    <li><a href="listausuarios.html">Usuarios</a></li>
-                    <li><a href="relatorios.html">Relatorios</a></li>
-                </ul>
-            </nav>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+        <link rel="stylesheet" href="../css/perfilobra.css">
+        <link rel="stylesheet" href="../css/padrao.css">
 
-        <div id="header_dir">
-            <div class="opc_user">
-                <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
-                <a href="login.html"><p><i>Sair</i></p></a>
+    </head>
+    <body>
+        <header>
+            <div id="header_esq">
+                <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Obras</a></li>
+                        <li><a href="listausuarios.html">Usuarios</a></li>
+                        <li><a href="relatorios.html">Relatorios</a></li>
+                    </ul>
+                </nav>
             </div>
-            <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
-        </div>
-    </header>
-    
-    <article>
 
-       <section>
-            <div class="conteudo">
-                <div class="img">
-                <img class="obra" src="../img/sem_foto.png"  alt="Foto Obra">
-            </div>
-                <section class="desc">
-                    <section class="desc1">
-                <h3>Nome do Projeto</h3>
-                <h4>Endereço:</h4>
-                <h4>Data do certame:</h4>
-                <h4>Empresa contratada:</h4>
-                <h4>Data de Inicio:</h4>
-            </section>
-       
-                <section class="desc2">
-                    
-                    <h4>Empresa contratada:</h4>
-                    <h4>Data de Inicio:</h4>
-                <h4>Valor do edital:</h4>
-                <h4>Valor contratado:</h4>
-
-              
-            </section>
-            <div class="part">
-               <a href="./configObra.html"> <img class="config" src="../img/eng.png"  alt="configurações"> </a>
-            <button id="btp">PARTICIPAR</button>
-        </div>
-       
-            </section>
-           
-        </div>
-        
-       </section>
-       
-       <section>
-            <nav>
-                <div class="lista">
-                    <p>Cronograma</p>
-                    <a href="./graficos.html"><p>Graficos</p></a>
-                    <p>Fotos</p>
-                    <p>Projetos</p>
-                    <p>Relatorios</p>
-                    <p>Documentos</p>
+            <div id="header_dir">
+                <div class="opc_user">
+                    <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
+                    <a href="login.html"><p><i>Sair</i></p></a>
                 </div>
-            </nav>
-       </section>
-       
-    </article>
+                <img src="../img/loginico.png" alt="foto usuario"
+                    class="icone_header">
+            </div>
+        </header>
 
-</body>
+        <article>
+
+            <section>
+                <div class="conteudo">
+                    <div class="img">
+                        <img class="obra" src="../img/sem_foto.png" alt="Foto
+                            Obra">
+                    </div>
+                    <section class="desc">
+                        <section class="desc1">
+                            <h3>Nome do Projeto</h3>
+                            <h4>Endereço:</h4>
+                            <h4>Data do certame:</h4>
+                            <h4>Empresa contratada:</h4>
+                            <h4>Data de Inicio:</h4>
+                        </section>
+
+                        <section class="desc2">
+
+                            <h4>Empresa contratada:</h4>
+                            <h4>Data de Inicio:</h4>
+                            <h4>Valor do edital:</h4>
+                            <h4>Valor contratado:</h4>
+
+
+                        </section>
+
+                        <form class="contaienr-form_ajusteObra" id="contaienr-form_ajusteObra">
+
+                            <div class="config-obra-coluna1">
+                                <input class="titulo-obra" type="text" placeholder="Titulo Atual" >
+                                <input class="licitacao" type="text" placeholder="Licitação Atual">
+                                <input class="bairro" type="text"placeholder="Bairro Atual" >
+                                <input class="rua" type="text" placeholder="Rua Atual">
+                                <input class="numero" type="text" placeholder="Número Atual">
+                                <input class="data-inicio" type="date"  >
+                                <input class="empresa_contr" type="text" placeholder="Empresa Contratada Atual" >
+                            </div>
+            
+            
+            
+                            <div class="config-obra-coluna2">
+                                <input class="objeto" type="text" placeholder="Objeto Atual">
+                                <input class="data-certame" type="date" >
+                                <input class="valor-edital" type="text" placeholder="Valor Atual do valor-edital">
+                                <select class="tipo-obra" type="text" placeholder="Tipo de obra Atual"></select>
+                                <input class="numero-de-contrato" type="text" placeholder="Número de contrato Atual">
+                                <input class="data-termino" type="date" >
+                                <input class="valor_contr" type="text" placeholder="Valor Atual Contratado">
+            
+                            </div>
+            
+                            <button class="confirmar-ajuste">Confirmar</button>
+            
+                        </form>
+                        <div class="part">
+                             <img class="config" src="../img/eng.png" alt="configurações" onclick="mostrarConfigObra()">
+                            </a>
+                            <button id="btp">PARTICIPAR</button>
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+            <section>
+                <nav>
+                    <div class="lista">
+                        <p>Cronograma</p>
+                        <p onclick="mostrarGraficos(), mostrarGraficos2()" id="btn-grafico">Graficos</p>
+                        <p>Fotos</p>
+                        <p>Projetos</p>
+                        <p>Relatorios</p>
+                        <p>Documentos</p>
+                    </div>
+                </nav>
+
+               <div id="graficos">
+
+                <div id="obrasAcom"></div>
+
+                <div id="obrasFin"></div>
+
+        
+            </div>
+
+            </section>
+
+            
+        </article>
+        <script type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../script/graficos.js"></script>
+    </body>
 </html>
