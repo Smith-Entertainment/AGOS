@@ -1,56 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS - Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet" href="../css/perfilusuario.css">
+    <link rel="stylesheet" href="../css/padrao.css">
 </head>
 
 <body>
+    <!– --------------------------- Inicio Header---------------------------- ->
     <header>
-        <img src="../img/logo.png" alt="Logo Observatorio">
-        <h4>Usuario</h4>
-        <a href="login.html">Sair</a>
-        <a href="login.html"><img src="../img/loginico.png" alt="foto usuario"></a>
-        <nav>
-            <a href="index.html">Obras</a>
-            <a href="listausuarios.html">Usuarios</a>
-            <a href="relatorios.html">Relatorios</a>
-        </nav>
+        <div class="container-header">
+            <picture class="container-header_logo">
+                <img src="../img/logo.png" alt="Logo Observatorio"
+                    class="logo">
+            </picture>
 
+            <nav>
+                <a href="index.html">Obras</a>
+                <a href="listausuarios.html">Usuários</a>
+                <a href="relatorios.html">Relatorios</a>
+            </nav>
+            <div class="container-header_user">
+                <h4>Usuário</h4>
+                <a href="login.html" class="sair">Sair</a>
+                <a href="login.html"><img class="imguser"
+                        src="../img/loginico.png" alt="foto usuario"
+                        class="user"></a>
+            </div>
+        </div>
     </header>
-
-    <article>
+    <!– --------------------------- End Header---------------------------- ->
+    <article class="main">
         <aside>
-            <img src="../img/icone usuario.png" alt="Foto Usuario">
-            <h3>Usuario</h3>
-            <h4>Nome</h4>
-            <h4>CPF</h4>
-            <h4>E-mail</h4>
-            <h4>Celular</h4>
+            <div>
+                <div class="icone-user">
+                    <img src="../img/icone usuario.png" alt="Foto Usuario">
+                    <h3><b>Usuário</b></h3>
+                </div>
+                <div id="dados_usuario">
+                    <h4>Nome</h4>
+                    <h4>CPF</h4>
+                    <h4>E-mail</h4>
+                    <h4>Celular</h4>
+                </div>
+            </div>
+            <a href="#" id="ancora_acesso"><b>Nível de Acesso ></b></a>
         </aside>
-        <a href="#">Acesso</a>
-        <section>
-
-            <div>
-                <input type="text">
-                <img src="../img/icon_lupa.png">
+        <section class="lado_direito">
+            <div class="submenu">
+                <div id="container-busca_input">
+                    <input type="text" placeholder="Buscar..." class="input_busca">
+                    <!--<img src="../img/icon_lupa.png" width="2%">-->
+                </div>
                 <h2>Obras Acompanhadas </h2>
-                <button> Filtros</button>
+                <button id="btnfiltro"> Filtros</button>
             </div>
 
-            <div>
-                <img src="../img/obra.png" alt="Foto Obra">
-                <h3>Nome</h3>
-                <h4>Objeto</h4>
-                <h4>Endereço</h4>
-                <h4>Data do certame</h4>
-                <h4>Data de Inicio</h4>
-                <h4>Data de termino previsto</h4>
-                <h4>Numero de voluntarios</h4>
-            </div>
+            <section>
+                <a href="perfilobra.html">
+                    <div class="container-obra">
+                        <div class="container-obra_img">
+                            <img src="../img/sem_foto.png" alt="Foto Obra">
+                        </div>
+
+                        <div class="objizq">
+                            <h3>Nome:</h3>
+                            <h3>Objeto:</h3>
+                            <h3>Endereço:</h3>
+                            <h3>Nº do Contrato:</h3>
+                        </div>
+
+                        <div class="objdir">
+                            <br>
+                            <h3>Data de Inicio:</h3>
+                            <h3>Data de Termino Previsto:</h3>
+                            <h3>Valor do Contrato:</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="perfilobra.html">
+                    <div class="container-obra">
+                        <div class="container-obra_img">
+                            <img src="../img/sem_foto.png" alt="Foto Obra">
+                        </div>
+
+                        <div class="objizq">
+                            <h3>Nome:</h3>
+                            <h3>Objeto:</h3>
+                            <h3>Endereço:</h3>
+                            <h3>Nº do Contrato:</h3>
+                        </div>
+
+                        <div class="objdir">
+                            <br>
+                            <h3>Data de Inicio:</h3>
+                            <h3>Data de Termino Previsto:</h3>
+                            <h3>Valor do Contrato:</h3>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="perfilobra.html">
+                    <div class="container-obra">
+                        <div class="container-obra_img">
+                            <img src="../img/sem_foto.png" alt="Foto Obra">
+                        </div>
+
+                        <div class="objizq">
+                            <h3>Nome:</h3>
+                            <h3>Objeto:</h3>
+                            <h3>Endereço:</h3>
+                            <h3>Nº do Contrato:</h3>
+                        </div>
+
+                        <div class="objdir">
+                            <br>
+                            <h3>Data de Inicio:</h3>
+                            <h3>Data de Termino Previsto:</h3>
+                            <h3>Valor do Contrato:</h3>
+                        </div>
+                    </div>
+                </a>
+            </section>
         </section>
     </article>
 

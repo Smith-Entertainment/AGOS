@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Caladea';
+    font-weight: 400;
+}
+
 
 
 /*-------------------------- Inicio Busca ----------------------------*/
@@ -53,9 +66,9 @@
 
 /*-------------------------- End Busca ----------------------------*/
 
-/*-------------------------- Inicio Obra ----------------------------*/
+/*-------------------------- Inicio Lista Usuarios ----------------------------*/
 
-.container-obra {
+.container-usuario {
     display: flex;
     flex-direction: row;
     width: 95vw;
@@ -68,12 +81,12 @@
     
 }
 
-.container-obra:hover {
+.container-usuario:hover {
     border: 3px solid #A5CF3A;
     border-radius: 40px;
 }
 
-.container-img-obra{
+.container-img-usuario{
     width: auto;
     height: 25vh;
     flex-grow: 1;
@@ -82,7 +95,7 @@
     
 }
 
-.obra_img{
+.usuario_img{
     height: 20vh;
     width: 220px;
     margin-top: 2vh;

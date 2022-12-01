@@ -1,1 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.lado_direito {
+    padding: 1rem;
+    width: 90%;
+    height: auto;
+}
+
+/* OBRA*/
+.container-obra {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    height: 28vh;
+    border: 1px solid grey;
+    border-radius: 40px;
+    margin: 3vh auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.container-obra:hover {
+    border: 3px solid #A5CF3A;
+    border-radius: 40px;
+}
+
+.container-obra_img {
+    display: flex;
+    flex-direction: row;
+    height: 25vh;
+    width: 13vw;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.objizq {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+
+}
+
+.objdir {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 25vh;
+    justify-content: space-around;
+}
+
+/*FIM OBRA*/
+
+/*BOTAO FILTRO*/
+#btnfiltro {
+    width: 15vw;
+    height: 6vh;
+    border: 5px solid #A5CF3A;
+    border-radius: 30px;
+    background-color: #A5CF3A;
+    font-size: 20px;
+}
+
+/*FIM BOTAO OBRA*/
+
+/*ASIDE*/
+aside {
+    padding: 1rem;
+    width: 30vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #202020;
+
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.icone-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+#dados_usuario {
+    padding-top: 5rem;
+}
+
+#ancora_acesso {
+    padding-top: 17rem;
+    font-size: 1.3rem;
+}
+
+/*FIM ASIDE*/
+
+/*SUBMENU*/
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    justify-content: space-between;
+}
+
+/* FIM_SUBMENU*/

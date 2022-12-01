@@ -1,121 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-.logo {
+/*INFORMAÇÕES DA OBRA*/
+.logo{
     height: 7vw;
 }
-
-.img {
+.img{
     display: flex;
     align-items: center;
 }
-
-.obra {
+.obra{
     height: 300px;
 
 }
-
-body {
+body{
     font-family: 'Caladea';
     font-weight: 400;
 }
-
-.header {
+.header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
     gap: 15vw;
-
+    
 }
-
-.usuario {
+.usuario{
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
     align-items: center;
     gap: 5%;
 
 }
-
-.us {
+.us{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-
-.config {
-    height: 30px;
-    width: 30px;
-
+.config{
+    height:30px;
+    width:30px;
+ 
 }
 
 
-.desc2 img {
+.desc2 img{
     padding-left: 170px;
 }
-
-.links {
-
+.links{
+    
     font-size: 25px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction:row;
+    align-items:flex-end ;
+    justify-content:center;
     gap: 150px;
-
+    
 }
-
-a {
+a{
     text-decoration: none;
     color: black;
 }
 
-.conteudo {
+.conteudo{
     font-size: 18px;
     padding: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-
+    
+    
 }
-
-.desc {
+.desc{
     display: flex;
     flex-direction: row;
     gap: 10vw;
 }
-
-.desc1 {
+.desc1{
     display: flex;
     flex-direction: column;
-
-
 }
 
-.desc2 {
-    padding-top: 7.5%;
+.desc1 h3{
+    margin-top: 4vh;
+}
+
+.desc1 h4{
+    margin-top: 4vh;
+}
+.desc2{
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
-
 }
 
-.lista {
+.desc2 h4{
+    margin-top: 4vh;
+}
+
+
+.lista{
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    margin: 5vh 0 5vh 20vw ;
+    
+    
 }
-
-.part {
+.part{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-
+    
 }
-
-#btp {
+#btp{
     background-color: #A5CF3A;
     border-style: none;
     width: 200px;
@@ -123,16 +122,94 @@ a {
     margin-bottom: 2vw;
 }
 
+/*ABA CRONOGRAMAS*/
+#cronogramas{
+    padding: 0 3vw;
+    display: none;
+}
+
+#botoes_cronog{
+    display: flex;
+    justify-content: center;
+}
+
+.botao_duplo{
+    background-color: white;
+    border: 1px solid #A5CF3A;
+    border-radius: 25px;
+}
+
+#btn_fisico{
+    width: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#btn_financeiro{
+    width: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+table{
+    padding: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#tabela{
+    margin: 0;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #A5CF3A;
+    border: 1px solid #202020;
+}
+
+td{
+    border: 1px solid #A5CF3A;
+}
+
+tr{
+    border: 1px solid #A5CF3A;
+}
+
+.header_mes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mes{
+    grid-column: 1 / span 2;
+}
+
+.data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contrato{
+    display: none;
+}
+
+#linha-01 th{
+    width: 25vw;
+}
 
 #graficos {
     display: block;
-    z-index: -1;
+    width: 90vw;
+    margin-left: 1vw;
+}
+
+#graficos-desativado {
+    display: block;
     width: 90vw;
     margin-left: 1vw;
    
     /* Hidden by default */
 }
-
 #contaienr-form_ajusteObra {
     display: none;
     position: absolute;
@@ -143,9 +220,6 @@ a {
 
 }
 
-
-#btn-grafico{
-
-    color: #A5CF3A;
-    text-decoration: underline;
+.aba{
+    margin-left: 8vw;
 }
