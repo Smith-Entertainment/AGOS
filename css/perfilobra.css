@@ -78,22 +78,33 @@ a{
 .desc1{
     display: flex;
     flex-direction: column;
-    
-    
 }
 
+.desc1 h3{
+    margin-top: 4vh;
+}
+
+.desc1 h4{
+    margin-top: 4vh;
+}
 .desc2{
-    padding-top: 7.5%;
+    padding-top: 7%;
     display: flex;
     flex-direction: column;
-    
 }
+
+.desc2 h4{
+    margin-top: 4vh;
+}
+
 
 .lista{
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 5vh 0 5vh 20vw ;
+    
     
 }
 .part{
@@ -184,4 +195,31 @@ tr{
 
 #linha-01 th{
     width: 25vw;
+}
+
+#graficos {
+    display: block;
+    width: 90vw;
+    margin-left: 1vw;
+}
+
+#graficos-desativado {
+    display: block;
+    width: 90vw;
+    margin-left: 1vw;
+   
+    /* Hidden by default */
+}
+#contaienr-form_ajusteObra {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 10px;
+    top: 100px;
+    right:200vw;
+
+}
+
+.aba{
+    margin-left: 8vw;
 }
