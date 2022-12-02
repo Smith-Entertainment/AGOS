@@ -21,7 +21,6 @@
     flex-wrap: wrap;
     width: 100%;
     border-bottom: 1px solid #000000;
-
 }
 
 .container-header_logo {
@@ -40,9 +39,6 @@
     margin-top: 1vh;
     margin-left: 1vw;
 }
-
-
-
 
 nav {
     display: flex;
@@ -64,7 +60,6 @@ nav a {
 
 a:hover {
     color: #A5CF3A;
-
 }
 
 
@@ -105,7 +100,7 @@ a:hover {
 /*FIM HEADER*/
 /*
 input{
-    width: 24rem;
+    width: 20vw;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
@@ -114,7 +109,7 @@ input{
 }
 
 select{
-    width: 24rem;
+    width: 20vw;
     height: 52px;
     background-color: #F1F1F1;
     border-style: none;
@@ -129,4 +124,5 @@ select{
     background-color: #FFFFFF;
     border-radius: 14px;
     margin: 2vw 1vw;
+   
 }
