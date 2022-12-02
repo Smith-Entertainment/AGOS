@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'Caladea';
+    font-weight: 400;
+}
+
+
+
 /*-------------------------- Inicio Busca ----------------------------*/
 .container-busca {
     display: flex;
@@ -25,7 +40,6 @@
     text-align: end;
     flex-grow: 1;
     
-    
 }
 
 
@@ -41,56 +55,38 @@
 
 #btnfiltro {
     height: auto;
-    font-size: 20px;
-    min-width: max-content;
-}
-
-#btnfiltro {
-    height: 6vh;
-
     border: 5px solid #A5CF3A;
     border-radius: 15px;
     background-color: #A5CF3A;
     font-size: 15px;
     width: auto;
     text-align: center;
-
- 
-
 }
 
 
 /*-------------------------- End Busca ----------------------------*/
 
-/*-------------------------- Inicio Obra ----------------------------*/
+/*-------------------------- Inicio Lista Usuarios ----------------------------*/
 
-#lista{
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2vh;
-    padding: 0 3vw;
-}
-
-.container-obra {
+.container-usuario {
     display: flex;
     flex-direction: row;
     width: 95vw;
     height: auto;
     border: 1px solid grey;
     border-radius: 40px;
-    margin: 5vh auto; 
+    margin: 5vh auto;
     flex-wrap: wrap;
     justify-content: space-around;
-
+    
 }
 
-.container-obra:hover {
+.container-usuario:hover {
     border: 3px solid #A5CF3A;
     border-radius: 40px;
 }
 
-
-.container-img-obra{
+.container-img-usuario{
     width: auto;
     height: 25vh;
     flex-grow: 1;
@@ -99,7 +95,7 @@
     
 }
 
-.obra_img{
+.usuario_img{
     height: 20vh;
     width: 220px;
     margin-top: 2vh;
@@ -114,8 +110,6 @@
     flex-grow: 2;
     margin: 2vh 5vw
     
-
-  
 }
 
 .objizq h3, .objdir h3{
@@ -166,4 +160,3 @@ span{
     border-radius: 15px;
     background-color: #FFFFFF;
 }
-
