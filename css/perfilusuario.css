@@ -57,17 +57,6 @@
 
 /*FIM OBRA*/
 
-/*BOTAO FILTRO*/
-#btnfiltro {
-    width: 15vw;
-    height: 6vh;
-    border: 5px solid #A5CF3A;
-    border-radius: 30px;
-    background-color: #A5CF3A;
-    font-size: 20px;
-}
-
-/*FIM BOTAO OBRA*/
 
 /*ASIDE*/
 aside {
@@ -97,7 +86,7 @@ h4 {
 }
 
 #ancora_acesso {
-    padding-top: 17rem;
+    padding-top: 14rem;
     font-size: 1.3rem;
 }
 
