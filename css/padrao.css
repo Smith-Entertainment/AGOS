@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     color: #202020;
@@ -33,7 +33,7 @@
 
 }
 
-.logo{
+.logo {
     width: 20vw;
     height: 12vh;
     margin-top: 1vh;
@@ -66,7 +66,7 @@ a:hover {
 .container-header_user {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     align-content: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -92,7 +92,7 @@ a:hover {
 
 
 /*BOTOES*/
-.botao_quadrado_verde{
+.botao_quadrado_verde {
     background-color: #A5CF3A;
     border-color: #A5CF3A;
     width: 16rem;
@@ -117,7 +117,7 @@ a:hover {
     box-shadow: 5px 5px 5px #A5CF3A;
 }
 
-.btn_adicionar{
+.btn_adicionar {
     height: 4.5vh;
     border: 5px solid #A5CF3A;
     border-radius: 15px;
@@ -138,19 +138,21 @@ a:hover {
     width: 7vw;
     text-align: center;
 }
+
 /*END BOTOES*/
 
 /*INPUTS*/
-.input_busca{
+.input_busca {
     width: 20vw;
     height: 4.5VH;
     border: 1px solid #202020;
     background-color: #FFFFFF;
     border-radius: 14px;
-    
+
     font-size: 1.2rem;
 }
-input{
+
+input {
     width: 25vw;
     height: 52px;
     background-color: #F1F1F1;
@@ -159,7 +161,7 @@ input{
     border-radius: 5px;
 }
 
-select{
+select {
     width: 25vw;
     height: 52px;
     background-color: #F1F1F1;
@@ -167,4 +169,5 @@ select{
     padding-left: 5%;
     border-radius: 5px;
 }
+
 /*FIM INPUTS*/
