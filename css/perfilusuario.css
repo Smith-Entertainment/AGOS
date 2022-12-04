@@ -143,11 +143,15 @@ h4 {
 
 .close {
     color: #A5CF3A;
-    float: right;
-    font-size: 28px;
+    font-size: 3rem;
     font-weight: bold;
 }
 
+#close_id{
+    display: block;
+    margin-left: 24vw;
+    padding-bottom: 3vh;
+}
 .close:hover,
 .close:focus {
     color: #000;
@@ -224,4 +228,5 @@ h4 {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 /*FIM CHECKBOX*/
