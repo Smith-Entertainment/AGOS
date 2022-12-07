@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-* {
-    font-family: 'Caladea', serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 /*--------------------------- Inicio header -----------------------------*/
 .container-header {
     display: flex;
