@@ -11,7 +11,9 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
             />
-            
+
+        <link rel="stylesheet" href="../css/configObra.css">
+
     </head>
 
     <body>
@@ -45,6 +47,44 @@
                 <article>
 
                     <section>
+                        <form class="contaienr-form_ajusteObra">
+                    
+                            <div class="config-obra-coluna1">
+                                <input class="titulo-obra" type="text"
+                                    placeholder="Titulo Atual">
+                                <input class="licitacao" type="text"
+                                    placeholder="Licitação Atual">
+                                <input class="bairro" type="text"
+                                    placeholder="Bairro Atual">
+                                <input class="rua" type="text" placeholder="Rua Atual">
+                                <input class="numero" type="text"
+                                    placeholder="Número Atual">
+                                <input class="data-inicio" type="date">
+                                <input class="empresa_contr" type="text"
+                                    placeholder="Empresa Contratada Atual">
+                            </div>
+
+
+
+                            <div class="config-obra-coluna2">
+                                <input class="objeto" type="text"
+                                    placeholder="Objeto Atual">
+                                <input class="data-certame" type="date">
+                                <input class="valor-edital" type="text"
+                                    placeholder="Valor Atual do valor-edital">
+                                <select class="tipo-obra" type="text"
+                                    placeholder="Tipo de obra Atual"></select>
+                                <input class="numero-de-contrato" type="text"
+                                    placeholder="Número de contrato Atual">
+                                <input class="data-termino" type="date">
+                                <input class="valor_contr" type="text"
+                                    placeholder="Valor Atual Contratado">
+
+                            </div>
+
+                            <button class="confirmar-ajuste">Confirmar</button>
+                        </form>
+
                         <div class="conteudo" id="conteudo">
                             <div class="img">
                                 <img class="obra" src="../img/sem_foto.png"
@@ -67,13 +107,17 @@
                                     <h4>Valor contratado:</h4>
                                 </section>
 
-                                <div class="part">
+                                <div class="part" id="part" onclick="abrirConfig()">
                                     <img class="config" src="../img/eng.png"
-                                        alt="configurações">
+                                        alt="configurações" id="imgConfigObra">
                                     <button id="btp">Participar</button>
                                 </div>
                             </section>
                         </div>
+
+
+
+
                     </section>
 
                     <!--NAV BAR-->
@@ -141,7 +185,7 @@
                         </table>
                     </div>
 
-                    
+
 
                 </section>
                 <div id="obrasAcom">
@@ -151,6 +195,8 @@
                 <div id="obrasFin">
 
                 </div>
+
+
             </article>
             <script type="text/javascript"
                 src="https://www.gstatic.com/charts/loader.js"></script>

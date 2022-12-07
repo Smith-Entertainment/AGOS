@@ -15,3 +15,15 @@ function abrir_cronog(){
 }
 
 opc[0].addEventListener("click", abrir_cronog);
+
+
+
+let btnConfigObra = getElementById("part");
+let janelaConfigObra = document.getElementById("contaienr-form_ajusteObra");
+
+
+
+function abrirConfig(){
+  janelaConfigObra.style.display = "flex";
+}
+
