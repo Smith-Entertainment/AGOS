@@ -91,79 +91,78 @@
                     <br>
 
                     <div id=div_tabelas>
-                        <table id="tabela">
+                        <table>
                             <thead>
-                                <tr id="linha-01">
-                                    <th>Descrição <span class="material-symbols-outlined">build</span></th>
-                                    <th class="contrato">
-                                        <div class="header_mes"><span
-                                                class="mes">Contrato</span><span>R$</span><span>%</span></div>
-                                    </th>
-                                    <th>
-                                        <div class="header_mes"><span
-                                                class="mes">Nov/20</span><span>Previsto</span><span>Realizado</span>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="header_mes"><span
-                                                class="mes">Dez/20</span><span>Previsto</span><span>Realizado</span>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="header_mes"><span
-                                                class="mes">Jan/21</span><span>Previsto</span><span>Realizado</span>
-                                        </div>
-                                    </th>
+                                <tr id="meses">
+                                    <th rowspan="2">Descrição <span class="material-symbols-outlined">build</span></th>
+                                    <th colspan="2">Contrato</th>
+                                    <th colspan="2">Out/20</th>
+                                    <th colspan="2">Nov/20</th>
+                                    <th colspan="2">Dez/20</th>
+                                </tr>
+                                <tr id="legenda">
+                                    <th>R$</th>
+                                    <th>%</th>
+                                    <th>Previsto</th>
+                                    <th>Realizado</th>
+                                    <th>Previsto</th>
+                                    <th>Realizado</th>
+                                    <th>Previsto</th>
+                                    <th>Realizado</th>
                                 </tr>
                             </thead>
 
-                            <tr id="linha-02">
-                                <td>Serviços Gerais</td>
-                                <td class="contrato">
-                                    <div class="data"><span>21505,06</span><span>1,28%</span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span>100%</span><span>40%</span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span></span><span>20%</span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span></span><span>20%</span></div>
-                                </td>
-                            </tr>
+                            <tbody>
+                                <tr class="descricao">
+                                    <th>Serviços Gerais</th>
+                                    <td>21505,06</td>
+                                    <td>1,28%</td>
+                                    <td>100%</td>
+                                    <td>40%</td>
+                                    <td></td>
+                                    <td>20%</td>
+                                    <td></td>
+                                    <td>20%</td>
+                                </tr>
 
-                            <tr id="linha-03">
-                                <td>Alvenaria paredes externas</td>
-                                <td class="contrato">
-                                    <div class="data"><span>83309,05</span><span>4,96%</span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span></span><span></span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span>10%</span><span></span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span>50%</span><span></span></div>
-                                </td>
-                            </tr>
+                                <tr class="descricao">
+                                    <th>Alvenaria paredes externas</th>
+                                    <td>83309,05</td>
+                                    <td>4,96%</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>10%</td>
+                                    <td></td>
+                                    <td>50%</td>
+                                    <td></td>
+                                </tr>
 
-                            <tr id="linha-04">
-                                <td>Alvenaria paredes internas</td>
-                                <td class="contrato">
-                                    <div class="data"><span>124465,66</span><span>7,40%</span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span></span><span></span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span>10%</span><span></span></div>
-                                </td>
-                                <td>
-                                    <div class="data"><span>50%</span><span></span></div>
-                                </td>
-                            </tr>
+                                <tr class="descricao">
+                                    <th>Alvenaria paredes internas</th>
+                                    <td>124465,66</td>
+                                    <td>7,40%</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>10%</td>
+                                    <td></td>
+                                    <td>50%</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <th class="descricao" id="total_row">Total</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
 
