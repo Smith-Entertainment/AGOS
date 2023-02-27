@@ -147,11 +147,12 @@ h4 {
     font-weight: bold;
 }
 
-#close_id{
+#close_id {
     display: block;
     margin-left: 24vw;
     padding-bottom: 3vh;
 }
+
 .close:hover,
 .close:focus {
     color: #000;

@@ -54,7 +54,7 @@
 
                             <div class="modal-content">
                                 <div id="close_id"><span class="close">&times;</span></div>
-                                
+
 
                                 <label class="container_label">Enviar fotos ou relatórios em obras <input
                                         type="checkbox" value="Enviar fotos ou relatórios em obras" name="nivel"
@@ -186,30 +186,7 @@
                     </section>
                 </section>
             </article>
-            <script>
-
-                //MODAL
-                let modal = document.getElementById("myModal");
-                let ancora_modal = document.getElementById("abre_modal");
-                let span = document.getElementsByClassName("close")[0];
-
-                // QUANDO CLICAR NA ANCORA, ABRE O MODAL
-                ancora_modal.onclick = function () {
-                    modal.style.display = "block";
-                }
-
-                // BOTAO FECHAR (SPAN)
-                span.onclick = function () {
-                    modal.style.display = "none";
-                }
-
-                //FECHAR MODAL COM QUALQUER CLIQUE
-                window.onclick = function (event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            </script>
+            <script src="../script/perfil_usuario_modal"></script>
 </body>
 
 </html>
