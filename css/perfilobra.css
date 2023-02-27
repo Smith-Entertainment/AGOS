@@ -223,3 +223,29 @@ tr{
 .aba{
     margin-left: 8vw;
 }
+#ft_{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    display: none;
+}
+
+#Fotos{
+    
+    display: none;
+}
+#user_ft{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    padding-left: 2vw;
+    text-align: center;
+    
+    background-color: #A5CF3A;
+    height: 0.5;
+   
+}
