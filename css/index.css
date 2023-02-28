@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
+a{
+    display: inline-block;
+}
 /*-------------------------- Inicio Busca ----------------------------*/
 .container-busca {
     height: 14vh;
@@ -30,24 +33,25 @@
 
 /*-------------------------- Inicio Obra ----------------------------*/
 
-#lista{
+.class-lista-obra{
     display: flex;
     flex-flow: column nowrap;
     gap: 2vh;
-    padding: 0 3vw;
+    align-items: center;
+    
 }
 
 .container-obra {
+
     display: flex;
     flex-direction: row;
     width: 95vw;
     height: auto;
     border: 1px solid grey;
     border-radius: 40px;
-    margin: 5vh auto; 
     flex-wrap: wrap;
     justify-content: space-around;
-
+    
 }
 
 .container-obra:hover {
@@ -78,10 +82,7 @@
     width: auto;
     height: 25vh;
     flex-grow: 2;
-    margin: 2vh 5vw
-    
-
-  
+    margin: 2vh 5vw;
 }
 
 .objizq h3, .objdir h3{

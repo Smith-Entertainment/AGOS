@@ -1,6 +1,7 @@
 .main {
     display: flex;
     flex-direction: row;
+    
 }
 
 .lado_direito {
