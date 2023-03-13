@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-a{
+a {
     display: inline-block;
 }
+
 /*-------------------------- Inicio Busca ----------------------------*/
 .container-busca {
     height: 14vh;
     width: auto;
     display: flex;
     flex-direction: row;
-     
+
 }
 
-.container-busca_input{
+.container-busca_input {
     gap: 2vw;
     align-items: center;
     flex-grow: 2;
     margin: 2vw 2.5vw;
 }
 
-.container-busca_btn{
+.container-busca_btn {
     display: flex;
     flex-direction: row;
-    gap: 1vw; 
+    gap: 1vw;
     align-items: center;
     text-align: center;
     flex-grow: 0.09;
@@ -33,12 +34,12 @@ a{
 
 /*-------------------------- Inicio Obra ----------------------------*/
 
-.class-lista-obra{
+.class-lista-obra {
     display: flex;
     flex-flow: column nowrap;
     gap: 2vh;
     align-items: center;
-    
+
 }
 
 .container-obra {
@@ -51,7 +52,7 @@ a{
     border-radius: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
 }
 
 .container-obra:hover {
@@ -60,16 +61,16 @@ a{
 }
 
 
-.container-img-obra{
+.container-img-obra {
     width: auto;
     height: 25vh;
     flex-grow: 1;
     margin: 2vh 2vw;
     flex-grow: 1;
-    
+
 }
 
-.obra_img{
+.obra_img {
     height: 20vh;
     width: 220px;
     margin-top: 2vh;
@@ -78,20 +79,22 @@ a{
     border-radius: 15px;
 }
 
-.objizq, .objdir {
+.objizq,
+.objdir {
     width: auto;
     height: 25vh;
     flex-grow: 2;
     margin: 2vh 5vw;
 }
 
-.objizq h3, .objdir h3{
+.objizq h3,
+.objdir h3 {
     padding-bottom: 2vh;
 }
 
 /*-------------------------- End Obra ----------------------------*/
 /*Janela filtros*/
-#janela_filtros{
+#janela_filtros {
     display: none;
     position: fixed;
     z-index: 1;
@@ -102,33 +105,33 @@ a{
     margin: 0 3vw 0 57vw;
 }
 
-#header_janela{
+#header_janela {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
 
-span{
+span {
     font-size: 48px;
     float: right;
     cursor: pointer;
 }
 
-#fechar{
+#fechar {
     justify-self: flex-end;
 }
 
-.display_filtros{
+.display_filtros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 5px 5px;
 }
 
-.display_filtros h3{
+.display_filtros h3 {
     grid-column: 1 / span 4;
 }
 
-#janela_filtros button{
+#janela_filtros button {
     border: 1px solid #A5CF3A;
     border-radius: 15px;
     background-color: #FFFFFF;
