@@ -152,11 +152,11 @@ a{
 }
 
 #div_tabelas{
+    display: none;
     overflow-x: auto;
 }
 
 table{
-    display: table;
     margin-bottom: 2vh;
     padding: 0;
     text-align: center;
@@ -177,7 +177,7 @@ tr{
 }
 
 .descricao:first-child{
-    min-width: 500px;
+    min-width: 400px;
 }
 
 td{
@@ -227,7 +227,6 @@ td{
     display: none;
 }
 #user_ft{
-    
     display: flex;
     flex-direction: row;
     gap: 5vw;
