@@ -1,68 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/configObra.css">
-        <link rel="stylesheet" href="../css/padrao.css">
-      
-        <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
-    </head>
-    <body>
 
-        <header>
-            <div id="header_esq">
-                <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Obras</a></li>
-                        <li><a href="listausuarios.html">Usuarios</a></li>
-                        <li><a href="relatorios.html">Relatorios</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/configObra.css">
+    <link rel="stylesheet" href="../css/padrao.css">
+
+    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+</head>
+
+<body>
+    <div id="header_div"></div>
+    <article class="container-ajustesObra">
+        <h2 class="textajus"> Ajustar obra</h2>
+
+        <form class="contaienr-form_ajusteObra">
+
+            <div class="config-obra-coluna1">
+                <input class="titulo-obra" type="text" placeholder="Titulo Atual">
+                <input class="licitacao" type="text" placeholder="Licitação Atual">
+                <input class="bairro" type="text" placeholder="Bairro Atual">
+                <input class="rua" type="text" placeholder="Rua Atual">
+                <input class="numero" type="text" placeholder="Número Atual">
+                <input class="data-inicio" type="date">
+                <input class="empresa_contr" type="text" placeholder="Empresa Contratada Atual">
             </div>
-    
-            <div id="header_dir">
-                <div class="opc_user">
-                    <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
-                    <a href="login.html"><p><i>Sair</i></p></a>
-                </div>
-                <img src="../img/loginico.png" alt="foto usuario" class="icone_header">
+
+
+
+            <div class="config-obra-coluna2">
+                <input class="objeto" type="text" placeholder="Objeto Atual">
+                <input class="data-certame" type="date">
+                <input class="valor-edital" type="text" placeholder="Valor Atual do valor-edital">
+                <select class="tipo-obra" type="text" placeholder="Tipo de obra Atual"></select>
+                <input class="numero-de-contrato" type="text" placeholder="Número de contrato Atual">
+                <input class="data-termino" type="date">
+                <input class="valor_contr" type="text" placeholder="Valor Atual Contratado">
+
             </div>
-        </header>
-        <article class="container-ajustesObra">
-            <h2 class="textajus"> Ajustar obra</h2>
 
-            <form class="contaienr-form_ajusteObra">
+            <button class="confirmar-ajuste">Confirmar</button>
 
-                <div class="config-obra-coluna1">
-                    <input class="titulo-obra" type="text" placeholder="Titulo Atual" >
-                    <input class="licitacao" type="text" placeholder="Licitação Atual">
-                    <input class="bairro" type="text"placeholder="Bairro Atual" >
-                    <input class="rua" type="text" placeholder="Rua Atual">
-                    <input class="numero" type="text" placeholder="Número Atual">
-                    <input class="data-inicio" type="date"  >
-                    <input class="empresa_contr" type="text" placeholder="Empresa Contratada Atual" >
-                </div>
+        </form>
 
+    </article>
+    <script src="../script/header.js"></script>
+</body>
 
-
-                <div class="config-obra-coluna2">
-                    <input class="objeto" type="text" placeholder="Objeto Atual">
-                    <input class="data-certame" type="date" >
-                    <input class="valor-edital" type="text" placeholder="Valor Atual do valor-edital">
-                    <select class="tipo-obra" type="text" placeholder="Tipo de obra Atual"></select>
-                    <input class="numero-de-contrato" type="text" placeholder="Número de contrato Atual">
-                    <input class="data-termino" type="date" >
-                    <input class="valor_contr" type="text" placeholder="Valor Atual Contratado">
-
-                </div>
-
-                <button class="confirmar-ajuste">Confirmar</button>
-
-            </form>
-
-        </article>
-    </body>
 </html>
