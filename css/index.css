@@ -46,7 +46,7 @@ a {
 
     display: flex;
     flex-direction: row;
-    width: 95vw;
+    width: 94vw;
     height: auto;
     border: 1px solid grey;
     border-radius: 40px;
@@ -90,6 +90,7 @@ a {
 .objizq h3,
 .objdir h3 {
     padding-bottom: 2vh;
+    font-weight: 500;
 }
 
 /*-------------------------- End Obra ----------------------------*/
