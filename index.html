@@ -11,33 +11,15 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    
 </head>
 
 <body>
     <!– --------------------------- Inicio Header---------------------------- ->
-        <header>
-            <div class="container-header">
-                <picture class="container-header_logo">
-                    <a href="./index.html"><img src="./img/logo.png" alt="Logo Observatorio" class="logo"></a>
-                </picture>
-
-                <button id="menu_mobile"><span class="material-symbols-outlined">
-                        menu
-                    </span></button>
-
-                <nav>
-                    <a href="./index.html">Obras</a>
-                    <a href="./html/listausuarios.html">Usuários</a>
-                    <a href="./html/relatorios.html">Relatorios</a>
-                </nav>
-                <div class="container-header_user">
-                    <h4>Usuário</h4>
-                    <a href="./html/login.html" class="sair">Sair</a>
-                    <a href="./html/perfilusuario.html"><img class="imguser" src="./img/loginico.png" alt="foto usuario"
-                            class="user"></a>
-                </div>
-            </div>
-        </header>
+    <div id="header_div"></div>
+    <div id="modal_menu">
+        <div id="content_modal"></div>
+    </div>
         <!– --------------------------- End Header---------------------------- ->
             <!– --------------------------- Inicio Busca---------------------------- ->
                 <!-- BUSCA -->
@@ -165,6 +147,7 @@
                         </section>
                         <!– --------------------------- End Lista Obra---------------------------- ->
                             <script src="./script/index.js"></script>
+                            <script src="./script/header.js"></script>
 
 </body>
 
