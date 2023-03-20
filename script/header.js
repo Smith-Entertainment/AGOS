@@ -1,8 +1,7 @@
-let header = document.getElementById("header_div");
+let header = document.getElementsByTagName("header")[0];
 let modal = document.getElementById("modal_menu");
 
-header.innerHTML = `<header>
-<div class="container-header">
+header.innerHTML = `<div class="container-header">
     <picture class="container-header_logo">
         <a href="../index.html"><img src="../img/logo.png" alt="Logo Observatorio" class="logo"></a>
     </picture>
@@ -19,8 +18,7 @@ header.innerHTML = `<header>
         <a href="../html/login.html" class="sair">Sair</a>
         <a href="../html/perfilusuario.html"><img class="imguser" src="../img/loginico.png" alt="foto usuario"class="user"></a>
     </div>
-</div>
-</header>`;
+</div>`;
 
 let botao_modal = document.getElementById("menu_mobile");
 
