@@ -88,8 +88,19 @@ a:hover {
 }
 
 
-/*--------------------------- End header -----------------------------*/
+#header_dir{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-right: 1%;
+}
 
+a{
+    display: inline-block;
+}
+/*--------------------------- End header -----------------------------*/
 
 /*BOTOES*/
 .botao_quadrado_verde {

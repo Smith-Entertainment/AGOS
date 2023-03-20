@@ -1,3 +1,9 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #202020;
+}
+
 /*CONTEUDO*/
 h2{
     text-align: center;
