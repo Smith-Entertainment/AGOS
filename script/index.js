@@ -17,18 +17,17 @@ let secao_obras = document.querySelector(".class-lista-obra");
 let item_lista = document.createElement("a");
 let obras = [
     {img: "./img/projeto1.jfif", nome: "Nome obra 1", objeto: "Objeto obra 1", logradouro: "Av Panará", numero: 1641, contrato: 253125, data_inicio: "06/02/2022", data_terminio: "01/08/2023", valor_contrato: 150000},
-    {img: "./img/projeto2.jfif", nome: "Nome obra 1", objeto: "Objeto obra 1", logradouro: "Rua Santos Dumont", numero: 1021, contrato: 843714, data_inicio: "12/08/2022", data_terminio: "07/12/2023", valor_contrato: 100000}
+    {img: "./img/projeto2.jfif", nome: "Nome obra 2", objeto: "Objeto obra 2", logradouro: "Rua Santos Dumont", numero: 1021, contrato: 843714, data_inicio: "12/08/2022", data_terminio: "07/12/2023", valor_contrato: 100000},
+    {img: "./img/projeto3.jfif", nome: "Nome obra 3", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000}
 ];
 
 for(var i = 0; i < obras.length; i++)
 {
-    item_lista.innerHTML = ``;
     item_lista.setAttribute("href", "./html/perfilobra.html");
     item_lista.innerHTML = `
         <div class="container-obra">
-
             <div class="container-img-obra">
-                <img src=./img/projeto1.jfif class="obra_img" alt="Foto Obra">
+                <img src=${obras[i].img} class="obra_img" alt="Foto Obra">
             </div>
 
             <div class="objizq">
@@ -44,10 +43,10 @@ for(var i = 0; i < obras.length; i++)
                 <h3>Data de Termino Previsto: ${obras[i].data_terminio}</h3>
                 <h3>Valor do Contrato: R$${obras[i].valor_contrato}</h3>
             </div>
-
         </div>
     `;
     item_lista = item_lista.cloneNode(true);
 
     secao_obras.appendChild(item_lista);
+    item_lista = document.createElement("a");
 }
