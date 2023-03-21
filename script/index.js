@@ -1,5 +1,5 @@
 let janela = document.getElementById("janela_filtros");
-let botao_filtros = document.getElementById("btnfiltro");
+let botao_filtros = document.getElementById("btn_filtros");
 let botao_fechar = document.getElementById("fechar");
 
 function abrir_janela(){
