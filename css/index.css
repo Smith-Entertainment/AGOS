@@ -47,15 +47,10 @@ a {
     z-index: 1; 
   }
 
-  #search-results {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-  }
+
 
   .result {
-    background-color: #868686;
+    background-color: #dddada;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 5px;
@@ -64,6 +59,8 @@ a {
     display: flex;
     flex-direction: column;
     z-index: 0;
+    border: 2px gray;
+    border-style:solid;
   
 
   }
