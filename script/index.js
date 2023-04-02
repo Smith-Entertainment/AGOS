@@ -21,6 +21,9 @@ let obras = [
     {img: "./img/projeto3.jfif", nome: "Nome obra 3", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000}
 ];
 
+  let input = document.getElementById("input_busca");
+  input.addEventListener("keyup", search);
+
 for(var i = 0; i < obras.length; i++)
 {
     item_lista.setAttribute("href", "./html/perfilobra.html");
@@ -50,3 +53,35 @@ for(var i = 0; i < obras.length; i++)
     secao_obras.appendChild(item_lista);
     item_lista = document.createElement("a");
 }
+function search() {
+    let input = document.getElementById("input_busca");
+    let filter = input.value.toUpperCase();
+    let resultsList = document.getElementById("results-list");
+        // Esconder a lista de resultados se o campo de pesquisa estiver vazio
+        if (filter === "") {
+            resultsList.style.display = "none";
+            return;
+        } else {
+            resultsList.style.display = "block";
+        }
+    
+    resultsList.innerHTML = "";
+  
+    obras.forEach((obra) => {
+      if (obra.nome.toUpperCase().indexOf(filter) > -1) {
+        let listItem = document.createElement("a");
+        listItem.classList.add("result");
+        listItem.innerHTML = `<img src="${obra.img}" alt="${obra.nome}" width="100" height="100">
+                                    <a>${obra.nome}</a>
+                                    <a>${obra.objeto}</a>
+                                    <a>${obra.logradouro}, ${obra.numero}</a>
+                                    <a>${obra.contrato}</a>
+                                    <a>${obra.data_inicio} - ${obra.data_terminio}</a>
+                                    <a>${obra.valor_contrato}</a>`;
+                                    listItem.href = '../html/perfilobra.html';
+        resultsList.appendChild(listItem);
+       
+      }
+    });
+  }
+  

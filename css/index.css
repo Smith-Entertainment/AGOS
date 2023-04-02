@@ -28,6 +28,46 @@ a {
     text-align: center;
     flex-grow: 0.09;
 }
+#search-container {
+    position: relative; /* Para posicionar a pesquisa em relação a este elemento */
+    margin: 20px;
+  }
+
+  #search-input {
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #ccc;
+    position: absolute; 
+    top: -50px; 
+    left: 0;
+    z-index: 1; 
+  }
+
+  #search-results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .result {
+    background-color: #868686;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 25vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+  
+
+  }
+
 
 
 /*-------------------------- End Busca ----------------------------*/
