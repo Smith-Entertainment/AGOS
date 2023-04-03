@@ -1,16 +1,13 @@
-let janela = document.getElementById("janela_filtros");
+let filtros = document.getElementById("janela_filtros");
 let botao_filtros = document.getElementById("btn_filtros");
 let botao_fechar = document.getElementById("fechar");
 
-function abrir_janela(){
-    janela.style.display = "block";
+function abrir_filtros(){
+    filtros.style.display = "flex";
 }
-function fechar_janela(){
-    janela.style.display = "none";
+function fechar_filtros(){
+    filtros.style.display = "none";
 }
-
-/* botao_filtros.addEventListener("click", abrir_janela);
-botao_fechar.addEventListener("click", fechar_janela); */
 
 let pagina = 1;
 let secao_obras = document.querySelector(".class-lista-obra");
@@ -21,8 +18,8 @@ let obras = [
     {img: "./img/projeto3.jfif", nome: "Nome obra 3", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000}
 ];
 
-  let input = document.getElementById("input_busca");
-  input.addEventListener("keyup", search);
+let input = document.getElementById("input_busca");
+input.addEventListener("keyup", search);
 
 for(var i = 0; i < obras.length; i++)
 {
@@ -53,6 +50,7 @@ for(var i = 0; i < obras.length; i++)
     secao_obras.appendChild(item_lista);
     item_lista = document.createElement("a");
 }
+
 function search() {
     let input = document.getElementById("input_busca");
     let filter = input.value.toUpperCase();
@@ -80,8 +78,9 @@ function search() {
                                     <a>${obra.valor_contrato}</a>`;
                                     listItem.href = '../html/perfilobra.html';
         resultsList.appendChild(listItem);
-       
       }
     });
-  }
-  
+}
+
+botao_filtros.addEventListener("click", abrir_filtros);
+botao_fechar.addEventListener("click", fechar_filtros);
