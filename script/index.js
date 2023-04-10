@@ -18,33 +18,37 @@ let item_lista = document.createElement("a");
 let obras = [
     {img: "./img/projeto1.jfif", nome: "Nome obra 1", objeto: "Objeto obra 1", logradouro: "Av Panará", numero: 1641, contrato: 253125, data_inicio: "06/02/2022", data_terminio: "01/08/2023", valor_contrato: 150000},
     {img: "./img/projeto2.jfif", nome: "Nome obra 2", objeto: "Objeto obra 2", logradouro: "Rua Santos Dumont", numero: 1021, contrato: 843714, data_inicio: "12/08/2022", data_terminio: "07/12/2023", valor_contrato: 100000},
-    {img: "./img/projeto3.jfif", nome: "Nome obra 3", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000}
+    {img: "./img/projeto3.jfif", nome: "Nome obra 3", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000},
+    {img: "./img/projeto3.jfif", nome: "museu", objeto: "Objeto obra 3", logradouro: "Av das Cataratas", numero: 465, contrato: 4897626, data_inicio: "12/09/2021", data_terminio: "07/12/2023", valor_contrato: 300000}
 ];
-
-  let input = document.getElementById("input_busca");
-  input.addEventListener("keyup", search);
-
+let listaObras= obras;
+let input = document.getElementById("input_busca");
+input.addEventListener("keyup", search);
+mostrar_obras();
+function mostrar_obras(){
+    secao_obras.innerHTML = "";
 for(var i = 0; i < obras.length; i++)
 {
+    
     item_lista.setAttribute("href", "./html/perfilobra.html");
     item_lista.innerHTML = `
         <div class="container-obra">
             <div class="container-img-obra">
-                <img src=${obras[i].img} class="obra_img" alt="Foto Obra">
+                <img src=${listaObras[i].img} class="obra_img" alt="Foto Obra">
             </div>
 
             <div class="objizq">
-                <h3>Nome: ${obras[i].nome}</h3>
-                <h3>Objeto: ${obras[i].objeto}</h3>
-                <h3>Endereço: ${obras[i].logradouro} ${obras[i].numero}</h3>
-                <h3>Nº do Contrato: ${obras[i].contrato}</h3>
+                <h3>Nome: ${listaObras[i].nome}</h3>
+                <h3>Objeto: ${listaObras[i].objeto}</h3>
+                <h3>Endereço: ${listaObras[i].logradouro} ${listaObras[i].numero}</h3>
+                <h3>Nº do Contrato: ${listaObras[i].contrato}</h3>
             </div>
 
             <div class="objdir">
                 <br>
-                <h3>Data de Inicio: ${obras[i].data_inicio}</h3>
-                <h3>Data de Termino Previsto: ${obras[i].data_terminio}</h3>
-                <h3>Valor do Contrato: R$${obras[i].valor_contrato}</h3>
+                <h3>Data de Inicio: ${listaObras[i].data_inicio}</h3>
+                <h3>Data de Termino Previsto: ${listaObras[i].data_terminio}</h3>
+                <h3>Valor do Contrato: R$${listaObras[i].valor_contrato}</h3>
             </div>
         </div>
     `;
@@ -53,6 +57,8 @@ for(var i = 0; i < obras.length; i++)
     secao_obras.appendChild(item_lista);
     item_lista = document.createElement("a");
 }
+}
+
 function search() {
     let input = document.getElementById("input_busca");
     let filter = input.value.toUpperCase();
@@ -63,12 +69,20 @@ function search() {
             return;
         } else {
             resultsList.style.display = "block";
+            
         }
     
     resultsList.innerHTML = "";
   
     obras.forEach((obra) => {
       if (obra.nome.toUpperCase().indexOf(filter) > -1) {
+        if(listaObras.length >= obras.length){
+        listaObras = [];
+        }
+        
+        listaObras.push(obra);
+        
+/*
         let listItem = document.createElement("a");
         listItem.classList.add("result");
         listItem.innerHTML = `<img src="${obra.img}" alt="${obra.nome}" width="100" height="100">
@@ -80,8 +94,10 @@ function search() {
                                     <a>${obra.valor_contrato}</a>`;
                                     listItem.href = '../html/perfilobra.html';
         resultsList.appendChild(listItem);
-       
+       */
       }
     });
-  }
+
+    mostrar_obras();
+}
   
