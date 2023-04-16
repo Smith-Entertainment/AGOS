@@ -1,7 +1,9 @@
 let header = document.getElementsByTagName("header")[0];
-let modal = document.getElementById("modal_menu");
 
-header.innerHTML = `<div class="container-header">
+header.innerHTML = `
+<div class="container-header">
+    <div id="modal_menu">
+    </div>
     <picture class="container-header_logo">
         <a href="../index.html"><img src="../img/logo.png" alt="Logo Observatorio" class="logo"></a>
     </picture>
@@ -20,6 +22,7 @@ header.innerHTML = `<div class="container-header">
     </div>
 </div>`;
 
+let modal = document.getElementById("modal_menu");
 let botao_modal = document.getElementById("menu_mobile");
 
 const switchModal = () => {
@@ -31,6 +34,14 @@ const switchModal = () => {
     else {
         modal.style.display = "block";
 
+//         modal.innerHTML = `
+// // <nav>
+// //     <a href="../index.html">Obras</a>
+// //     <a href="../html/listausuarios.html">Usuários</a>
+// //     <a href="../html/relatorios.html">Relatorios</a>
+// // </nav>
+// `;
+
     }
 }
 botao_modal.addEventListener('click', switchModal);
@@ -40,8 +51,9 @@ window.onclick = function (event) {
     }
 }
 
+
 // botao_modal.onclick = function () {
-//     modal.style.display = "block";
+    //     modal.style.display = "block";
 // }
 // botao_modal.onclick = function () {
     //     modal.style.display = "none";
