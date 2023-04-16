@@ -1,16 +1,13 @@
-let janela = document.getElementById("janela_filtros");
+let filtros = document.getElementById("janela_filtros");
 let botao_filtros = document.getElementById("btn_filtros");
 let botao_fechar = document.getElementById("fechar");
 
-function abrir_janela(){
-    janela.style.display = "block";
+function abrir_filtros(){
+    filtros.style.display = "flex";
 }
-function fechar_janela(){
-    janela.style.display = "none";
+function fechar_filtros(){
+    filtros.style.display = "none";
 }
-
-/* botao_filtros.addEventListener("click", abrir_janela);
-botao_fechar.addEventListener("click", fechar_janela); */
 
 let pagina = 1;
 let secao_obras = document.querySelector(".class-lista-obra");
@@ -56,8 +53,7 @@ for(var i = 0; i < obras.length; i++)
 
     secao_obras.appendChild(item_lista);
     item_lista = document.createElement("a");
-}
-}
+}}
 
 function search() {
     let input = document.getElementById("input_busca");
@@ -100,4 +96,3 @@ function search() {
 
     mostrar_obras();
 }
-  

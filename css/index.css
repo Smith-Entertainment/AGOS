@@ -136,17 +136,13 @@ a {
     display: none;
     position: fixed;
     z-index: 1;
-    width: 40vw;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     padding: 1vw;
+    width: 35%;
     box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
     background-color: #FFFFFF;
-    margin: 0 3vw 0 57vw;
-}
-
-#header_janela {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    right: 1vw;
 }
 
 span {
@@ -159,18 +155,6 @@ span {
     justify-self: flex-end;
 }
 
-.display_filtros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px 5px;
-}
-
-.display_filtros h3 {
-    grid-column: 1 / span 4;
-}
-
-#janela_filtros button {
-    border: 1px solid #A5CF3A;
-    border-radius: 15px;
-    background-color: #FFFFFF;
+.select_filtros{
+    width: 7vw;
 }
