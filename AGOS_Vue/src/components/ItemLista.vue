@@ -8,16 +8,23 @@
 
 <template>
     <div class="container">
-        <img :src="obra.img" class="rounded float-start" alt="Foto Obra">
+        <div class="row">
+            <img :src="obra.img" class="col-2" alt="Foto Obra">
 
-        <h2>Nome: {{obra.nome}}</h2>
-        <h3>Objeto: {{obra.objeto}}</h3>
-        <h3>Endereço: {{obra.logradouro}} {{obra.numero}}</h3>
-        <h3>Nº do Contrato: {{obra.contrato}}</h3>
+            <div class="col">
+                <h2>Nome: {{obra.nome}}</h2>
+                <p>Objeto: {{obra.objeto}}</p>
+                <p>Endereço: {{obra.logradouro}} {{obra.numero}}</p>
+                <p>Nº do Contrato: {{obra.contrato}}</p>
+            </div>
 
-        <h3>Data de Inicio: {{obra.data_inicio}}</h3>
-        <h3>Data de Termino Previsto: {{obra.data_terminio}}</h3>
-        <h3>Valor do Contrato: R${{obra.valor_contrato}}</h3>
+            <div class="col">
+                <h2><br></h2>
+                <p>Data de Inicio: {{obra.data_inicio}}</p>
+                <p>Data de Termino Previsto: {{obra.data_terminio}}</p>
+                <p>Valor do Contrato: R${{obra.valor_contrato}}</p>
+            </div>
+        </div>
     </div>
 </template>
 
