@@ -8,7 +8,7 @@
 
 <template>
     <div class="container">
-        <img src={{obra.img}} class="obra_img" alt="Foto Obra">
+        <img :src="obra.img" class="rounded float-start" alt="Foto Obra">
 
         <h2>Nome: {{obra.nome}}</h2>
         <h3>Objeto: {{obra.objeto}}</h3>
