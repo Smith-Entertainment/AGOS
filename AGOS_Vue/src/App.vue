@@ -1,10 +1,11 @@
 <script>
   import Lista from './components/Lista.vue'
-  //import Header from './components/Header.vue'
+  import Header from './components/Header.vue'
 
   export default {
     components: {
-      Lista
+      Lista,
+      Header
     }
   }
 </script>
@@ -14,6 +15,7 @@
   </header>
 
   <main>
+    <Header />
     <Lista />
   </main>
 </template>

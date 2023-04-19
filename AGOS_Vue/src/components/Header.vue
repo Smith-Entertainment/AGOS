@@ -1,38 +1,26 @@
+
 <script>
-        export default{
-        data(){
-            return{
-                Header:
-            }
-        },
-        components: {
-            
-        }
-    }
+    console.log('Hello World!')
 </script>
-
 <template>
-    <div class="container-header">
-    <picture class="container-header_logo">
-        <a href="../index.html"><img src="../img/logo.png" alt="Logo Observatorio" class="logo"></a>
-    </picture>
+    <div class="">
+        <picture class="">
+            <a href="Obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class=""></a>
+        </picture>
 
-    <button id="menu_mobile"><span class="material-symbols-outlined">menu</span></button>
-    <nav>
+        <button ><span class="material-symbols-outlined">menu</span></button> <!--botao menu mobile-->
+        <nav>
+            <a href="Obras">Obras</a> <!--provisorio ate ter as rotas-->
+            <a href="Usuarios">Usuários</a> <!---->
+            <a href="Relatorios">Relatorios</a> <!--provisorio ate ter as rotas-->
+        </nav>
+        <div class="">
+            <h4>Usuário</h4>
 
-        <a href="../index.html">Obras</a>
-        <a href="../html/listausuarios.html">Usuários</a>
-        <a href="../html/relatorios.html">Relatorios</a>
-    </nav>
-    <div class="container-header_user">
-        <h4>Usuário</h4>
-        
-        <a href="../html/login.html" class="sair">Sair</a>
-        <a href="../html/perfilusuario.html"><img class="imguser" src="../img/loginico.png" alt="foto usuario"class="user"></a>
+            <a href="./html/login.html" class="">Sair</a>
+            <a href="#"><img class="" src="../assets/img/loginico.png" alt="Imagem usuário"></a>
+        </div>
     </div>
-</div>
 </template>
 
-<style>
-
-</style>
+<style></style>
