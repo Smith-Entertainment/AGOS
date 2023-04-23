@@ -8,7 +8,8 @@ export default {
     <header class="row">
         <div class="container" id="nav-container">
             <div class="col-5">
-                <a href="Obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand" id="logo"></a>
+                <a href="Obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand"
+                        id="logo"></a>
             </div>
             <div class="col-md-8">
                 <nav class="navbar navbar-expand-md"> <!--fixed-top?-->
@@ -27,17 +28,47 @@ export default {
             <div class="col-5">
                 <h4>Usuário</h4>
                 <a href="#" class="">Sair</a>
-                <a href="#"><img src="../assets/img/loginico.png" alt="Imagem usuário" width="100"></a>
+                <a href="#"><img src="../assets/img/loginico.png" alt="Imagem usuário" width="100" id="imagem-usuario"></a>
             </div>
         </div>
     </header>
 </template>
 <style>
-header {
-    background-color: rgb(0, 255, 225);
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
+.container {
+    padding: 80px 0;
 }
 
-.col-md-8 {
-    border: 2px solid black;
+header {
+    background-color: #FFFFFF;
+    color: #202020;
+    font-family: 'Caladea', serif;
+}
+
+nav a {
+    color: #202020;
+    text-decoration: none;
+
+}
+
+header a {
+    color: #202020;
+    font-size: 1.5rem;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 300px;
+    height: auto;
+}
+
+#imagem-usuario {
+    width: 50px;
+    height: auto;
 }
 </style>

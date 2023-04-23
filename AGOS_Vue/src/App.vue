@@ -12,10 +12,10 @@
 
 <template>
   <header>
+    <Header />
   </header>
 
   <main>
-    <Header />
     <Lista />
   </main>
 </template>
