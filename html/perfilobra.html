@@ -8,288 +8,156 @@
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
     <link rel="stylesheet" href="../css/perfilobra.css">
     <link rel="stylesheet" href="../css/padrao.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        
-
+    <link rel="Shortcut Icon" type="image/png" href="../img/iconObs.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
+    <!-- HEADER -->
     <header></header>
+    <!-- FIM HEADER -->
 
-    <article>
-
-        <section>
-            <div class="conteudo" id="conteudo">
-                <div class="img">
-                    <img class="obra" src="../img/sem_foto.png" alt="Foto Obra">
-                </div>
-                <section class="desc">
-                    <section class="desc1">
-                        <h3>Nome do Projeto</h3>
-                        <h4>Endereço:</h4>
-                        <h4>Data do certame:</h4>
-                        <h4>Empresa contratada:</h4>
-                        <h4>Data de Inicio:</h4>
-                    </section>
-
-                    <section class="desc2">
-
-                        <h4>Empresa contratada:</h4>
-                        <h4>Data de Inicio:</h4>
-                        <h4>Valor do edital:</h4>
-                        <h4>Valor contratado:</h4>
-                    </section>
-
-                    <div class="part">
-                        <img class="config" src="../img/eng.png" alt="configurações">
-                        <button id="btp">Participar</button>
-                    </div>
+    <section>
+        <div class="conteudo" id="conteudo">
+            <div class="img">
+                <img class="obra" src="../img/sem_foto.png" alt="Foto Obra">
+            </div>
+            <section class="desc">
+                <section class="desc1">
+                    <h3>Nome do Projeto</h3>
+                    <h4>Endereço:</h4>
+                    <h4>Data do certame:</h4>
+                    <h4>Objetivo</h4>
+                    <h4>Licitação</h4>
+                    <h4>Empresa contratada:</h4>
+                    <h4>Data de Inicio:</h4>
                 </section>
-            </div>
-        </section>
 
-        <!--NAV BAR-->
-        <nav>
-            <div class="lista"><a href=""></a>
-                <a class="aba">Cronograma</a>
-                <a class="aba" id="btn-grafico">Graficos</a>
-                <a class="aba">Fotos</a>
-                <a class="aba">Projetos</a>
-                <a class="aba">Relatorios</a>
-                <a class="aba">Documentos</a>
-            </div>
-        </nav>
-        </section>
+                <section class="desc2">
+                    
+                    <h4>Empresa contratada:</h4>
+                    <h4>Data de Inicio:</h4>
+                    <h4>Numero do contrato</h4>
+                    <h4>Valor do edital:</h4>
+                    <h4>Valor contratado:</h4>
+                </section>
 
-        <!--CRONOGRAMAS-->
-        <section id="cronogramas">
-            <div id="botoes_cronog">
-                <button class="botao_duplo" id="btn_fisico">Físico</button>
-                <button class="botao_duplo" id="btn_financeiro">Financeiro</button>
-            </div>
-            <br>
+                <div class="part">
+                    <img class="config" src="../img/eng.png" alt="configurações">
+                    <button id="btp">Participar</button>
+                </div>
+            </section>
+        </div>
+    </section>
 
-            <div id=div_tabelas>
-                <table id="tabela">
-                    <thead>
-                        <tr id="linha-01">
-                            <th>Descrição <span class="material-symbols-outlined">build</span></th>
-                            <th class="contrato">
-                                <div class="header_mes"><span class="mes">Contrato</span><span>R$</span><span>%</span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="header_mes"><span
-                                        class="mes">Nov/20</span><span>Previsto</span><span>Realizado</span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="header_mes"><span
-                                        class="mes">Dez/20</span><span>Previsto</span><span>Realizado</span>
-                                </div>
-                            </th>
-                            <th>
-                                <div class="header_mes"><span
-                                        class="mes">Jan/21</span><span>Previsto</span><span>Realizado</span>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
+    <!--NAV BAR-->
+    <nav>
+        <div class="lista"><a href=""></a>
+            <a class="aba">Cronograma</a>
+            <a class="aba" id="btn-grafico">Graficos</a>
+            <a class="aba">Fotos</a>
+            <a class="aba">Projetos</a>
+            <a class="aba">Relatorios</a>
+            <a class="aba">Documentos</a>
+        </div>
+    </nav>
 
-                    <tr id="linha-02">
-                        <td>Serviços Gerais</td>
-                        <td class="contrato">
-                            <div class="data"><span>21505,06</span><span>1,28%</span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span>100%</span><span>40%</span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span></span><span>20%</span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span></span><span>20%</span></div>
-                        </td>
+    <!--CRONOGRAMAS-->
+    <section id="cronogramas">
+        <div id="botoes_cronog">
+            <button class="botao_duplo" id="btn_fisico">Físico</button>
+            <button class="botao_duplo" id="btn_financeiro">Financeiro</button>
+        </div>
+        <br>
+
+        <div id=div_tabelas>
+            <table>
+                <colgroup>
+                    <col span="2">
+                    <col span="2">
+                    <col span="2">
+                </colgroup>
+
+                <thead>
+                    <tr id="meses">
+                        <th rowspan="2">Descrição <span class="material-symbols-outlined">build</span></th>
+                        <th colspan="2">Contrato</th>
+                        <th colspan="2">Total</th>
+                    </tr>
+                    <tr id="legenda">
+                        <th>R$</th>
+                        <th>%</th>
+                        <th>Previsto</th>
+                        <th>Realizado</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th class="descricao" id="total_row">Total</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
 
-                    <tr id="linha-03">
-                        <td>Alvenaria paredes externas</td>
-                        <td class="contrato">
-                            <div class="data"><span>83309,05</span><span>4,96%</span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span></span><span></span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span>10%</span><span></span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span>50%</span><span></span></div>
-                        </td>
+                    <tr>
+                        <th class="descricao" id="totalA_row">Total Acumulado</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
 
-                    <tr id="linha-04">
-                        <td>Alvenaria paredes internas</td>
-                        <td class="contrato">
-                            <div class="data"><span>124465,66</span><span>7,40%</span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span></span><span></span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span>10%</span><span></span></div>
-                        </td>
-                        <td>
-                            <div class="data"><span>50%</span><span></span></div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+    <div id="obrasAcom">
+    </div>
 
+    <div id="obrasFin">
+    </div>
 
-
-        </section>
-        <div id="obrasAcom">
-
+    <!-- Fotos -->
+    <section id="Fotos">
+        <div class="aba_ft" id="user_ft">
+            <p>20/10/2022</p>          
+            <p>Fotos do Usuário 1</p>
         </div>
 
-        <div id="obrasFin">
-
+        <div id="ft_" class="ft_">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
         </div>
 
-        <!-- Fotos -->
-        <section id="Fotos">
+        <div class="aba_ft" id="user_ft">
+            <p>20/10/2022</p>          
+            <p>Fotos do Usuário 2</p> 
+        </div>
+            
+        <div id="ft_" class="ft_">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+            <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
+        </div>
+    </section>
 
-            <div class="aba_ft" id="user_ft">
-                <p>20/10/2022</p>
-                <p>Fotos do Usuário 1</p>
-            </div>
-            <div id="ft_" class="ft_">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-            </div>
-            <div class="aba_ft" id="user_ft">
-                <p>20/10/2022</p>
-                <p>Fotos do Usuário 2</p>
-            </div>
-            </div>
-            <div id="ft_" class="ft_">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-                <img src="../img/projeto 3.jfif" alt="" width="200vw" height="150vw">
-            </div>
-
-        </section>
-    </article>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript" src="../script/graficos.js"></script>
     <script src="../script/perfil_obra.js"></script>
+    <script src="../script/cronogramas.js"></script>
+    <script src="../script/header.js"></script>
 </body>
-
-<!--CRONOGRAMAS-->
-<section id="cronogramas">
-    <div id="botoes_cronog">
-        <button class="botao_duplo" id="btn_fisico">Físico</button>
-        <button class="botao_duplo" id="btn_financeiro">Financeiro</button>
-    </div>
-    <br>
-
-    <div id=div_tabelas>
-        <table id="tabela">
-            <thead>
-                <tr id="linha-01">
-                    <th>Descrição <span class="material-symbols-outlined">build</span></th>
-                    <th class="contrato">
-                        <div class="header_mes"><span class="mes">Contrato</span><span>R$</span><span>%</span></div>
-                    </th>
-                    <th>
-                        <div class="header_mes"><span
-                                class="mes">Nov/20</span><span>Previsto</span><span>Realizado</span></div>
-                    </th>
-                    <th>
-                        <div class="header_mes"><span
-                                class="mes">Dez/20</span><span>Previsto</span><span>Realizado</span></div>
-                    </th>
-                    <th>
-                        <div class="header_mes"><span
-                                class="mes">Jan/21</span><span>Previsto</span><span>Realizado</span></div>
-                    </th>
-                </tr>
-            </thead>
-
-            <tr id="linha-02">
-                <td>Serviços Gerais</td>
-                <td class="contrato">
-                    <div class="data"><span>21505,06</span><span>1,28%</span></div>
-                </td>
-                <td>
-                    <div class="data"><span>100%</span><span>40%</span></div>
-                </td>
-                <td>
-                    <div class="data"><span></span><span>20%</span></div>
-                </td>
-                <td>
-                    <div class="data"><span></span><span>20%</span></div>
-                </td>
-            </tr>
-
-            <tr id="linha-03">
-                <td>Alvenaria paredes externas</td>
-                <td class="contrato">
-                    <div class="data"><span>83309,05</span><span>4,96%</span></div>
-                </td>
-                <td>
-                    <div class="data"><span></span><span></span></div>
-                </td>
-                <td>
-                    <div class="data"><span>10%</span><span></span></div>
-                </td>
-                <td>
-                    <div class="data"><span>50%</span><span></span></div>
-                </td>
-            </tr>
-
-            <tr id="linha-04">
-                <td>Alvenaria paredes internas</td>
-                <td class="contrato">
-                    <div class="data"><span>124465,66</span><span>7,40%</span></div>
-                </td>
-                <td>
-                    <div class="data"><span></span><span></span></div>
-                </td>
-                <td>
-                    <div class="data"><span>10%</span><span></span></div>
-                </td>
-                <td>
-                    <div class="data"><span>50%</span><span></span></div>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-
-
-</section>
-<div id="obrasAcom">
-
-</div>
-
-<div id="obrasFin">
-
-</div>
-</article>
-<script src="../script/header.js"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="../script/graficos.js"></script>
-<script src="../script/perfil_obra.js"></script>
-</body>
-
 </html>

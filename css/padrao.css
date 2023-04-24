@@ -106,6 +106,7 @@ a:hover {
 #modal_menu {
     display: none;
     background-color: #A5CF3A;
+<<<<<<< HEAD
     position: fixed;
     overflow: auto;
     z-index: 1;
@@ -115,6 +116,11 @@ a:hover {
     border-radius: 0 0 15px 15px;
 }
 
+=======
+    width: 15vw;
+    height: 15vh;
+}
+>>>>>>> desenvolvimento
 /*--------------------------- End header -----------------------------*/
 @media screen and (max-width: 450px) {
 
@@ -174,18 +180,6 @@ a:hover {
     background-color: #A5CF3A;
     font-size: 1.2rem;
     width: 10vw;
-    text-align: center;
-}
-
-.btn_filtros {
-    height: 4.5vh;
-    font-size: 20px;
-    min-width: max-content;
-    border: 5px solid #A5CF3A;
-    border-radius: 15px;
-    background-color: #A5CF3A;
-    font-size: 1.2rem;
-    width: 7vw;
     text-align: center;
 }
 
