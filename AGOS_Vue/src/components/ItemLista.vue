@@ -7,13 +7,13 @@
 </script>
 
 <template>
-    <div class="container">
+    <div class="container border">
         <div class="row align-items-center justify-content-between">
             <img :src="obra.img" class="col-md-3 col-sm-6" alt="Foto Obra">
 
             <div class="col">
                 <div class="row">
-                    <h2>Nome: {{obra.nome}}</h2>
+                    <h2>{{obra.nome}}</h2>
                 </div>
                 
                 <div class="row">
