@@ -7,7 +7,7 @@
 </script>
 
 <template>
-    <div class="container border">
+    <div class="container border border-2 mt-4 rounded item-border">
         <div class="row align-items-center justify-content-between">
             <img :src="obra.img" class="col-md-3 col-sm-6" alt="Foto Obra">
 
@@ -35,5 +35,9 @@
 </template>
 
 <style>
+    .item-border:hover{
+        border-color: #A5CF3A !important;
 
+        cursor: pointer;
+    }
 </style>

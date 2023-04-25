@@ -1,5 +1,5 @@
 <script>
-    import ItemLista from './ItemLista.vue'
+    import ListItem from './ListItem.vue'
 
     export default{
         data(){
@@ -12,13 +12,13 @@
             }
         },
         components: {
-            ItemLista
+            ListItem
         }
     }
 </script>
 
 <template>
-    <ItemLista v-for="obra in obras" :key="obra.id" :obra="obra" />
+    <ListItem v-for="obra in obras" :key="obra.id" :obra="obra" />
 </template>
 
 <style>

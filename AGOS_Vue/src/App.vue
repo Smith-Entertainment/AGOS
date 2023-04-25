@@ -1,9 +1,9 @@
 <script>
-  import Lista from './components/Lista.vue'
+  import List from './components/List.vue'
 
   export default {
     components: {
-      Lista
+      List
     }
   }
 </script>
@@ -13,7 +13,7 @@
   </header>
 
   <main>
-    <Lista />
+    <List />
   </main>
 </template>
 
