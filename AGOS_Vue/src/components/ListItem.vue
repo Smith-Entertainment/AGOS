@@ -7,9 +7,9 @@
 </script>
 
 <template>
-    <div class="container border border-2 mt-4 rounded item-border">
+    <div class="container border border-2 mt-4 rounded rounded-5 overflow-hidden item-border">
         <div class="row align-items-center justify-content-between">
-            <img :src="obra.img" class="col-md-3 col-sm-6" alt="Foto Obra">
+            <img :src="obra.img" class="rounded col-3 m-2 image" alt="Foto Obra">
 
             <div class="col">
                 <div class="row">
@@ -35,6 +35,18 @@
 </template>
 
 <style>
+    .row{
+        height: 100%;
+    }
+
+    .image{
+        max-height: 180px;
+    }
+
+    .item-border{
+        height: 200px;
+    }
+
     .item-border:hover{
         border-color: #A5CF3A !important;
 
