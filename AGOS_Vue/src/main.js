@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import Index from './Index.vue'
 
 import "bootstrap/dist/css/bootstrap.css"
 
-createApp(App).mount('#app')
+createApp(Index).mount('#index')
 
 import "bootstrap/dist/js/bootstrap.js"
