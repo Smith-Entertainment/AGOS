@@ -18,8 +18,10 @@
 </script>
 
 <template>
+    <div>
     <ItemLista v-for="obra in obras" :key="obra.id" :obra="obra" />
     <button type="button" class="btn btn-success">Success</button>
+</div>
 </template>
 
 <style>

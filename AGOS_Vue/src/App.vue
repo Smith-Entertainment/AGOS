@@ -11,13 +11,16 @@
 </script>
 
 <template>
+  <div>
   <header>
     <Header />
   </header>
-
+  <div>
+</div>
   <main>
     <Lista />
   </main>
+</div>
 </template>
 
 <style scoped>
