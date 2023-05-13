@@ -4,7 +4,7 @@
       <section>
         <div class="conteudo" id="conteudo">
           <div class="img">
-            <img class="obra" src="../img/sem_foto.png" alt="Foto Obra">
+            <img class="obra" src="../assets/img/obra.png" alt="Foto Obra">
           </div>
           <section class="desc">
             <section class="desc1">
@@ -36,7 +36,7 @@
   </template>
  
   
-  <style scoped>
+  <style>
   .img {
     display: flex;
     align-items: center;
@@ -80,4 +80,4 @@
   .desc2 img {
     padding-left: 170px;
   }
-  
+</style>

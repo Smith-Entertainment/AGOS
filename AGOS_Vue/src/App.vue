@@ -1,15 +1,22 @@
-<script>
-  import Lista from './components/Lista.vue'
-  import Header from './components/Header.vue'
 
+<script>
+import PerfilObraInfo from './components/PerfilObraInfo.vue'
+import Header from './components/Header.vue'
+import PerfilObraNav from './components/PerfilObraNav.vue';
+import CadastroObra from './components/CadastroObra.vue';
   export default {
-    components: {
-      Lista,
-      Header
-    }
+   components: {
+    Header,
+    PerfilObraInfo,
+    PerfilObraNav,
+    CadastroObra
+}
   }
 </script>
 
+<style scoped>
+
+</style>
 <template>
   <div>
   <header>
@@ -18,10 +25,12 @@
   <div>
 </div>
   <main>
-    <Lista />
+  <CadastroObra/>
   </main>
+  
 </div>
 </template>
 
-<style scoped>
+<style>
+
 </style>
