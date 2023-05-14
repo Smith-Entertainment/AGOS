@@ -1,25 +1,24 @@
 <template>
   <article>
     <h2>Cadastro de Obras</h2>
-    <form @submit.prevent="cadastrarObra">
+    <form>
       <div class="coluna">
-        <input type="text" placeholder="Titulo" v-model="obra.titulo">
-        <input type="text" placeholder="Bairro" v-model="obra.bairro">
-        <input type="text" placeholder="Rua" v-model="obra.rua">
-        <input type="number" placeholder="Nº" v-model="obra.numero">
-        <input type="submit" value="Cadastrar" id="botao_cadastrar">
+        <input type="text" placeholder="Titulo" id="obratitulo">
+        <input type="text" placeholder="Bairro" id="obrabairro">
+        <input type="text" placeholder="Rua" id="obrarua">
+        <input type="number" placeholder="Nº" id="obranumero">
+          <input type="button" value="Cadastrar" id="botao_cadastrar">
       </div>
 
       <div class="coluna">
-        <input type="text" placeholder="Objeto" v-model="obra.objeto">
-        <input type="date" placeholder="Data do certame" v-model="obra.dataCertame">
-        <input type="text" placeholder="Valor do edital" v-model="obra.valorEdital">
-        <select name="tipoObra" v-model="obra.tipoObra">
+        <input type="text" placeholder="Objetivo" id="obraobjetivo">
+        <input type="date" placeholder="Data do certame" id="obracertame">
+        <input type="text" placeholder="Valor do edital" id="obravalorEdital">
+        <select name="tipoObra" id="obratipoObra">
           <option disabled selected>Tipo de obra</option>
-          <option>Tipo 1</option>
-          <option>Tipo 2</option>
-          <option>Tipo 3</option>
-          <option>Tipo 4</option>
+          <option>SAUDE</option>
+          <option>INFRESTRUTURA</option>
+          <option>EDUCACAO</option>
         </select>
         <input type="reset" value="Limpar" id="botao_limpar">
       </div>
@@ -28,43 +27,57 @@
 </template>
 
 <script>
-export default {
-data() {
-  return {
-    obra: {
-      titulo: '',
-      bairro: '',
-      rua: '',
-      numero: null,
-      objeto: '',
-      dataCertame: '',
-      valorEdital: '',
-      tipoObra: ''
-    }
-  };
-},
-methods: {
-  cadastrarObra() {
-    fetch('http://localhost:9000/api/obra', {
-      method: 'POST',
-      mode: 'no-cors', // Adicionando o modo no-cors
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(this.obra)
+function cadastrarObra() {
+  const ititulo = document.querySelector("#obratitulo");
+  const ibairro = document.querySelector("#obrabairro");
+  const irua = document.querySelector("#obrarua");
+  const iN = document.querySelector("#obranumero");
+  const iobjetivo = document.querySelector("#obraobjetivo");
+  const idatac = document.querySelector("#obracertame");
+  const ivaloredital = document.querySelector("#obravalorEdital");
+  const itipoobra = document.querySelector("#obratipoObra");
+
+  console.log(ititulo.value);
+  console.log(ibairro.value);
+  console.log(irua.value);
+  console.log(iN.value);
+  console.log(iobjetivo.value);
+  console.log(idatac.value);
+  console.log(ivaloredital.value);
+  console.log(itipoobra.value);
+
+  fetch("http://localhost:9000/api/obra", {
+    headers: {
+      'Accept': 'application/json',
+      'Content-type': 'application/json'
+    },
+    method: "POST",
+    body: JSON.stringify({
+      
+      "titulo": ititulo.value,
+        "objetivo": iobjetivo.value,
+        "dataCertame": idatac.value,
+        "valorEdital": ivaloredital.value,
+        "bairro": ibairro.value,
+        "rua": irua.value,
+        "numero": 26,
+        "tipoObra": itipoobra.value
+    
     })
-      .then(() => {
-        console.log('Cadastro realizado com sucesso!');
-        // Resto do código de manipulação (se necessário)
-      })
-      .catch(error => {
-        console.error('Erro ao cadastrar:', error);
-        // Resto do código de manipulação de erro
-      });
-  }
-}
+  })
+  .then(function(res) {
+    console.log(res);
+  })
+  .catch(function(res) {
+    console.log(res);
+  })
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cadastrarBtn = document.getElementById("botao_cadastrar");
+  cadastrarBtn.addEventListener("click", cadastrarObra);
+});
 
 </script>
   <style>
