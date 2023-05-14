@@ -20,7 +20,6 @@ import CadastroObra from './components/CadastroObra.vue';
 <template>
   
   <div>
-    <router-view/>
   <header>
     
     <Header />
@@ -32,7 +31,8 @@ import CadastroObra from './components/CadastroObra.vue';
   <router-link :to="{name: 'PerfilObra'}">PerfilObra</router-link> <br>
   <router-link :to="{name: 'ListaObra'}">ListaObra</router-link>
   </main>
-  
+  <router-view/>
+
 </div>
 </template>
 
