@@ -1,15 +1,8 @@
-
 <script>
-import PerfilObraInfo from './components/PerfilObraInfo.vue'
 import Header from './components/Header.vue'
-import PerfilObraNav from './components/PerfilObraNav.vue';
-import CadastroObra from './components/CadastroObra.vue';
   export default {
    components: {
-    Header,
-    PerfilObraInfo,
-    PerfilObraNav,
-    CadastroObra
+    Header
 }
   }
 </script>
@@ -27,7 +20,7 @@ import CadastroObra from './components/CadastroObra.vue';
   <div>
 </div>
   <main>
-  <CadastroObra/>
+  <router-link :to="{name: 'CadastroObra'}">CadastroObra</router-link> <br>
   <router-link :to="{name: 'PerfilObra'}">PerfilObra</router-link> <br>
   <router-link :to="{name: 'ListaObra'}">ListaObra</router-link>
   </main>
