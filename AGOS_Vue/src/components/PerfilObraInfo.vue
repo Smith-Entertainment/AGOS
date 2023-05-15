@@ -26,7 +26,6 @@
             </section>
   
             <div class="part">
-              <img class="config" src="../img/eng.png" alt="configurações">
               <button id="btp">Participar</button>
             </div>
           </section>

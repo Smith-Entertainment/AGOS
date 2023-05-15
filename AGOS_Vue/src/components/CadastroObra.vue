@@ -55,13 +55,13 @@ function cadastrarObra() {
     body: JSON.stringify({
       
       "titulo": ititulo.value,
-        "objetivo": iobjetivo.value,
-        "dataCertame": idatac.value,
-        "valorEdital": ivaloredital.value,
-        "bairro": ibairro.value,
-        "rua": irua.value,
-        "numero": 26,
-        "tipoObra": itipoobra.value
+      "objetivo": iobjetivo.value,
+      "dataCertame": idatac.value,
+      "valorEdital": ivaloredital.value,
+      "bairro": ibairro.value,
+      "rua": irua.value,
+      "numero": iN.value,
+      "tipoObra": itipoobra.value
     
     })
   })

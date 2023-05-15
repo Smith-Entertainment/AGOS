@@ -1,9 +1,10 @@
 <script>
-import Header from './components/Header.vue'
+  import Header from './components/Header.vue'
+
   export default {
-   components: {
-    Header
-}
+    components: {
+      Header
+  }
   }
 </script>
 
@@ -14,17 +15,19 @@ import Header from './components/Header.vue'
   
   <div>
   <header>
-    
     <Header />
   </header>
   <div>
 </div>
+
   <main>
   <router-link :to="{name: 'CadastroObra'}">CadastroObra</router-link> <br>
   <router-link :to="{name: 'PerfilObra'}">PerfilObra</router-link> <br>
   <router-link :to="{name: 'ListaObra'}">ListaObra</router-link>
-  </main>
+
   <router-view/>
+  </main>
+  
 
 </div>
 </template>
