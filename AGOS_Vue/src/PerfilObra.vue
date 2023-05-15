@@ -1,6 +1,5 @@
 <template>
     <div>
-<Header/>
     </div>
     <main><PerfilObraInfo/><PerfilObraNav/></main>
  
