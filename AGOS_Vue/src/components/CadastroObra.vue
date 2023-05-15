@@ -1,33 +1,15 @@
-<template>
-  <article>
-    <h2>Cadastro de Obras</h2>
-    <form>
-      <div class="coluna">
-        <input type="text" placeholder="Titulo" id="obratitulo">
-        <input type="text" placeholder="Bairro" id="obrabairro">
-        <input type="text" placeholder="Rua" id="obrarua">
-        <input type="number" placeholder="Nº" id="obranumero">
-          <input type="button" value="Cadastrar" id="botao_cadastrar">
-      </div>
 
-      <div class="coluna">
-        <input type="text" placeholder="Objetivo" id="obraobjetivo">
-        <input type="date" placeholder="Data do certame" id="obracertame">
-        <input type="text" placeholder="Valor do edital" id="obravalorEdital">
-        <select name="tipoObra" id="obratipoObra">
-          <option disabled selected>Tipo de obra</option>
-          <option>SAUDE</option>
-          <option>INFRESTRUTURA</option>
-          <option>EDUCACAO</option>
-        </select>
-        <input type="reset" value="Limpar" id="botao_limpar">
-      </div>
-    </form>
-  </article>
-</template>
 
 <script>
-function cadastrarObra() {
+export default{
+mounted() {
+  
+  const cadastrarBtn = document.getElementById("botao_cadastrar");
+      cadastrarBtn.addEventListener("click", this.cadastrarObra);
+  },
+methods: {
+ cadastrarObra(event) {
+  event.preventDefault();
   const ititulo = document.querySelector("#obratitulo");
   const ibairro = document.querySelector("#obrabairro");
   const irua = document.querySelector("#obrarua");
@@ -55,13 +37,13 @@ function cadastrarObra() {
     body: JSON.stringify({
       
       "titulo": ititulo.value,
-      "objetivo": iobjetivo.value,
-      "dataCertame": idatac.value,
-      "valorEdital": ivaloredital.value,
-      "bairro": ibairro.value,
-      "rua": irua.value,
-      "numero": iN.value,
-      "tipoObra": itipoobra.value
+        "objetivo": iobjetivo.value,
+        "dataCertame": idatac.value,
+        "valorEdital": ivaloredital.value,
+        "bairro": ibairro.value,
+        "rua": irua.value,
+        "numero": 26,
+        "tipoObra": itipoobra.value
     
     })
   })
@@ -71,15 +53,39 @@ function cadastrarObra() {
   .catch(function(res) {
     console.log(res);
   })
-}
+}}};
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  const cadastrarBtn = document.getElementById("botao_cadastrar");
-  cadastrarBtn.addEventListener("click", cadastrarObra);
-});
 
 </script>
+
+<template>
+  <article>
+    <h2>Cadastro de Obras</h2>
+    <form>
+      <div class="coluna">
+        <input type="text" placeholder="Titulo" id="obratitulo">
+        <input type="text" placeholder="Bairro" id="obrabairro">
+        <input type="text" placeholder="Rua" id="obrarua">
+        <input type="number" placeholder="Nº" id="obranumero">
+          <input type="button" value="Cadastrar" id="botao_cadastrar">
+      </div>
+
+      <div class="coluna">
+        <input type="text" placeholder="Objetivo" id="obraobjetivo">
+        <input type="date" placeholder="Data do certame" id="obracertame">
+        <input type="text" placeholder="Valor do edital" id="obravalorEdital">
+        <select name="tipoObra" id="obratipoObra">
+          <option disabled selected>Tipo de obra</option>
+          <option>SAUDE</option>
+          <option>INFRAESTRUTURA</option>
+          <option>EDUCACAO</option>
+        </select>
+        <input type="reset" value="Limpar" id="botao_limpar">
+      </div>
+    </form>
+  </article>
+</template>
+
   <style>
   h2 {
     text-align: center;
