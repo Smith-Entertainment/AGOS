@@ -1,20 +1,17 @@
 <script>
-  import Lista from './components/Lista.vue'
-  import btnHeaderCronograma from './components/components-cronograma/btn-cronograma.vue'
+  import Header from './components/components-cronograma/Header-Obra/Header-obra.vue'
 
   export default {
     components: {
-      Lista,
-      btnHeaderCronograma
+      Header
+    
     }
   }
 </script>
+  
 
 <template>
-  <main>
-    <btnHeaderCronograma/>
-  </main>
+<div><Header/></div>
+
 </template>
 
-<style scoped>
-</style>
