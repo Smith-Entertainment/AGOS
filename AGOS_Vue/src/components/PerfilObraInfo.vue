@@ -35,7 +35,7 @@
   </template>
  
   
-  <style>
+  <style scoped>
   .img {
     display: flex;
     align-items: center;

@@ -22,6 +22,6 @@
     <ListItem v-for="obra in obras" :key="obra.id" :obra="obra" />
 </template>
 
-<style>
+<style scoped>
 
 </style>

@@ -33,7 +33,7 @@ export default {
         </div>
     </header>
 </template>
-<style>
+<style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
 header {

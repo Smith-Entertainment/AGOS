@@ -21,7 +21,7 @@
           <input class="rounded" type="search" placeholder="Buscar...">
         </div>
 
-        <div class="col justify-content-center">
+        <div class="col">
           <span class="material-symbols-outlined">filter_alt</span>
           <a href="#"><button class="rounded">Adicionar</button></a>
         </div>
@@ -31,5 +31,5 @@
   </main>
 </template>
 
-<style>
+<style scoped>
 </style>

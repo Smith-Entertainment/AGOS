@@ -86,7 +86,7 @@ methods: {
   </article>
 </template>
 
-  <style>
+  <style scoped>
   h2 {
     text-align: center;
     font-size: 36px;

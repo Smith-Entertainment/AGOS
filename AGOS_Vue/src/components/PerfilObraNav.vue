@@ -11,7 +11,7 @@
         </div>
     </nav>
 </template>
-<style>
+<style scoped>
 .lista {
     font-size: 20px;
     display: flex;
