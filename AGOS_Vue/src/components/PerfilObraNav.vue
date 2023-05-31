@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 5vh 0 5vh 20vw;
+    margin: 5vh 0vh 5vh 0vw;
   }
   
   .part {

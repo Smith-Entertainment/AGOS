@@ -36,47 +36,77 @@
  
   
   <style scoped>
-  .img {
+
+.img{
     display: flex;
     align-items: center;
-  }
-  
-  .obra {
+}
+.obra{
     height: 300px;
+
+}
+
+#btp {
+    background-color: #A5CF3A;
+    border-style: none;
+    width: 200px;
+    height: 80px;
+    margin-bottom: 2vw;
   }
-  
-  body {
-    font-family: 'Caladea';
-    font-weight: 400;
-  }
-  
-  .header {
+
+.desc2 img{
+    padding-left: 170px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo{
+    font-size: 18px;
+    padding: 2px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 15vw;
-  }
-  
-  .usuario {
+    justify-content: space-around;
+    
+    
+}
+.desc{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 5%;
-  }
-  
-  .us {
+    gap: 10vw;
+}
+.desc1{
     display: flex;
     flex-direction: column;
+}
+
+.desc1 h3{
+    margin-top: 4vh;
+}
+
+.desc1 h4{
+    margin-top: 4vh;
+}
+.desc2{
+    padding-top: 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desc2 h4{
+    margin-top: 4vh;
+}
+
+
+
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
-  }
-  
-  .config {
-    height: 30px;
-    width: 30px;
-  }
-  
-  .desc2 img {
-    padding-left: 170px;
-  }
+    
+}
+
 </style>
