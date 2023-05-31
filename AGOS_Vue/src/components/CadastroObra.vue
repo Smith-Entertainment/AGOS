@@ -12,6 +12,7 @@ methods: {
   event.preventDefault();
   const ititulo = document.querySelector("#obratitulo");
   const ibairro = document.querySelector("#obrabairro");
+  const ilicitacao = document.querySelector("#obralicitacao");
   const irua = document.querySelector("#obrarua");
   const iN = document.querySelector("#obranumero");
   const iobjetivo = document.querySelector("#obraobjetivo");
@@ -41,6 +42,7 @@ methods: {
         "dataCertame": idatac.value,
         "valorEdital": ivaloredital.value,
         "bairro": ibairro.value,
+        "licitacao": ilicitacao.value,
         "rua": irua.value,
         "numero": 26,
         "tipoObra": itipoobra.value
@@ -65,9 +67,10 @@ methods: {
       <div class="coluna">
         <input type="text" placeholder="Titulo" id="obratitulo">
         <input type="text" placeholder="Bairro" id="obrabairro">
+        <input type="text" placeholder="Licitação" id="obralicitacao">
         <input type="text" placeholder="Rua" id="obrarua">
         <input type="number" placeholder="Nº" id="obranumero">
-          <input type="button" value="Cadastrar" id="botao_cadastrar">
+        <input type="button" value="Cadastrar" id="botao_cadastrar">
       </div>
 
       <div class="coluna">
@@ -79,7 +82,7 @@ methods: {
           <option>SAUDE</option>
           <option>INFRAESTRUTURA</option>
           <option>EDUCACAO</option>
-        </select>
+        </select> 
         <input type="reset" value="Limpar" id="botao_limpar">
       </div>
     </form>
