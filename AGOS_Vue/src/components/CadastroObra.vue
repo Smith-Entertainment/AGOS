@@ -66,8 +66,8 @@ methods: {
     <form>
       <div class="coluna">
         <input type="text" placeholder="Titulo" id="obratitulo">
-        <input type="text" placeholder="Bairro" id="obrabairro">
         <input type="text" placeholder="Licitação" id="obralicitacao">
+        <input type="text" placeholder="Bairro" id="obrabairro">
         <input type="text" placeholder="Rua" id="obrarua">
         <input type="number" placeholder="Nº" id="obranumero">
         <input type="button" value="Cadastrar" id="botao_cadastrar">
