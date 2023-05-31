@@ -127,7 +127,7 @@ return this.items.reduce((total, item) => total + item.realizado, 0);
 };
 </script>
 
-<style>
+<style scoped>
 .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
