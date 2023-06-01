@@ -21,10 +21,6 @@
 </div>
 
   <main>
-  <router-link :to="{name: 'CadastroObra'}">CadastroObra</router-link> <br>
-  <router-link :to="{name: 'PerfilObra'}">PerfilObra</router-link> <br>
-  <router-link :to="{name: 'ListaObra'}">ListaObra</router-link>
-
   <router-view/>
   </main>
   

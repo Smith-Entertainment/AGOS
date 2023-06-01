@@ -23,7 +23,7 @@
 
         <div class="col">
           <span class="material-symbols-outlined">filter_alt</span>
-          <a href="#"><button class="rounded">Adicionar</button></a>
+          <a href="/cadastro-obra"><button class="rounded">Adicionar</button></a>
         </div>
       </div>
     </div>

@@ -19,9 +19,12 @@
 </script>
 
 <template>
-    <ListItem v-for="obra in obras" :key="obra.id" :obra="obra" />
+    <a href="perfil-obra"><ListItem v-for="obra in obras" :key="obra.id" :obra="obra" /></a>
 </template>
 
 <style scoped>
-
+    a {
+        color: #202020;
+        text-decoration: none;
+    }
 </style>

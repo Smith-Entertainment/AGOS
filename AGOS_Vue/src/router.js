@@ -3,9 +3,10 @@ import PerfilObra from './PerfilObra.vue';
 import ListaObra from './ListaObra.vue';
 import CadastroObra from './components/CadastroObra.vue';
 const routes = [
-  { path: '/PerfilObra', name: 'PerfilObra', component: PerfilObra },
-  { path: '/ListaObra', name: 'ListaObra', component: ListaObra },
-  { path: '/CadastroObra', name: 'CadastroObra', component: CadastroObra }
+  { path: '/', name: 'home', redirect: {name: ListaObra} },
+  { path: '/perfil-obra', name: 'PerfilObra', component: PerfilObra },
+  { path: '/lista-obra', name: 'ListaObra', component: ListaObra },
+  { path: '/cadastro-obra', name: 'CadastroObra', component: CadastroObra }
 ];
 
 const router = createRouter({
