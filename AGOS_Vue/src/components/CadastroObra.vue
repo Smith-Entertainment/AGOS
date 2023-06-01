@@ -29,7 +29,7 @@ methods: {
   console.log(ivaloredital.value);
   console.log(itipoobra.value);
 
-  fetch("http://localhost:9000/api/obra", {
+  fetch("http://localhost:8080/api/obra", {
     headers: {
       'Accept': 'application/json',
       'Content-type': 'application/json'

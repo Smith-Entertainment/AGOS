@@ -8,7 +8,7 @@
             }
         },
         created(){
-            fetch("http://localhost:9000/api/obra/lista")
+            fetch("http://localhost:8080/api/obra/lista")
                 .then(response => {response.json().then(data => {this.obras = data})})
                 .catch(error => {console.log(error)})
         },

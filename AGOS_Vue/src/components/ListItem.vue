@@ -21,14 +21,14 @@
                 <div class="row">
                     <div class="col">
                         <p>Objeto: {{obra.objetivo}}</p>
-                        <p>Endereço: {{obra.rua}} {{obra.numero}}</p>
-                        <p>Nº do Contrato: {{obra.id}}</p>
+                        <p>Endereço: {{obra.rua}} {{obra.numero}}, {{obra.bairro}}</p>
+                        <p>Licitação: {{obra.licitacao}}</p>
                     </div>
 
                     <div class="col">
-                        <p>Data de Inicio: {{obra.dataCertame}}</p>
-                        <p>Data de Termino Previsto: {{obra.dataCertame}}</p>
-                        <p>Valor do Contrato: R${{obra.valorEdital}}</p>
+                        <p>Data do Certame: {{obra.dataCertame}}</p>
+                        <p>Valor do Edital: R$ {{obra.valorEdital}}</p>
+                        <p>Tipo: {{obra.tipoObra}}</p>
                     </div>
                 </div>
             </div>
