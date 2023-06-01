@@ -1,6 +1,7 @@
 
-
 <script>
+
+
 export default{
 mounted() {
   
@@ -47,15 +48,19 @@ methods: {
         "numero": 26,
         "tipoObra": itipoobra.value
     
-    })
+    }) 
   })
   .then(function(res) {
     console.log(res);
-  })
+    const obraId = res.data.id;
+    self.$router.push(`/obra/${obraId}`);
+})
+
   .catch(function(res) {
     console.log(res);
   })
-}}};
+}}
+};
 
 
 </script>
@@ -75,7 +80,7 @@ methods: {
 
       <div class="coluna">
         <input type="text" placeholder="Objetivo" id="obraobjetivo">
-        <input type="date" placeholder="Data do certame" id="obracertame">
+        <input type="text" placeholder="Data do certame" id="obracertame" onfocus="(this.type='date')" onblur="(this.type='text')">
         <input type="text" placeholder="Valor do edital" id="obravalorEdital">
         <select name="tipoObra" id="obratipoObra">
           <option disabled selected>Tipo de obra</option>
@@ -83,6 +88,8 @@ methods: {
           <option>INFRAESTRUTURA</option>
           <option>EDUCACAO</option>
         </select> 
+        <input type="file" id="imagemObra" accept="image/*">
+
         <input type="reset" value="Limpar" id="botao_limpar">
       </div>
     </form>
