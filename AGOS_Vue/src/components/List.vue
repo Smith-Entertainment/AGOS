@@ -12,6 +12,11 @@
                 .then(response => {response.json().then(data => {this.obras = data})})
                 .catch(error => {console.log(error)})
         },
+        methods: {
+            redirect(obra){
+                this.$router.push(`/obra/${obra.id}`)
+            }
+        },
         components: {
             ListItem
         }
@@ -19,7 +24,7 @@
 </script>
 
 <template>
-    <a href="perfil-obra"><ListItem v-for="obra in obras" :key="obra.id" :obra="obra" /></a>
+    <ListItem v-for="obra in obras" :key="obra.id" :obra="obra" @click="redirect(obra)"/>
 </template>
 
 <style scoped>

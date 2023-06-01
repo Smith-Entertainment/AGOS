@@ -8,8 +8,7 @@ export default {
     <header class="row">
         <div class="container" id="nav-container">
             <div class="col-2">
-                <a href="/lista-obra"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand"
-                        id="logo"></a>
+                <a href="/lista-obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand" id="logo"></a>
             </div>
             <div class="col-3">
                 <nav class="navbar navbar-expand-md"> <!--fixed-top?-->
@@ -18,7 +17,7 @@ export default {
                         <span class="navbar-toggler-icon"></span></button> <!--botao menu mobile-->
                     <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                         <div class="navbar-nav">
-                            <a href="/lista-obra" class="nav-item nav-link" id="obras-menu">Obras</a>
+                            <a href="/lista-obras" class="nav-item nav-link" id="obras-menu">Obras</a>
                             <a class="nav-item nav-link" id="usuario-menu">Usuários</a>
                             <a class="nav-item nav-link" id="relatorio-menu">Relatorios</a>
                         </div>
