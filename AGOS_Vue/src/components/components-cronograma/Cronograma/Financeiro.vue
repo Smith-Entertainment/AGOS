@@ -1,70 +1,125 @@
-
 <template>
   <div>
-
-  <Item/>
-  <Data/>
-  <table>
-  <tr>
-    <th>Período</th>
-  </tr>
-  <tr>
-    <td v-for="periodo in periodos" :key="periodo.id" class="periodo-cell">
-      {{ periodo.nomeMes }} {{ periodo.ano }}
-    </td>
-  </tr>
-</table>
-
+    <table class="table styled-table">
+      <tr>
+        <td><Data/></td>
+        <td v-for="periodo in periodos" :key="periodo.id" class="periodo-cell">
+          <div class="centered">{{ periodo.nomeMes }} {{ periodo.ano }}</div>
+          <th>Previsto</th>
+          <th>Realizado</th>
+        </td>
+      </tr>
+      <tr>
+        <td><Item/></td>
+      </tr>
+      <tr v-for="item in items" :key="item.id" class="item-cell">
+        <td class="centered">{{ item.nome }} </td>
+      </tr>
+    </table>
   </div>
-  </template>
-  
-  <script>
-  import Data from "./cadastro-inicio-termino.vue"
-  import Item from './cadastro-item.vue'
+</template>
+
+<script>
+import Data from "./cadastro-inicio-termino.vue";
+import Item from './cadastro-item.vue';
 
 export default {
-    components: {
-      Item,
-      Data
-    
+  components: {
+    Item,
+    Data
+  },
+  data() {
+    return {
+      periodos: [],
+      items: [],
+    };
+  },
+  mounted() {
+    this.buscarPeriodos();
+    this.buscarItems();
+  },
+  methods: {
+    buscarPeriodos() {
+      const url = 'http://localhost:8080/obra/periodo/lista';
+
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          this.periodos = data;
+        })
+        .catch(error => {
+          console.error('Erro ao buscar os períodos da obra:', error);
+        });
     },
-    data() {
-  return {
-    periodos: [] 
-  }
-},
-mounted() {
-  this.buscarPeriodos();
-},
+    buscarItems() {
+      const url = 'http://localhost:8080/obra/item/lista';
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          this.items = data;
+        })
+        .catch(error => {
+          console.error('Erro ao buscar os itens da obra:', error);
+        });
+    },
+    atualizarDadosPeriodicamente() {
+      setInterval(() => {
+        this.buscarPeriodos();
+        this.buscarItems();
+      }, 5000); // Define um intervalo de 5 segundos para atualizar os dados (ajuste conforme necessário)
+    },
+  },
+};
+</script>
 
-methods: {
-  buscarPeriodos() {
-    const url = 'http://localhost:8080/obra/periodo/lista';
+<style scoped>
+.styled-table {
+  margin: 25px 0;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: 8px;
+}
 
-    fetch(url)
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          throw new Error('Erro ao buscar os períodos');
-        }
-      })
-      .then(data => {
-        this.periodos = data; // Armazena os períodos na variável
-      })
-      .catch(error => {
-        alert('Erro ao buscar os períodos: ' + error.message);
-      });
-  }
-},
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+}
 
-    }
-    
-  </script>
-  
-  <style scoped>
+.styled-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
 .periodo-cell {
   display: inline-block;
-  margin-right: 10px; /* Espaçamento entre as células */
+  justify-content: center;
+  margin-right: 10px;
+  position: relative;
 }
+
+.periodo-cell .centered {
+  display: flex;
+  justify-content: center;
+}
+
+.item-cell td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-cell td:last-child {
+  border-bottom: none;
+}
+
+.item-cell td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
 </style>

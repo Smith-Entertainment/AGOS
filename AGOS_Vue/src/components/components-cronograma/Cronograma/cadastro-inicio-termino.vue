@@ -1,11 +1,11 @@
 <template>
     <div>
-      <button class="btn btn-outline-secondary" @click="exibirPopup">Datas</button>
+      <button class="btn btn-outline-secondary" @click="exibirPopup">PERIODO</button>
       <div class="overlay" v-if="exibir">
         <div id="popup" v-show="exibir" class="popup-container">
           <article>
-            <h5>Cadastro Datas</h5>
-            <h6>Cronograma</h6>
+            <h5>PERIODO DO</h5>
+            <h6>CRONOGRAMA</h6>
           </article>
           <form class="popup-form">
             <div class="form-group">
@@ -53,6 +53,7 @@
             .then(dadosObra => {
               dadosObra.dataInicio = this.dataInicio;
               dadosObra.dataTermino = this.dataTermino;
+              
     
               fetch('http://localhost:8080/api/obra/1', {
                 method: 'PUT',
@@ -73,10 +74,12 @@
                 })
                 .catch(error => {
                   console.error('Erro ao atualizar dados:', error);
+                  this.fecharPopup();
                 });
             })
             .catch(error => {
               console.error('Erro ao obter dados da obra:', error);
+              this.fecharPopup();
             });
         }
       }
@@ -84,6 +87,10 @@
     </script>
     
     <style scoped>
+    .btn{
+    width:150px;
+
+  }
   .overlay {
     position: fixed;
     top: 0;

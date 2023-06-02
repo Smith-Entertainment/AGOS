@@ -1,10 +1,10 @@
 <template>
     <div>
-      <button class="btn btn-outline-secondary" @click="exibirPopup">Itens</button>
+      <button class="btn btn-outline-secondary" @click="exibirPopup">DESCRIÇÃO</button>
       <div class="overlay" v-if="exibir">
         <div id="popup" v-show="exibir" class="popup-container">
           <article>
-            <h5>CADASTRO ITENS CRONOGRAMA</h5>
+            <h5>CADASTRO ITENS</h5>
            <br>
           </article>
           <form class="popup-form">
@@ -27,8 +27,7 @@ export default {
   data() {
     return {
       exibir: false,
-      dataInicio: '',
-      dataTermino: ''
+      nome: '',
     };
   },
   methods: {
@@ -39,27 +38,32 @@ export default {
       this.exibir = false;
     },
     salvar() {
-  const url = 'http://localhost:8080/obra/item';
-  const options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
+      const url = 'http://localhost:8080/obra/item';
+      const options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ nome: this.nome, obraId: {  id: 1  }}),
+      };
+
+      fetch(url, options)
+        .then(response => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Erro ao cadastrar o nome');
+          }
+        })
+        .then(data => {
+          alert('Nome cadastrado com sucesso: ' + data.nome);
+        })
+        .catch(error => {
+          alert('Erro ao cadastrar o nome: ' + error.message);
+        });
     },
-    body: JSON.stringify({ nome: this.nome })
-  };
-
-  fetch(url, options)
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      } else {
-        throw new Error('Erro ao cadastrar o nome');
-      }
-    })
-    }
-    }
+  },
 };
-
 
 
 </script>
@@ -100,7 +104,9 @@ export default {
     border-radius: 5px;
     padding: 20px;
   }
-
+  .btn{
+    width:150px;
+  }
 
 .popup-form {
   margin-bottom: 20px;
