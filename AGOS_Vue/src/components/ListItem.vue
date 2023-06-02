@@ -11,7 +11,7 @@
 <template>
     <div class="container border border-2 mt-4 rounded rounded-5 overflow-hidden item-border">
         <div class="row align-items-center justify-content-between">
-            <img :src="obra.img" class="rounded col-3 m-2 image" alt="Foto Obra"> 
+            <img src='../assets/img/sem_foto.png' class="rounded col-3 m-2 image" alt="Foto Obra"> 
 
             <div class="col">
                 <div class="row">

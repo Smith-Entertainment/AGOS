@@ -15,21 +15,22 @@ methods: {
   const ibairro = document.querySelector("#obrabairro");
   const ilicitacao = document.querySelector("#obralicitacao");
   const irua = document.querySelector("#obrarua");
-  const iN = document.querySelector("#obranumero");
+  const inumero = document.querySelector("#obranumero");
   const iobjetivo = document.querySelector("#obraobjetivo");
   const idatac = document.querySelector("#obracertame");
   const ivaloredital = document.querySelector("#obravalorEdital");
   const itipoobra = document.querySelector("#obratipoObra");
+  const iimagem = '../assets/img/sem_foto.png';
 
   console.log(ititulo.value);
   console.log(ibairro.value);
   console.log(irua.value);
-  console.log(iN.value);
+  console.log(inumero.value);
   console.log(iobjetivo.value);
   console.log(idatac.value);
   console.log(ivaloredital.value);
   console.log(itipoobra.value);
-
+  console.log(iimagem);
   fetch("http://localhost:8080/api/obra", {
     headers: {
       'Accept': 'application/json',
@@ -45,9 +46,9 @@ methods: {
         "bairro": ibairro.value,
         "licitacao": ilicitacao.value,
         "rua": irua.value,
-        "numero": 26,
-        "tipoObra": itipoobra.value
-    
+        "numero": inumero.value,
+        "tipoObra": itipoobra.value,
+        "imagem": iimagem.value
     }) 
   })
   .then(function(res) {
@@ -88,7 +89,7 @@ methods: {
           <option>INFRAESTRUTURA</option>
           <option>EDUCACAO</option>
         </select> 
-        <input type="file" id="imagemObra" accept="image/*">
+        
 
         <input type="reset" value="Limpar" id="botao_limpar">
       </div>

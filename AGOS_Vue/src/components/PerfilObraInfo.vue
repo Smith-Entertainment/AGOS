@@ -11,7 +11,7 @@ export default {
     <section>
       <div class="conteudo" id="conteudo">
         <div class="img">
-          <img class="obra" src="../assets/img/obra.png" alt="Foto Obra">
+          <img class="obra" src="../assets/img/sem_foto.png" alt="Foto Obra">
         </div>
         <section class="desc">
           <section class="desc1">
