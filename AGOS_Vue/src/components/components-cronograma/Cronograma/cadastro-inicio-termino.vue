@@ -1,6 +1,6 @@
 <template>
     <div>
-      <button class="btn btn-outline-secondary" @click="exibirPopup">PERIODO</button>
+      <button class="btn btn-edit btn-outline-secondary" @click="exibirPopup"><span>📅</span></button>
       <div class="overlay" v-if="exibir">
         <div id="popup" v-show="exibir" class="popup-container">
           <article>
@@ -75,8 +75,7 @@
     
     <style scoped>
     .btn{
-    width:150px;
-
+    width:50px;
   }
   .overlay {
     position: fixed;
@@ -133,6 +132,8 @@
   .text-center button{
     border-color: #8bbf32;
     color: black;
+    width:100px;
+
   } 
   .text-center button:hover{
     background-color: #8bbf32;
@@ -142,10 +143,19 @@
     margin: 10px;
     border-color: #ff0000;
     color: black;
+    width:100px;
   }
   .text-center :nth-child(2):hover{
     background-color: #bd3939;
     color: #fff;
+  }
+ .btn-edit{ 
+  border: none;
+}
+  .btn-edit:hover{
+    background-color: #a5cf3a;
+    border: none;
+
   }
   
     </style>
