@@ -1,90 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    
+    <link rel="Shortcut Icon" type="image/png" href="../img/iconObs.png">
     <link rel="stylesheet" href="../css/padrao.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-
-    <!– --------------------------- Inicio Header---------------------------- ->
-    <header>
-        <div class="container-header">
-            <picture class="container-header_logo">
-                <img src="../img/logo.png" alt="Logo Observatorio"
-                    class="logo">
-            </picture>
-
-            <nav>
-                <a href="../index.html">Obras</a>
-                <a href="listausuarios.html">Usuários</a>
-                <a href="relatorios.html">Relatorios</a>
-            </nav>
-            <div class="container-header_user">
-                <h4>Usuário</h4>
-                <a href="login.html" class="sair">Sair</a>
-                <a href="login.html"><img class="imguser"
-                        src="../img/loginico.png" alt="foto usuario"
-                        class="user"></a>
-            </div>
-        </div>
-    </header>
-    <!– --------------------------- End Header---------------------------- ->
+    <header></header>
 
     <article class="tudo">
 
         <br>
         <h2 class="textcad"> Cadastro</h2>
 
-          <form>
+        <form>
 
             <div class="esp">
 
-            <div class="colunas">
+                <div class="colunas">
 
-   <div class="coluna1">
-            <input class="nome" type="text" placeholder="Nome">
-            <input class="usu" type="text" placeholder="Usuario">
-            <input class="email" type="email" placeholder="Email">
-            <input class="sen" type="password" placeholder="Senha">
-   </div> 
-
-
-        
-   <div class="coluna2">
-            <input class="sobrenome" type="text" placeholder="Sobrenome">
-            <input class="cpf" type="number" placeholder="CPF">
-            <input class="tel" type="number" placeholder="Telefone">
-            <input class="conf" type="password" placeholder="Confirmar senha">
-
-  </div>
+                    <div class="coluna1">
+                        <input class="nome" type="text" placeholder="Nome">
+                        <input class="usu" type="text" placeholder="Usuario">
+                        <input class="email" type="email" placeholder="Email">
+                        <input class="sen" type="password" placeholder="Senha">
+                    </div>
 
 
- </div>
-            <div class="polit">
-            <p> Tem alguma filiação politica?</p>
-     </div>   
 
-<div>
+                    <div class="coluna2">
+                        <input class="sobrenome" type="text" placeholder="Sobrenome">
+                        <input class="cpf" type="number" placeholder="CPF">
+                        <input class="tel" type="number" placeholder="Telefone">
+                        <input class="conf" type="password" placeholder="Confirmar senha">
 
-         <div class="SN">
-            <label><input type="checkbox"> Sim</label>
-            <label><input type="checkbox"> Não</label>
-     </div>
-     </div>
-    <div class="botao">
-   <a href="login.html"><input class="logar" type="button" value="Cadastrar"></a> 
-   <a href="login.html"><input class="voltar" type="button" value="Voltar"></a> 
-  </div>
+                    </div>
 
-</div>
 
-</form>
+                </div>
+                <div class="polit">
+                    <p> Tem alguma filiação politica?</p>
+                </div>
 
- </article>
+                <div>
 
+                    <div class="SN">
+                        <label><input type="checkbox"> Sim</label>
+                        <label><input type="checkbox"> Não</label>
+                    </div>
+                </div>
+                <div class="botao">
+                    <a href="login.html"><input class="logar" type="button" value="Cadastrar"></a>
+                    <a href="login.html"><input class="voltar" type="button" value="Voltar"></a>
+                </div>
+
+            </div>
+
+        </form>
+
+    </article>
+    <script src="../script/header.js"></script>
 </body>
+
 </html>

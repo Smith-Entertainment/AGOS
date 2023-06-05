@@ -1,99 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
-        <link rel="stylesheet" href="../css/perfilobra-graficos.css">
-        <link rel="stylesheet" href="../css/padrao.css">
 
-    </head>
-    <body>
-        <header>
-            <div id="header_esq">
-                <img src="../img/logo.png" alt="Logo Observatorio" class="logo">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Obras</a></li>
-                        <li><a href="listausuarios.html">Usuarios</a></li>
-                        <li><a href="relatorios.html">Relatorios</a></li>
-                    </ul>
-                </nav>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet" href="../css/perfilobra-graficos.css">
+    <link rel="stylesheet" href="../css/padrao.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-            <div id="header_dir">
-                <div class="opc_user">
-                    <a href="perfilusuario.html"><p><b>Usuario</b></p></a>
-                    <a href="login.html"><p><i>Sair</i></p></a>
-                </div>
-                <img src="../img/loginico.png" alt="foto usuario"
-                    class="icone_header">
-            </div>
-        </header>
+</head>
 
-        <article>
+<body>
+    <header></header>
+    <article>
 
-            <section>
-                <div class="conteudo">
-                    <div class="img">
-                        <img class="obra" src="../img/sem_foto.png" alt="Foto
+        <section>
+            <div class="conteudo">
+                <div class="img">
+                    <img class="obra" src="../img/sem_foto.png" alt="Foto
                             Obra">
-                    </div>
-                    <section class="desc">
-                        <section class="desc1">
-                            <h3>Nome do Projeto</h3>
-                            <h4>Endereço:</h4>
-                            <h4>Data do certame:</h4>
-                            <h4>Empresa contratada:</h4>
-                            <h4>Data de Inicio:</h4>
-                        </section>
-
-                        <section class="desc2">
-
-                            <h4>Empresa contratada:</h4>
-                            <h4>Data de Inicio:</h4>
-                            <h4>Valor do edital:</h4>
-                            <h4>Valor contratado:</h4>
-
-
-                        </section>
-                        <div class="part">
-                            <img class="config" src="../img/eng.png"
-                                alt="configurações">
-                            <button id="btp">PARTICIPAR</button>
-                        </div>
-
+                </div>
+                <section class="desc">
+                    <section class="desc1">
+                        <h3>Nome do Projeto</h3>
+                        <h4>Endereço:</h4>
+                        <h4>Data do certame:</h4>
+                        <h4>Empresa contratada:</h4>
+                        <h4>Data de Inicio:</h4>
                     </section>
 
-                </div>
+                    <section class="desc2">
 
-            </section>
+                        <h4>Empresa contratada:</h4>
+                        <h4>Data de Inicio:</h4>
+                        <h4>Valor do edital:</h4>
+                        <h4>Valor contratado:</h4>
 
-            <section>
-                <nav>
-                    <div class="lista">
-                        <p>Cronograma</p>
-                        <a href="./graficos.html"><p class="aba-graficos">Graficos</p></a>
-                        <p>Fotos</p>
-                        <p>Projetos</p>
-                        <p>Relatorios</p>
-                        <p>Documentos</p>
+
+                    </section>
+                    <div class="part">
+                        <img class="config" src="../img/eng.png" alt="configurações">
+                        <button id="btp">PARTICIPAR</button>
                     </div>
-                </nav>
 
-                <div class="graficos">
+                </section>
 
-                    <div id="graficoPizza"></div>
+            </div>
 
-                    <div id="graficoPizza2"></div>
+        </section>
+
+        <section>
+            <nav>
+                <div class="lista">
+                    <p>Cronograma</p>
+                    <a href="./graficos.html">
+                        <p class="aba-graficos">Graficos</p>
+                    </a>
+                    <p>Fotos</p>
+                    <p>Projetos</p>
+                    <p>Relatorios</p>
+                    <p>Documentos</p>
                 </div>
-            </section>
+            </nav>
 
-        </article>
+            <div class="graficos">
 
-        <script type="text/javascript"
-            src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript" src="../script/gafricos.js"></script>
-    </body>
+                <div id="graficoPizza"></div>
+
+                <div id="graficoPizza2"></div>
+            </div>
+        </section>
+
+    </article>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="../script/graficos.js"></script>
+    <script src="../script/header.js"></script>
+</body>
+
 </html>

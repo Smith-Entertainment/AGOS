@@ -7,168 +7,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/listaUsuarios.css">
     <link rel="stylesheet" href="../css/padrao.css">
+    
+    <link rel="Shortcut Icon" type="image/png" href="../img/iconObs.png">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <!– --------------------------- Inicio Header---------------------------- ->
-            <header>
-                <div class="container-header">
-                    <picture class="container-header_logo">
-                        <img src="../img/logo.png" alt="Logo Observatorio"
-                            class="logo">
-                    </picture>
+    <header></header>
 
-                    <nav>
-                        <a href="../index.html">Obras</a>
-                        <a href="listausuarios.html">Usuários</a>
-                        <a href="relatorios.html">Relatorios</a>
-                    </nav>
-                    <div class="container-header_user">
-                        <h4>Usuário</h4>
-                        <a href="login.html" class="sair">Sair</a>
-                        <a href="login.html"><img class="imguser"
-                                src="../img/loginico.png" alt="foto usuario"
-                                class="user"></a>
-                    </div>
-                </div>
-            </header>
-            <!– --------------------------- End Header---------------------------- ->
+    <!– --------------------------- Inicio Busca---------------------------- ->
 
-            <!– --------------------------- Inicio Busca---------------------------- ->
-
-            <!-- BUSCA -->
-            <section class="container-busca">
-                <div class="container-busca_input">
-                    <input type="text" placeholder="Buscar..."
-                        class="input_busca">
-                </div>
-                <div class="container-busca_btn">
-                    <a href="../html/cadastro_obras.html"><button
-                            class="btnaddobra">Adicionar Obra</button></a>
-                    <button id="btnfiltro">Filtros</button>
-
-                </div>
-            </section>
-
-            <!-- JANELA DE FILTROS -->
-            <div id="janela_filtros">
-                <section id="header_janela">
-                    <input type="text" placeholder="Buscar..."
-                        class="input_busca">
-                    <span>&plus;</span>
-                    <span id="fechar">&times;</span>
-                </section>
-                <br>
-
-                <section class="display_filtros">
-                    <h3>Titulo</h3>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                </section>
-                <br>
-
-                <section class="display_filtros">
-                    <h3>Titulo</h3>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                    <button>Filtro</button>
-                </section>
+        <!-- BUSCA -->
+        <section class="container-busca">
+            <div class="container-busca_input">
+                <input type="text" placeholder="Buscar..." class="input_busca">
+            </div>
+            <div class="container-busca_btn">
+                <a href="../html/cadastro_obras.html"><button class="btn_adicionar">Adicionar Obra</button></a>
+                <button class="btn_filtros">Filtros</button>
 
             </div>
-            
-            <!– --------------------------- End Busca---------------------------- ->
-            <!– --------------------------- Inicio Lista Usuario----------------------------->
-            <section>
-                <a href="perfilusuario.html">
-                    <div class="container-usuario">
+        </section>
 
-                        <div class="container-img-usuario">
-                            <img src="../img/luis.jpg"
-                                class="usuario_img" alt="Foto
-                                usuario">
-                        </div>
+        <!-- JANELA DE FILTROS -->
+        <div id="janela_filtros">
+            <section id="header_janela">
+                <input type="text" placeholder="Buscar..." class="input_busca">
+                <span>&plus;</span>
+                <span id="fechar">&times;</span>
+            </section>
+            <br>
 
-                        <div class="objizq">
+            <section class="display_filtros">
+                <h3>Titulo</h3>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+            </section>
+            <br>
 
-                            <h3>Usuario: Luisr13</h3>
-                    <h3>Nome:Luis Rodriguez</h3>
-                    <h3>CPF: 801.720.159-10</h3>
-                    <h3>E-mail: luiserr1394@gmail.com</h3>
-                        </div>
-
-                        <div class="objdir">
-                            <br>
-                    <h3>Celular: (45) 991 539 849</h3>
-                    <h3>N de obras acompanhando: 3</h3>
-                    <h3>Nivel de acesso: Admin</h3>
-                        </div>
-
-                    </div>
-                </a>
-
-                <a href="perfilusuario.html">
-
-                    <div class="container-usuario">
-
-                        <div class="container-img-usuario">
-                            <img src="../img/alex.jpeg"
-                                class="usuario_img" alt="Foto
-                                usuario">
-                        </div>
-                        <div class="objizq">
-                            <h3>Usuario: Alex123</h3>
-                    <h3>Nome: Alex Biedermann</h3>
-                    <h3>CPF: 094.987.349-76</h3>
-                    <h3>E-mail: aalexplayer01@gmail.com</h3>
-                        </div>
-
-                        <div class="objdir">
-                            <br>
-                    <h3>Celular: (45) 984 175 554</h3>
-                    <h3>N de obras acompanhando: 2</h3>
-                    <h3>Nivel de acesso: Admin</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="perfilusuario.html">
-                    <div class="container-usuario">
-
-                        <div class="container-img-usuario">
-                            <img src="../img/andre.jpg"
-                                class="usuario_img" alt="Foto
-                                usuario">
-                        </div>
-
-                        <div class="objizq">
-                            <h3>Usuario: Andre5</h3>
-                    <h3>Nome: André mai </h3>
-                    <h3>CPF: 075.341.141-74</h3>
-                    <h3>E-mail: andremai1@gmail.com</h3>
-                        </div>
-
-                        <div class="objdir">
-                            <br>
-                    <h3>Celular: (45) 999 452 746</h3>
-                    <h3>N de obras acompanhando: 5</h3>
-                    <h3>Nivel de acesso: Admin</h3>
-                        </div>
-                    </div>
-                </a>
+            <section class="display_filtros">
+                <h3>Titulo</h3>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
+                <button>Filtro</button>
             </section>
 
-            <!– --------------------------- End Lista Usuario---------------------------- ->
-        <script src="../script/index.js"></script>
+        </div>
+
+        <!– --------------------------- End Busca---------------------------- ->
+            <!– --------------------------- Inicio Lista Usuario----------------------------->
+                <section>
+                    <a href="perfilusuario.html">
+                        <div class="container-usuario">
+
+                            <div class="container-img-usuario">
+                                <img src="../img/luis.jpg" class="usuario_img" alt="Foto
+                                usuario">
+                            </div>
+
+                            <div class="objizq">
+
+                                <h3>Usuario: Luisr13</h3>
+                                <h3>Nome:Luis Rodriguez</h3>
+                                <h3>CPF: 801.720.159-10</h3>
+                                <h3>E-mail: luiserr1394@gmail.com</h3>
+                            </div>
+
+                            <div class="objdir">
+                                <br>
+                                <h3>Celular: (45) 991 539 849</h3>
+                                <h3>N de obras acompanhando: 3</h3>
+                                <h3>Nivel de acesso: Admin</h3>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="perfilusuario.html">
+
+                        <div class="container-usuario">
+
+                            <div class="container-img-usuario">
+                                <img src="../img/alex.jpeg" class="usuario_img" alt="Foto
+                                usuario">
+                            </div>
+                            <div class="objizq">
+                                <h3>Usuario: Alex123</h3>
+                                <h3>Nome: Alex Biedermann</h3>
+                                <h3>CPF: 094.987.349-76</h3>
+                                <h3>E-mail: aalexplayer01@gmail.com</h3>
+                            </div>
+
+                            <div class="objdir">
+                                <br>
+                                <h3>Celular: (45) 984 175 554</h3>
+                                <h3>N de obras acompanhando: 2</h3>
+                                <h3>Nivel de acesso: Admin</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="perfilusuario.html">
+                        <div class="container-usuario">
+
+                            <div class="container-img-usuario">
+                                <img src="../img/andre.jpg" class="usuario_img" alt="Foto
+                                usuario">
+                            </div>
+
+                            <div class="objizq">
+                                <h3>Usuario: Andre5</h3>
+                                <h3>Nome: André mai </h3>
+                                <h3>CPF: 075.341.141-74</h3>
+                                <h3>E-mail: andremai1@gmail.com</h3>
+                            </div>
+
+                            <div class="objdir">
+                                <br>
+                                <h3>Celular: (45) 999 452 746</h3>
+                                <h3>N de obras acompanhando: 5</h3>
+                                <h3>Nivel de acesso: Admin</h3>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <!– --------------------------- End Lista Usuario---------------------------- ->
+                    <script src="../script/index.js"></script>
+                    <script src="../script/header.js"></script>
+
 </body>
 
 </html>

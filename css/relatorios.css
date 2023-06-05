@@ -1,3 +1,4 @@
+
 #h2relatorio {
     padding: 25px;
     display: flex;
@@ -80,7 +81,7 @@ select {
     flex-direction: column;
     align-items: flex-start;
     position: relative;
-    left: -4.5rem;
+    left: -3rem;
     gap: 35px;
 }
 
@@ -228,28 +229,3 @@ select {
     
     background-color: #A5CF3A;
 }*/
-
-#botao-gerar {
-    background-color: #A5CF3A;
-    border-color: #A5CF3A;
-    width: 16rem;
-    height: 5rem;
-    font-size: 2rem;
-}
-
-#botao-gerar:hover {
-    box-shadow: 5px 5px 5px grey;
-}
-
-#botao-submit {
-    border: 0.2rem solid #A5CF3A;
-    background-color: #FFFFFF;
-    width: 16rem;
-    height: 5rem;
-    font-size: 2rem;
-}
-
-#botao-submit:hover {
-
-    box-shadow: 5px 5px 5px #A5CF3A;
-}

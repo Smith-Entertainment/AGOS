@@ -1,73 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="../css/login.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+    
+    <link rel="Shortcut Icon" type="image/png" href="../img/iconObs.png">
     <link rel="stylesheet" href="../css/padrao.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-    <!– --------------------------- Inicio Header---------------------------- ->
-    <header>
-        <div class="container-header">
-            <picture class="container-header_logo">
-                <img src="../img/logo.png" alt="Logo Observatorio"
-                    class="logo">
-            </picture>
 
-            <nav>
-                <a href="../index.html">Obras</a>
-                <a href="listausuarios.html">Usuários</a>
-                <a href="relatorios.html">Relatorios</a>
-            </nav>
-            <div class="container-header_user">
-                <h4>Usuário</h4>
-                <a href="login.html" class="sair">Sair</a>
-                <a href="login.html"><img class="imguser"
-                        src="../img/loginico.png" alt="foto usuario"
-                        class="user"></a>
+<body>
+    <header></header>
+    <article>
+
+        <form action="">
+            <div class="usuario1">
+                <h2 class="text"> Login</h2>
+                <input class="usuario" type="text" placeholder="Usuário">
+
+                <div class="esqs">
+                    <input class="senha" type="password" placeholder="Senha">
+
+
+                    <div class="esq">
+                        <a href="./recuperarsenha.html">Esqueci minha senha</a>
+                    </div>
+
+                </div>
+                <div class="bot">
+                    <a href="../index.html"> <input class="login" type="button" value="Login"></a>
+                    <a href="cadastrousuario.html"><input class="cad" type="button" value="Cadastrar-se"></a>
+
+
+                </div>
             </div>
 
-        </div>
-    </header>
-    <!– --------------------------- End Header---------------------------- ->
 
-    <article>
-        <br>
-        <br>
-        <br>
-        <br>
-              
-        <form>
-            
-            <div class="usuario1">
-         <h2 class="text"> Login</h2>
-            <input class="usuario" type="text" placeholder="Usuário">
-         
-        <div class="esqs">
-            <input class="senha" type="password" placeholder="Senha">
-         
-
-        <div class="esq">
-            <a href="./recuperarsenha.html">Esqueci minha senha</a>
-          </div>
-
-       </div>
-            <div class="bot">
-          <a href="../index.html"> <input class="login" type="button" value="Login"></a>
-           <a href="cadastrousuario.html"><input class="cad" type="button" value="Cadastrar-se"></a>
-           
-        
-        </div>
-        </div>
-
-      
 
         </form>
 
     </article>
+    <script src="../script/header.js"></script>
 
 </body>
+
 </html>

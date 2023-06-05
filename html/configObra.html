@@ -1,74 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/configObra.css">
-        <link rel="stylesheet" href="../css/padrao.css">
-      
-        <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
-    </head>
-    <!– --------------------------- Inicio Header---------------------------- ->
-    <header>
-        <div class="container-header">
-            <picture class="container-header_logo">
-                <img src="../img/logo.png" alt="Logo Observatorio"
-                    class="logo">
-            </picture>
 
-            <nav>
-                <a href="../index.html">Obras</a>
-                <a href="listausuarios.html">Usuários</a>
-                <a href="relatorios.html">Relatorios</a>
-            </nav>
-            <div class="container-header_user">
-                <h4>Usuário</h4>
-                <a href="login.html" class="sair">Sair</a>
-                <a href="login.html"><img class="imguser"
-                        src="../img/loginico.png" alt="foto usuario"
-                        class="user"></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/configObra.css">
+    <link rel="stylesheet" href="../css/padrao.css">
+    
+    <link rel="Shortcut Icon" type="image/png" href="../img/iconObs.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>AGOS-Aplicativo de Gerenciamento de Obras Sociais</title>
+</head>
+
+<body>
+    <header></header>
+    <article class="container-ajustesObra">
+        <h2 class="textajus"> Ajustar obra</h2>
+
+        <form class="contaienr-form_ajusteObra">
+
+            <div class="config-obra-coluna1">
+                <input class="titulo-obra" type="text" placeholder="Titulo Atual">
+                <input class="licitacao" type="text" placeholder="Licitação Atual">
+                <input class="bairro" type="text" placeholder="Bairro Atual">
+                <input class="rua" type="text" placeholder="Rua Atual">
+                <input class="numero" type="text" placeholder="Número Atual">
+                <input class="data-inicio" type="date">
+                <input class="empresa_contr" type="text" placeholder="Empresa Contratada Atual">
+            </div>
+
+
+
+            <div class="config-obra-coluna2">
+                <input class="objeto" type="text" placeholder="Objeto Atual">
+                <input class="data-certame" type="date">
+                <input class="valor-edital" type="text" placeholder="Valor Atual do valor-edital">
+                <select class="tipo-obra" type="text" placeholder="Tipo de obra Atual"></select>
+                <input class="numero-de-contrato" type="text" placeholder="Número de contrato Atual">
+                <input class="data-termino" type="date">
+                <input class="valor_contr" type="text" placeholder="Valor Atual Contratado">
 
             </div>
-        </div>
-    </header>
-    <!– --------------------------- End Header---------------------------- ->
 
-    <body>
+            <button class="confirmar-ajuste">Confirmar</button>
 
-        
-       
-            <h2 class="textajus"> Ajustar obra</h2>
+        </form>
 
-            <form class="contaienr-form_ajusteObra">
+    </article>
+    <script src="../script/header.js"></script>
+</body>
 
-                <div class="config-obra-coluna1">
-                    <input class="titulo-obra" type="text" placeholder="Titulo Atual" >
-                    <input class="licitacao" type="text" placeholder="Licitação Atual">
-                    <input class="bairro" type="text"placeholder="Bairro Atual" >
-                    <input class="rua" type="text" placeholder="Rua Atual">
-                    <input class="numero" type="text" placeholder="Número Atual">
-                    <input class="data-inicio" type="date"  >
-                    <input class="empresa_contr" type="text" placeholder="Empresa Contratada Atual" >
-                </div>
-
-
-
-                <div class="config-obra-coluna2">
-                    <input class="objeto" type="text" placeholder="Objeto Atual">
-                    <input class="data-certame" type="date" >
-                    <input class="valor-edital" type="text" placeholder="Valor Atual do valor-edital">
-                    <select class="tipo-obra" type="text" placeholder="Tipo de obra Atual"></select>
-                    <input class="numero-de-contrato" type="text" placeholder="Número de contrato Atual">
-                    <input class="data-termino" type="date" >
-                    <input class="valor_contr" type="text" placeholder="Valor Atual Contratado">
-
-                </div>
-
-                <button class="confirmar-ajuste">Confirmar</button>
-
-            </form>
-
-     
-    </body>
 </html>
