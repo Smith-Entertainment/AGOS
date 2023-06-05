@@ -21,6 +21,7 @@
           </form>
         </div>
     </div>
+
     </div>
     </template>
     
@@ -40,47 +41,33 @@
         fecharPopup() {
           this.exibir = false;
         },
-        salvar() {
-          fetch('http://localhost:8080/api/obra/1', {
-            method: 'GET'
-          })
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Erro na requisição. Código: ' + response.status);
-              }
-              return response.json();
-            })
-            .then(dadosObra => {
-              dadosObra.dataInicio = this.dataInicio;
-              dadosObra.dataTermino = this.dataTermino;
-              
-    
-              fetch('http://localhost:8080/api/obra/1', {
-                method: 'PUT',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(dadosObra)
-              })
-                .then(response => {
-                  if (!response.ok) {
-                    throw new Error('Erro na requisição. Código: ' + response.status);
-                  }
-                  return response.json();
-                })
-                .then(data => {
-                  console.log('Dados atualizados:', data);
-                  this.fecharPopup();
-                })
-                .catch(error => {
-                  console.error('Erro ao atualizar dados:', error);
-                  this.fecharPopup();
-                });
-            })
-            .catch(error => {
-              console.error('Erro ao obter dados da obra:', error);
-              this.fecharPopup();
+        async salvar() {
+          try {
+            const response = await fetch('http://localhost:8080/api/obra/1');
+            if (!response.ok) {
+              throw new Error('Erro na requisição. Código: ' + response.status);
+            }
+            const dadosObra = await response.json();
+            dadosObra.dataInicio = this.dataInicio;
+            dadosObra.dataTermino = this.dataTermino;
+
+            const updateResponse = await fetch('http://localhost:8080/api/obra/1', {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(dadosObra)
             });
+            if (!updateResponse.ok) {
+              throw new Error('Erro na requisição. Código: ' + updateResponse.status);
+            }
+            const data = await updateResponse.json();
+            console.log('Dados atualizados:', data);
+            this.fecharPopup();
+          } catch (error) {
+            console.error('Erro ao obter/atualizar dados da obra:', error);
+            this.fecharPopup();
+          }
         }
       }
     };
