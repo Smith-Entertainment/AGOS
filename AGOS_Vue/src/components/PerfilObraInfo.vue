@@ -33,9 +33,9 @@ export default {
 
           <div class="part">
             <button id="btp">Participar</button>
-           <!-- <button id="btp-edit">Editar</button> -->
-                            <a href="/editar-obra'" class="nav-item nav-link" id="btp-edit">Editar</a>
-                        </div>
+             <button id="btp-edit"> <a href="/editar-obra" id="btp-edit">Editar</a></button>
+           
+            </div>
         </section>
       </div>
     </section>

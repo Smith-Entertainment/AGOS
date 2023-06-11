@@ -1,6 +1,7 @@
 <script>
 import PerfilObraInfo from './components/PerfilObraInfo.vue'
 import PerfilObraNav from './components/PerfilObraNav.vue';
+import EditarObra from './components/EditarObra.vue';
 
 export default {
   data() {
