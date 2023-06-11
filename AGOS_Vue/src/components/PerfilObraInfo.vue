@@ -33,6 +33,7 @@ export default {
 
           <div class="part">
             <button id="btp">Participar</button>
+            <button id="btp-edit">Editar</button>
           </div>
         </section>
       </div>
@@ -59,6 +60,16 @@ export default {
   height: 80px;
   margin-bottom: 2vw;
 }
+
+#btp-edit {
+  background-color: #808080;
+  border-style: none;
+  width: 200px;
+  height: 80px;
+  margin-bottom: 2vw;
+}
+
+
 
 .desc2 img {
   padding-left: 170px;
