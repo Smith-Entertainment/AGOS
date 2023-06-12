@@ -1,15 +1,19 @@
-
-
 <script>
-
+export default {
+  props: {
+    obra: {}
+  },
+}
 </script>
+
 
 <template>
   <article>
-    <h2>Cadastro de Obras</h2>
+    <h2>Editar Obra</h2>
     <form>
       <div class="coluna">
-        <input type="text" placeholder="Titulo" id="obratitulo">
+      <h2>{obra.objetivo}</h2>
+        <input type="text" placeholder={{obra.titulo}} id="obratitulo">
         <input type="text" placeholder="Licitação" id="obralicitacao">
         <input type="text" placeholder="Bairro" id="obrabairro">
         <input type="text" placeholder="Rua" id="obrarua">
