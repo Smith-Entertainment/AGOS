@@ -1,9 +1,11 @@
 <script>
   import List from './components/List.vue'
+  import Pagination from './components/Pagination.vue'
 
   export default {
     components: {
-      List
+      List,
+      Pagination
     }
   }
 </script>
@@ -28,6 +30,8 @@
       </div>
     </div>
     <List />
+
+    <Pagination />
   </main>
 </template>
 
