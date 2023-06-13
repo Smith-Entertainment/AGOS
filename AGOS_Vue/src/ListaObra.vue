@@ -18,12 +18,12 @@
     <div class="container mt-4">
       <div class="row">
         <div class="col">
-          <input class="rounded" type="search" placeholder="Buscar...">
+          <input class="rounded rounded-4 ps-2 h-100 w-30" type="search" placeholder="Buscar...">
         </div>
 
-        <div class="col">
-          <span class="material-symbols-outlined">filter_alt</span>
-          <a href="/cadastro-obra"><button class="rounded">Adicionar</button></a>
+        <div class="col align-bottom">
+          <button class="border-0 bg-white"><span class="material-symbols-outlined">filter_alt</span></button>
+          <a href="/cadastro-obra"><button class="rounded rounded-4 border-0 green-backgorund h-100 w-20">Adicionar</button></a>
         </div>
       </div>
     </div>
@@ -32,4 +32,7 @@
 </template>
 
 <style scoped>
+.green-backgorund{
+  background-color: #A5CF3A;
+}
 </style>
