@@ -17,7 +17,8 @@ export default {
   },
   components: {
     PerfilObraInfo,
-    PerfilObraNav
+    PerfilObraNav,
+    EditarObra
   }
 }
 </script>
