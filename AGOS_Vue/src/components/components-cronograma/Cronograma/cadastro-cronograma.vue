@@ -69,11 +69,11 @@ export default {
           const cronograma = {
             periodo: { id: periodo.id },
             item: { id: itemId },
-            previstoFinanceiro: 0,
-            previstoFisico: 0,
-            realizadoFinanceiro: 0,
-            realizadoFisico: 0,
-            valorContrato: 0,
+            previstoFinanceiro: '',
+            previstoFisico: '',
+            realizadoFinanceiro: '',
+            realizadoFisico: '',
+            valorContrato: '',
           };
           await axios.post("http://localhost:8080/obra/cronograma", cronograma);
         }
