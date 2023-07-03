@@ -45,7 +45,7 @@ data() {
 },
 methods: {
   cadastrarObra() {
-    fetch('http://localhost:9000/api/obra', {
+    fetch('http://localhost:8080/api/obra', {
       method: 'POST',
       mode: 'no-cors', // Adicionando o modo no-cors
       headers: {
