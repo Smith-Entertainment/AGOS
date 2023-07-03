@@ -30,6 +30,7 @@ export default {
         </div>
     </header>
 </template>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
@@ -39,7 +40,6 @@ header {
     font-family: 'Caladea', serif;
     border-bottom: 1px solid #202020;
     padding: 0px 200px 0px 100px;
-    margin-bottom: 100px;
 }
 header h4{
     font-size: 1.4rem;
