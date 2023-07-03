@@ -8,8 +8,7 @@ export default {
     <header class="row">
         <div class="container" id="nav-container">
             <div class="col-2">
-                <a href="Obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand"
-                        id="logo"></a>
+                <a href="/lista-obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand" id="logo"></a>
             </div>
             <div class="col-3">
                 <nav class="navbar navbar-expand-md"> <!--fixed-top?-->
@@ -18,7 +17,7 @@ export default {
                         <span class="navbar-toggler-icon"></span></button> <!--botao menu mobile-->
                     <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" id="obras-menu">Obras</a>
+                            <a href="/lista-obras" class="nav-item nav-link" id="obras-menu">Obras</a>
                             <a class="nav-item nav-link" id="usuario-menu">Usuários</a>
                             <a class="nav-item nav-link" id="relatorio-menu">Relatorios</a>
                         </div>
@@ -26,25 +25,21 @@ export default {
                 </nav>
             </div>
             <div class="col-1">
-                <h4><strong>Usuário</strong></h4>
-                <a href="#" class="">Sair</a>
-                <a href="#"><img src="../assets/img/loginico.png" alt="Imagem usuário" id="imagem-usuario"></a>
+         
             </div>
         </div>
     </header>
 </template>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
-.container {
-    padding: 80px 0;
-}
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
 header {
     background-color: #FFFFFF;
     color: #202020;
     font-family: 'Caladea', serif;
     border-bottom: 1px solid #202020;
+    padding: 0px 200px 0px 100px;
 }
 header h4{
     font-size: 1.4rem;

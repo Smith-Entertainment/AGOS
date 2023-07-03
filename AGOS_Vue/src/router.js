@@ -1,10 +1,15 @@
-import { createApp } from 'vue';
 import { createRouter, createWebHistory } from "vue-router";
 import PerfilObra from './PerfilObra.vue';
 import ListaObra from './ListaObra.vue';
+import CadastroObra from './components/CadastroObra.vue';
+import CadastroUsuario from './components/CadastroUsuario.vue';
+
 const routes = [
-  { path: '/PerfilObra', name: 'PerfilObra', component: PerfilObra },
-  { path: '/ListaObra', name: 'ListaObra', component: ListaObra },
+  { path: '/', name: 'home', redirect: {name: "ListaObra"}},
+  { path: '/obra/:id', name: 'PerfilObra', component: PerfilObra},
+  { path: '/lista-obras', name: 'ListaObra', component: ListaObra},
+  { path: '/cadastro-obra', name: 'CadastroObra', component: CadastroObra},
+  { path: '/cadastro-usuario', name: 'CadastroUsuario', component: CadastroUsuario}
 ];
 
 const router = createRouter({
