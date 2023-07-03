@@ -1,5 +1,6 @@
 <template>
   <div class="center">
+    <Periodo />
     <table class="styled-table">
       <thead>
         <tr>
@@ -14,7 +15,7 @@
           </th>
         </tr>
         <tr>
-          <th rowspan="2" class="center"><Cronograma /><Periodo /></th>
+          <th rowspan="2" class="center"><Cronograma /></th>
           <th v-for="periodo in periodos" :key="periodo.id" class="text-center">
             Previsto
           </th>
@@ -59,6 +60,8 @@
         </tr>
       </tbody>
     </table>
+        <div style="height: 250px;"></div>    
+
   </div>
 </template>
 
@@ -101,8 +104,11 @@ export default {
   methods: {
     async fetchCronograma() {
       try {
+        const url = window.location.href; 
+        const idObra = url.substring(url.lastIndexOf("/") + 1);
+
         const response = await axios.get(
-          "http://localhost:8080/obra/cronograma/List-cronogrma-obra:1"
+          `http://localhost:8080/obra/cronograma/List-cronogrma-obra:${idObra}`
         );
         this.cronogramas = response.data;
       } catch (error) {
@@ -111,8 +117,10 @@ export default {
     },
     async fetchPeriodos() {
       try {
+        const url = window.location.href; 
+        const idObra = url.substring(url.lastIndexOf("/") + 1);
         const response = await axios.get(
-          "http://localhost:8080/obra/periodo/lista-obra:1"
+          `http://localhost:8080/obra/periodo/lista-obra:${idObra}`
         );
         this.periodos = response.data;
       } catch (error) {
@@ -200,6 +208,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column ;
+
 }
 
 .overlay {
