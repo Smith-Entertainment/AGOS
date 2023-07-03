@@ -1,32 +1,31 @@
-<script>
-import PerfilObraInfo from './PerfilObraInfo.vue'
-import PerfilObraNav from './PerfilObraNav.vue';
-import EditarObra from './/EditarObra.vue';
 
-export default {
-  data() {
-    return {
-      id: this.$route.params.id,
-      obra: {}
+<script>
+    import ListItem from './ListItem.vue'
+
+    export default{
+        data(){
+            return{
+                obra: new Obra
+            }
+        },
+        created(){
+            fetch("http://localhost:8080/api/obra/${id}")
+                .then(response => {response.json().then(data => {this.obras = data})})
+                .catch(error => {console.log(error)})
+        },
+        methods: {
+            redirect(obra){
+                this.$router.push(`/obra/${obra.id}`)
+            }
+        },
+        components: {
+            ListItem
+        }
     }
-  },
-  created() {
-    fetch(`http://localhost:8080/api/obra/${this.id}`)
-      .then(response => { response.json().then(data => { this.obra = data }) })
-      .catch(error => { console.log(error) })
-  },
-  components: {
- 
-    EditarObra
-  }
-}
 </script>
 
-<template>
-  <main>
-    <PerfilObraInfo  :obra="this.obra"/>
-    <PerfilObraNav />
-  </main>
-</template>
 
-<style scoped></style>
+<template>
+
+  <div>vdfggftg</div>
+</template>

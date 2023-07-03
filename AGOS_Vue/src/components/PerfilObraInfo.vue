@@ -33,7 +33,7 @@ export default {
 
           <div class="part">
             <button id="btp">Participar</button>
-             <button id="btp-edit"> <a href="/editar-obra" >Editar</a></button>
+            <button id="btp-edit"> <a href="/editar-obra/:id" >Editar</a></button>
            
             </div>
         </section>
