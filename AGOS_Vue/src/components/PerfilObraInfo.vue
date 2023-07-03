@@ -1,9 +1,9 @@
 <script>
 export default {
   props: {
-    obra: {}
+    obra: {},
   },
-}
+};
 </script>
 
 <template>
@@ -11,26 +11,60 @@ export default {
     <section>
       <div class="conteudo" id="conteudo">
         <div class="img">
-          <img class="obra" src="../assets/img/sem_foto.png" alt="Foto Obra">
+          <img class="obra" src="../assets/img/sem_foto.png" alt="Foto Obra" />
         </div>
         <section class="desc">
-          <section class="desc1">
-            <h3>{{ obra.titulo }}</h3>
-            <h4>Objetivo:  {{ obra.objetivo }}</h4>
-            <h4>Endereço: {{ obra.rua }} {{ obra.numero }}, {{ obra.bairro }}</h4>
-            <h4>Data do certame: {{ obra.dataCertame }}</h4>
-            <h4>Licitação: {{ obra.licitacao }}</h4>
-            <h4>Valor do edital: R$ {{ obra.valorEdital }}</h4>
-          </section>
+          <div>
+            <h2>{{ obra.titulo }}</h2>
+            <br />
+            <div class="flex">
+              <section>
+                <div class="banker">
+                  <label> <h4>Objetivo:</h4></label>
+                  <h5>{{ obra.objetivo }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Endereço:</h4></label>
+                  <h5>{{ obra.rua }} {{ obra.numero }}, {{ obra.bairro }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Data do certame:</h4></label>
+                  <h5>{{ obra.dataCertame }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Licitação:</h4></label>
+                  <h5>{{ obra.licitacao }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Valor do edital:</h4></label>
+                  <h5>R$ {{ obra.valorEdital }}</h5>
+                </div>
+              </section>
 
-          <section class="desc2">
-            <h4>Data de Inicio: {{ obra.dataInicio }}</h4>
-            <h4>Data de Término (previsto): {{ obra.dataTermino }}</h4>
-            <h4>Nº do contrato: {{ obra.numeroContrato }}</h4>
-            <h4>Empresa contratada: {{ obra.empresaContratada }}</h4>
-            <h4>Valor contratado: {{ obra.valorContratado }}</h4>
-          </section>
-
+              <section>
+                <div class="banker">
+                  <label><h4>Data de Inicio:</h4></label>
+                  <h5>{{ obra.dataInicio }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Data de Término (previsto):</h4></label>
+                  <h5>{{ obra.dataTermino }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Nº do contrato:</h4></label>
+                  <h5>{{ obra.numeroContrato }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Empresa contratada:</h4></label>
+                  <h5>{{ obra.empresaContratada }}</h5>
+                </div>
+                <div class="banker">
+                  <label><h4>Valor contratado:</h4></label>
+                  <h5>{{ obra.valorContratado }}</h5>
+                </div>
+              </section>
+            </div>
+          </div>
           <div class="part">
             <button id="btp">Participar</button>
           </div>
@@ -46,11 +80,18 @@ export default {
   display: flex;
   align-items: center;
 }
-
+.flex {
+  display: flex;
+  gap: 70px;
+}
 .obra {
   height: 300px;
 }
-
+.banker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 #btp {
   background-color: #a5cf3a;
   border-style: none;
@@ -80,29 +121,6 @@ a {
   display: flex;
   flex-direction: row;
   gap: 10vw;
-}
-
-.desc1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.desc1 h3 {
-  margin-top: 4vh;
-}
-
-.desc1 h4 {
-  margin-top: 2vh;
-}
-
-.desc2 {
-  padding-top: 7%;
-  display: flex;
-  flex-direction: column;
-}
-
-.desc2 h4 {
-  margin-top: 2vh;
 }
 
 .part {
