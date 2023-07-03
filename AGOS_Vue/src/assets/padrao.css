@@ -106,7 +106,6 @@ a:hover {
 #modal_menu {
     display: none;
     background-color: #A5CF3A;
-<<<<<<< HEAD
     position: fixed;
     overflow: auto;
     z-index: 1;
@@ -116,11 +115,6 @@ a:hover {
     border-radius: 0 0 15px 15px;
 }
 
-=======
-    width: 15vw;
-    height: 15vh;
-}
->>>>>>> desenvolvimento
 /*--------------------------- End header -----------------------------*/
 @media screen and (max-width: 450px) {
 

@@ -49,6 +49,14 @@ body {
     font-size: 30px;
     
 }
+input{
+    background-color: #F1F1F1;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    border-style: none;
+    border-radius: 5px;
+    padding: 12px;
+}
 
 .usuario1{
 

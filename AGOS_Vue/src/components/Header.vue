@@ -26,7 +26,7 @@ export default {
             </div>
             <div class="col-1">
                 <h4><strong>Usuário</strong></h4>
-                <a href="#" class="">Sair</a>
+                <a href="/cadastro-usuario" class="">Sair</a>
                 <a href="#"><img src="../assets/img/loginico.png" alt="Imagem usuário" id="imagem-usuario"></a>
             </div>
         </div>
