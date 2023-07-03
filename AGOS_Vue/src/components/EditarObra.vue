@@ -19,7 +19,7 @@
             }
         },
         components: {
-            ListItem
+            ListItemNPM
         }
     }
 </script>

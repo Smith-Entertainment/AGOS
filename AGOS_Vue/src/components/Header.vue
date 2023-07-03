@@ -8,7 +8,12 @@ export default {
     <header class="row">
         <div class="container" id="nav-container">
             <div class="col-2">
+<<<<<<< HEAD
                 <a href="/lista-obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand" id="logo"></a>
+=======
+                <a href="Obras"><img src="../assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand"
+                        id="logo"></a>
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
             </div>
             <div class="col-3">
                 <nav class="navbar navbar-expand-md"> <!--fixed-top?-->
@@ -17,7 +22,11 @@ export default {
                         <span class="navbar-toggler-icon"></span></button> <!--botao menu mobile-->
                     <div class="collapse navbar-collapse justify-content-center" id="navbar-links">
                         <div class="navbar-nav">
+<<<<<<< HEAD
                             <a href="/lista-obras" class="nav-item nav-link" id="obras-menu">Obras</a>
+=======
+                            <a class="nav-item nav-link" id="obras-menu">Obras</a>
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
                             <a class="nav-item nav-link" id="usuario-menu">Usuários</a>
                             <a class="nav-item nav-link" id="relatorio-menu">Relatorios</a>
                         </div>
@@ -32,9 +41,19 @@ export default {
         </div>
     </header>
 </template>
+<<<<<<< HEAD
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
+=======
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
+
+.container {
+    padding: 80px 0;
+}
+
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
 header {
     background-color: #FFFFFF;
     color: #202020;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <script>
 
@@ -91,13 +92,82 @@ methods: {
         </select> 
         
 
+=======
+<template>
+  <article>
+    <h2>Cadastro de Obras</h2>
+    <form @submit.prevent="cadastrarObra">
+      <div class="coluna">
+        <input type="text" placeholder="Titulo" v-model="obra.titulo">
+        <input type="text" placeholder="Bairro" v-model="obra.bairro">
+        <input type="text" placeholder="Rua" v-model="obra.rua">
+        <input type="number" placeholder="Nº" v-model="obra.numero">
+        <input type="submit" value="Cadastrar" id="botao_cadastrar">
+      </div>
+
+      <div class="coluna">
+        <input type="text" placeholder="Objeto" v-model="obra.objeto">
+        <input type="date" placeholder="Data do certame" v-model="obra.dataCertame">
+        <input type="text" placeholder="Valor do edital" v-model="obra.valorEdital">
+        <select name="tipoObra" v-model="obra.tipoObra">
+          <option disabled selected>Tipo de obra</option>
+          <option>Tipo 1</option>
+          <option>Tipo 2</option>
+          <option>Tipo 3</option>
+          <option>Tipo 4</option>
+        </select>
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
         <input type="reset" value="Limpar" id="botao_limpar">
       </div>
     </form>
   </article>
 </template>
 
+<<<<<<< HEAD
   <style scoped>
+=======
+<script>
+export default {
+data() {
+  return {
+    obra: {
+      titulo: '',
+      bairro: '',
+      rua: '',
+      numero: null,
+      objeto: '',
+      dataCertame: '',
+      valorEdital: '',
+      tipoObra: ''
+    }
+  };
+},
+methods: {
+  cadastrarObra() {
+    fetch('http://localhost:9000/api/obra', {
+      method: 'POST',
+      mode: 'no-cors', // Adicionando o modo no-cors
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.obra)
+    })
+      .then(() => {
+        console.log('Cadastro realizado com sucesso!');
+        // Resto do código de manipulação (se necessário)
+      })
+      .catch(error => {
+        console.error('Erro ao cadastrar:', error);
+        // Resto do código de manipulação de erro
+      });
+  }
+}
+}
+
+
+</script>
+  <style>
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
   h2 {
     text-align: center;
     font-size: 36px;

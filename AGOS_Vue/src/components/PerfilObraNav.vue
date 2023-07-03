@@ -11,13 +11,21 @@
         </div>
     </nav>
 </template>
+<<<<<<< HEAD
 <style scoped>
+=======
+<style>
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
 .lista {
     font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+<<<<<<< HEAD
     margin: 5vh 0vh 5vh 0vw;
+=======
+    margin: 5vh 0 5vh 20vw;
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
   }
   
   .part {

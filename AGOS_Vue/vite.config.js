@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import { fileURLToPath, URL } from 'node:url';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import cors from 'cors';
+=======
+import { fileURLToPath, URL } from 'node:url'
+
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
@@ -9,6 +17,7 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+<<<<<<< HEAD
   },
   server: {
     proxy: {
@@ -25,3 +34,8 @@ export default defineConfig({
     }
   }
 });
+=======
+  }
+}
+)
+>>>>>>> cae0fb151469fbd9637e9fb240fad8bc9e05424e
