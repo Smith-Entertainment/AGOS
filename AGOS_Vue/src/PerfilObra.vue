@@ -1,6 +1,6 @@
 <script>
 import PerfilObraInfo from './components/PerfilObraInfo.vue'
-import PerfilObraNav from './components/PerfilObraNav.vue';
+import PerfilObraNav from './components/components-cronograma/Header-Obra/Header.vue'
 
 export default {
   data() {
@@ -24,6 +24,7 @@ export default {
 <template>
   <main>
     <PerfilObraInfo  :obra="this.obra"/>
+    <br><br>
     <PerfilObraNav />
   </main>
 </template>

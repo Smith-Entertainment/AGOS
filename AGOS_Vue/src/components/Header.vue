@@ -25,13 +25,12 @@ export default {
                 </nav>
             </div>
             <div class="col-1">
-                <h4><strong>Usuário</strong></h4>
-                <a href="#" class="">Sair</a>
-                <a href="#"><img src="../assets/img/loginico.png" alt="Imagem usuário" id="imagem-usuario"></a>
+         
             </div>
         </div>
     </header>
 </template>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 
@@ -40,6 +39,7 @@ header {
     color: #202020;
     font-family: 'Caladea', serif;
     border-bottom: 1px solid #202020;
+    padding: 0px 200px 0px 100px;
 }
 header h4{
     font-size: 1.4rem;
