@@ -5,7 +5,7 @@ export class Documento{
 
     id! : number
     grupoProjeto! : GrupoProjeto[]
-    arquivos! : Arquivo
+    arquivos! : Arquivo[]
     obra! : Obra
 
 }
