@@ -1,4 +1,4 @@
-export class Arquivo{
+export class ArquivoModel{
     id! : number
     nome! : string
     endereco! : string

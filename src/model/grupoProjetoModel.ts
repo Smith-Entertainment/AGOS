@@ -1,3 +1,3 @@
-export enum GrupoProjeto {
+export enum GrupoProjetoModel {
     HIDRAULICO, ELETRICO, ESTRUTURA
 }

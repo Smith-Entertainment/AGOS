@@ -1,6 +1,6 @@
 import { Obra } from "@/model/obraModel.ts"
 
-export class Usuario{
+export class UsuarioModel{
     id !: number;
 
     nome !: string;

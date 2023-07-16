@@ -1,11 +1,11 @@
 import { GrupoProjeto } from "@/model/grupoProjetoModel"
-import { Arquivo } from "@/model/arquivoModel"
- import { Obra } from "@/model/obraModel"
-export class Documento{
+import { ArquivoModel } from "@/model/arquivoModel"
+ import { ObraModel } from "@/model/obraModel"
+export class DocumentoModel{
 
     id! : number
-    grupoProjeto! : GrupoProjeto[]
-    arquivos! : Arquivo[]
-    obra! : Obra
+    grupoProjeto! : GrupoProjetoModel[]
+    arquivos! : ArquivoModelo[]
+    obra! : ObraModel
 
 }
