@@ -1,40 +1,46 @@
 # AGOS
+# Projeto Integrador: AGOS Front-end
+<img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=%3CCOLOR%3E&style=FOR-THE-BADGE&logo=%3CLOGO%3E"></img>
+<h1 align="center">
+    <a href="https://spring.io/">VueJS + Bootstrap</a>
+</h1>
+#Descrição:<br>
+Integração de API com o Frontend.
+Planejado para otimizar e minimizar o uso de planilhas pelo Observatório Social de Foz do Iguaçu.<br><br>
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+<p align="center">
+ <a href="#como-usar">Como Usar</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#instalacao">Instalação</a> •
+</p>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Features
 
-## Type Support for `.vue` Imports in TS
+- [x] Consultas usando protocolo HTTP;
+- [x] Cadastro de Obras pelo front-end;
+- [x] Visualização das obras cadastradas em banco;
+- [ ] Cadastro e validação de usuários.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+### 🛠 Tecnologias
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+As seguintes ferramentas foram usadas na construção do projeto:
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+- [VueJS](https://vuejs.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [PostgresSQL](https://www.postgresql.org/)
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Instalação
+Para conseguir funcionar na sua máquina, é necessário:
 
-## Project Setup
-
-```sh
+1. instalação dos pacotes
+```
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
+2. Compilar e visualizar o servidor local
+```
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
