@@ -24,4 +24,8 @@ export class Usuario{
     dataNascimento !: Date;
 
     obras : Array<Obra>
+
+    constructor(){
+        this.obras = new Array<Obra>()
+    }
 }
