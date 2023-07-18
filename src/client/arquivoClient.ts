@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { ArquivoModel } from "@/model/arquivoModel";
+import { Arquivo } from "@/model/arquivoModel";
 
 export class ArquivoClient {
 
@@ -12,33 +12,33 @@ export class ArquivoClient {
         });
     }
 
-    public async findById(id: number) : Promise<ArquivoClient> {
+    public async findById(id: number) : Promise<Arquivo> {
         try {
-            return (await this.axiosClient.get<ArquivoClient>(`/obra/arquivo?id=${id}`)).data
+            return (await this.axiosClient.get<Arquivo>(`/obra/arquivo?id=${id}`)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-    public async findAll() : Promise<ArquivoClient[]>{
+    public async findAll() : Promise<Arquivo[]>{
         try {
-            return (await this.axiosClient.get<ArquivoClient[]>(`/obra/arquivo/lista`)).data
+            return (await this.axiosClient.get<Arquivo[]>(`/obra/arquivo/lista`)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-	public async create(arquivoClient: ArquivoClient): Promise<string> {
+	public async create(arquivo: Arquivo): Promise<string> {
 		try {
-            return (await this.axiosClient.post<string>(`/obra/arquivo`, arquivoClient)).data
+            return (await this.axiosClient.post<string>(`/obra/arquivo`, arquivo)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-	public async update(id: number, arquivoClient: ArquivoClient): Promise<string> {
+	public async update(id: number, arquivo: Arquivo): Promise<string> {
         try {
-            return (await this.axiosClient.put<string>(`/obra/arquivo?id=${id}`, arquivoClient)).data
+            return (await this.axiosClient.put<string>(`/obra/arquivo?id=${id}`, arquivo)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }

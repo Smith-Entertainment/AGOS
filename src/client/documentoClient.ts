@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { DocumentoModel } from "@/model/documentoModel";
+import { Documento } from "@/model/documentoModel";
 
 export class DocumentoClient {
 
@@ -12,33 +12,33 @@ export class DocumentoClient {
         });
     }
 
-    public async findById(id: number) : Promise<DocumentoClient> {
+    public async findById(id: number) : Promise<Documento> {
         try {
-            return (await this.axiosClient.get<DocumentoClient>(`/obra/documento?id=${id}`)).data
+            return (await this.axiosClient.get<Documento>(`/obra/documento?id=${id}`)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-    public async findAll() : Promise<DocumentoClient[]>{
+    public async findAll() : Promise<Documento[]>{
         try {
-            return (await this.axiosClient.get<DocumentoClient[]>(`/obra/documento/lista`)).data
+            return (await this.axiosClient.get<Documento[]>(`/obra/documento/lista`)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-	public async create(documentoClient: DocumentoClient): Promise<string> {
+	public async create(documento: Documento): Promise<string> {
 		try {
-            return (await this.axiosClient.post<string>(`/obra/documento`, documentoClient)).data
+            return (await this.axiosClient.post<string>(`/obra/documento`, documento)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
     }
 
-	public async update(id: number, documentoClient: DocumentoClient): Promise<string> {
+	public async update(id: number, documento: Documento): Promise<string> {
         try {
-            return (await this.axiosClient.put<string>(`/obra/documento?id=${id}`, documentoClient)).data
+            return (await this.axiosClient.put<string>(`/obra/documento?id=${id}`, documento)).data
         } catch (error:any) {
             return Promise.reject(error.response)
         }
