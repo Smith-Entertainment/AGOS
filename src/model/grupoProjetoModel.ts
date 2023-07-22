@@ -1,3 +1,3 @@
 export enum GrupoProjeto {
-    HIDRAULICO, ELETRICO, ESTRUTURA
+    HIDRAULICO, ELETRICO, ESTRUTURA, 
 }

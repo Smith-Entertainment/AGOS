@@ -1,4 +1,4 @@
-import { Obra } from "@/model/obraModel.ts"
+import { Obra } from "@/model/obraModel"
 
 export class Usuario{
     id !: number;
@@ -17,7 +17,7 @@ export class Usuario{
 
     senha !: string;
 
-    nomePai : string;
+    nomePai !: string;
 
     nomeMae !: string;
 

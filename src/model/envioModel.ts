@@ -1,3 +1,4 @@
+/*
 export class  envioModel{
 
   id!: number;
@@ -11,4 +12,4 @@ export class  envioModel{
   obra: ObraModel;
 
 
-}
+}*/
