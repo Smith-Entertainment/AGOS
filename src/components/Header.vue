@@ -10,8 +10,8 @@ export default {
             <div class="col-3">
                 <a href=""><img src="@/assets/img/logo.png" alt="Logo Observatorio" class="navbar-brand" id="logo"></a>
             </div>
-            <div class="col-7">
-                <nav class="navbar navbar-expand-md"> <!--fixed-top?-->
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg"> <!--fixed-top?-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links"
                         aria-controls="navbar-links" aria-extend="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span></button> <!--botao menu mobile-->
@@ -24,20 +24,21 @@ export default {
                     </div>
                 </nav>
             </div>
-            <div class="col-2" id="div-login">
-                <div class="row">
-                <div>
-                    <strong>
-                    <a href="" class="col-4">Usuário</a><!--TROCAR POR ROUTERLINK-->
-                    </strong>
-                </div>
-                <div>
-                    <a href="" class="col-4">Sair</a>
+            <div class="col-3" id="div-login">
+                <div class="text-end">
+                    <div>
+                        <strong>
+                            <a href="">Usuário</a><!--TROCAR POR ROUTERLINK-->
+                        </strong>
+                    </div>
+                    <div>
+                        <a href="">Sair</a>
+                    </div>
                 </div>
                 <div>
                     <img src="@/assets/img/iconeperfillogin.png" alt="icone-perfil-usuario" width="50">
                 </div>
-                </div>
+
             </div>
         </div>
     </header>
@@ -45,63 +46,61 @@ export default {
 
 <style scoped>
 
-@import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
-
-
 header {
-    background-color: #FFFFFF;
+    /*width: 100%;*/
     color: #202020;
     font-family: 'Caladea', serif;
     font-weight: 400;
     border-bottom: 1px solid #202020;
-    padding: 5px;
-    
+
 }
-header h4{
-    font-size: 1.4rem;
-}
-.navbar-nav{
+.navbar-nav {
     display: flex;
-    gap: 7rem;
+    flex-direction: row;
+    gap: 5rem;
+    background-color: blue;
 }
+
 .navbar-nav a {
+    display: flex;
+    flex-direction: column;
     color: #202020;
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: none;
 }
-.navbar-nav a:active{
-    color: #A5CF3A;
-}
-.navbar-nav a:hover{
-    color: #A5CF3A;
-}
-header a {
-    color: #202020;
 
+.navbar-nav a:active {
+    color: #A5CF3A;
 }
 
 #nav-container {
-    padding-top: 0;
-    padding-bottom: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 #logo {
-    width: 220px;
+    width: 240px;
     height: auto;
 }
 
-.navbar-expand-md, .navbar-nav, .nav-link{
-    padding: 1rem .8rem;
+
+#div-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+    flex-wrap: wrap-reverse;
+    /* background-color: black; */
 }
-#div-login a{
+
+#div-login a {
     font-size: 1.2rem;
     text-decoration: none;
+    color:#202020;
 }
-#div-login a:hover{
+
+#div-login a:hover {
     color: #A5CF3A;
-}
-</style>
+}</style>

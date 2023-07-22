@@ -11,4 +11,10 @@ import Header from '@/components/Header.vue'
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Caladea&display=swap');
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+*{
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 </style>
