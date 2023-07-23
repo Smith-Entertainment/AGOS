@@ -47,27 +47,26 @@ export default {
 <style scoped>
 
 header {
-    /*width: 100%;*/
+    /* width: 100%; */
     color: #202020;
     font-family: 'Caladea', serif;
     font-weight: 400;
     border-bottom: 1px solid #202020;
+    padding: 5px;
 
 }
+
 .navbar-nav {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
-    background-color: blue;
+    gap: 6rem;
 }
 
 .navbar-nav a {
     display: flex;
-    flex-direction: column;
     color: #202020;
     font-size: 1.5rem;
     font-weight: 500;
-    text-decoration: none;
 }
 
 .navbar-nav a:active {
@@ -77,6 +76,7 @@ header {
 #nav-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #logo {
