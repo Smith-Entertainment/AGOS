@@ -1,5 +1,6 @@
-import axios, { AxiosInstance } from "axios";
+import type {AxiosInstance } from "axios";
 import { Documento } from "@/model/documentoModel";
+import axios from "axios";
 
 export class DocumentoClient {
 
