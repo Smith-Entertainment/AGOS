@@ -8,14 +8,14 @@ export class ItemClient{
     
     constructor(){
         this.axiosClient = axios.create({
-            baseURL: "http://localhost:8080/api/periodo",
+            baseURL: "http://localhost:8080/api",
             headers:{ "Content-Type": "application/json"}
         })
     }
 
     public async findById(id: number) : Promise<Periodo>{
         try{
-            return (await this.axiosClient.get<Periodo>(`/?id=${id}`)).data;
+            return (await this.axiosClient.get<Periodo>(`/periodo?id=${id}`)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -23,7 +23,7 @@ export class ItemClient{
 
     public async findAll() : Promise<Periodo[]>{
         try{
-            return (await this.axiosClient.get<Periodo[]>(`/List`)).data;
+            return (await this.axiosClient.get<Periodo[]>(`/periodo/list`)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -32,7 +32,7 @@ export class ItemClient{
 
     public async create (periodo: Periodo) : Promise<string>{
         try{
-            return (await this.axiosClient.post<string>(`/create`, periodo)).data;
+            return (await this.axiosClient.post<string>(`/periodo`, periodo)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -40,7 +40,7 @@ export class ItemClient{
 
     public async updata(id: number, periodo: Periodo) : Promise<string>{
         try{
-            return (await this.axiosClient.put<string>(`/update`, periodo)).data;
+            return (await this.axiosClient.put<string>(`/periodo?id=${id}`, periodo)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }

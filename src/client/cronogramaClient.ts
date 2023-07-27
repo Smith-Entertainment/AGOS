@@ -7,14 +7,14 @@ export class CronogramaClient{
 
     constructor(){
         this.axiosClient = axios.create({
-            baseURL: "http://localhost:8080/api/cronograma",
+            baseURL: "http://localhost:8080/api",
             headers:{ "Content-Type": "application/json"}
         }); 
     }
     
     public async findById(id: number) : Promise<Cronograma> {
         try {
-            return (await this.axiosClient.get<Cronograma>(`/?id=${id}`)).data;
+            return (await this.axiosClient.get<Cronograma>(`/cronograma?id=${id}`)).data;
         } catch (error:any) {
             return Promise.reject(error.response)
         }
@@ -22,7 +22,7 @@ export class CronogramaClient{
 
     public async findAll() : Promise<Cronograma[]>{
         try{
-            return (await this.axiosClient.get<Cronograma[]>(`/List`)).data;
+            return (await this.axiosClient.get<Cronograma[]>(`/cronograma/list`)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -30,7 +30,7 @@ export class CronogramaClient{
 
     public async create(cronograma: Cronograma) : Promise<string>{
         try{
-            return (await this.axiosClient.post<string>(`/create`, cronograma)).data;
+            return (await this.axiosClient.post<string>(`/cronograma`, cronograma)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -38,7 +38,7 @@ export class CronogramaClient{
     
     public async update(id: number ,cronograma: Cronograma) : Promise<string>{
         try{
-            return (await this.axiosClient.put<string>(`/update?id=${id}`, cronograma)).data;
+            return (await this.axiosClient.put<string>(`/cronograma?id=${id}`, cronograma)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }

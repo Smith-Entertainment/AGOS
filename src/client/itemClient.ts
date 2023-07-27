@@ -8,14 +8,14 @@ export class ItemClient{
     
     constructor(){
         this.axiosClient = axios.create({
-            baseURL: "http://localhost:8080/api/item",
+            baseURL: "http://localhost:8080/api",
             headers:{ "Content-Type": "application/json"}
         })
     }
 
     public async findById(id: number) : Promise<Item>{
         try{
-            return (await this.axiosClient.get<Item>(`/?id=${id}`)).data;
+            return (await this.axiosClient.get<Item>(`/item?id=${id}`)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -23,23 +23,16 @@ export class ItemClient{
 
     public async findAll() : Promise<Item[]>{
         try{
-            return (await this.axiosClient.get<Item[]>(`/List`)).data;
+            return (await this.axiosClient.get<Item[]>(`/item/list`)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
     }
 
-    public async findByName(name: string) : Promise<Item>{
-       try{
-            return (await this.axiosClient.get<Item>(`/?name/${name}`)).data;
-        } catch (error:any){
-            return Promise.reject(error.response);
-        }  
-    }
 
     public async create (item: Item) : Promise<string>{
         try{
-            return (await this.axiosClient.post<string>(`/create`, item)).data;
+            return (await this.axiosClient.post<string>(`/item`, item)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
@@ -47,7 +40,7 @@ export class ItemClient{
 
     public async updata(id: number, item: Item) : Promise<string>{
         try{
-            return (await this.axiosClient.put<string>(`/update`, item)).data;
+            return (await this.axiosClient.put<string>(`/item?id=${id}`, item)).data;
         } catch (error:any){
             return Promise.reject(error.response);
         }
