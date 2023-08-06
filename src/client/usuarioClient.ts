@@ -29,7 +29,7 @@ export class UsuarioClient{
         }
     }
 
-    public async cadastrar(usuario : Usuario) : Promise<string> {
+    public async create(usuario : Usuario) : Promise<string> {
         try{
             return (await this.axiosClient.post<string>(`/usuario`, usuario)).data;
         }
@@ -38,7 +38,7 @@ export class UsuarioClient{
         }
     }
 
-    public async editar(id : number, usuario : Usuario) : Promise<string> {
+    public async update(id : number, usuario : Usuario) : Promise<string> {
         try{
             return (await this.axiosClient.put<string>(`/usuario?id=${id}`, usuario)).data;
         }
@@ -47,7 +47,7 @@ export class UsuarioClient{
         }
     }
 
-    public async excluir(id : number) : Promise<string> {
+    public async delete(id : number) : Promise<string> {
         try{
             return (await this.axiosClient.delete<string>(`/usuario?id=${id}`)).data;
         }
