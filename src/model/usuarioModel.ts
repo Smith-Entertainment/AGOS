@@ -17,7 +17,7 @@ export class Usuario{
 
     senha !: string;
 
-    nomePai !: string;
+    nomePai ?: string;
 
     nomeMae !: string;
 
