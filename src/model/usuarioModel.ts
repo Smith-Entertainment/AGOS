@@ -26,6 +26,7 @@ export class Usuario{
     obras : Array<Obra>
 
     constructor(){
-        this.obras = new Array<Obra>()
+        this.nomePai = "";
+        this.obras = new Array<Obra>();
     }
 }
