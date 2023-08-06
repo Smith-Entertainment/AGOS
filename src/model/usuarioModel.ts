@@ -17,7 +17,7 @@ export class Usuario{
 
     senha !: string;
 
-    nomePai !: string;
+    nomePai ?: string;
 
     nomeMae !: string;
 
@@ -26,6 +26,7 @@ export class Usuario{
     obras : Array<Obra>
 
     constructor(){
-        this.obras = new Array<Obra>()
+        this.nomePai = "";
+        this.obras = new Array<Obra>();
     }
 }
